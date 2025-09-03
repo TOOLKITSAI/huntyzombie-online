@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hunty Zombie Wiki 2025 - Complete guide for weapons, perks, pets, traits. Updated for UPDATE 2 with Dagger and Scythe weapons. Best strategies and tier lists.">
+    <meta name="keywords" content="hunty zombie wiki, roblox wave survival, weapon tier list, best perks, pet guide, trait system, UPDATE 2, scythe, dagger, greatsword meta, prodigy trait, 2025">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hunty Zombie Wiki - UPDATE 2 Complete Guide 2025">
+    <meta property="og:description" content="Hunty Zombie complete wiki for UPDATE 2. Weapon tier lists, best perks, pet guides, and meta strategies. Over 145M plays on Roblox.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0A0E1A/00D4FF?text=Hunty+Zombie+Wiki">
+    <meta property="og:url" content="https://huntyzombie.online/wiki/">
+    
+    <title>Hunty Zombie Wiki - UPDATE 2 Guide | Weapons, Perks, Pets & Strategies 2025</title>
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    
+    <style>
+        /* Wiki Specific Styles */
+        .wiki-hero {
+            background: linear-gradient(135deg, #0A0E1A 0%, #1E2430 100%);
+            padding: 120px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wiki-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0, 212, 255, 0.03) 2px,
+                    rgba(0, 212, 255, 0.03) 4px
+                );
+            animation: dataStream 10s linear infinite;
+        }
+        
+        .hero-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: var(--space-5);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            padding-bottom: 56.25%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .wiki-search {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            margin-top: var(--space-4);
+        }
+        
+        .wiki-search-input {
+            width: 100%;
+            padding: var(--space-3) var(--space-5) var(--space-3) var(--space-3);
+            background: rgba(21, 25, 35, 0.8);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: var(--radius-full);
+            color: var(--text-primary);
+            font-size: var(--text-lg);
+            transition: var(--transition-base);
+        }
+        
+        .wiki-search-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+        }
+        
+        .wiki-search-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent-blue);
+            border: none;
+            color: var(--primary-dark);
+            width: 45px;
+            height: 45px;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .wiki-search-btn:hover {
+            background: var(--accent-green);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        /* Wiki Content Layout */
+        .wiki-content-section {
+            padding: var(--space-6) 0;
+            background: var(--primary-dark);
+        }
+        
+        .wiki-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: var(--space-5);
+        }
+        
+        .wiki-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .sidebar-sticky {
+            background: var(--secondary-dark);
+            border-radius: var(--radius-lg);
+            padding: var(--space-3);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .sidebar-sticky h3 {
+            color: var(--accent-blue);
+            margin-bottom: var(--space-3);
+            font-size: var(--text-lg);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .wiki-nav {
+            list-style: none;
+        }
+        
+        .wiki-nav li {
+            margin-bottom: var(--space-2);
+        }
+        
+        .wiki-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2);
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+        }
+        
+        .wiki-nav a:hover {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-blue);
+            transform: translateX(4px);
+        }
+        
+        .wiki-nav a.active {
+            background: rgba(0, 212, 255, 0.2);
+            color: var(--accent-blue);
+        }
+        
+        .wiki-main-content {
+            background: var(--secondary-dark);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+        }
+        
+        .wiki-section {
+            margin-bottom: var(--space-5);
+            padding-bottom: var(--space-5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .wiki-section:last-child {
+            border-bottom: none;
+        }
+        
+        .wiki-section h2 {
+            color: var(--accent-green);
+            margin-bottom: var(--space-3);
+            font-size: var(--text-2xl);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .wiki-section h3 {
+            color: var(--accent-blue);
+            margin: var(--space-3) 0 var(--space-2) 0;
+            font-size: var(--text-xl);
+        }
+        
+        .wiki-section p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-3);
+        }
+        
+        .wiki-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-3) 0;
+        }
+        
+        .wiki-table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-blue);
+            padding: var(--space-2);
+            text-align: left;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .wiki-table td {
+            padding: var(--space-2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+        
+        .wiki-table tr:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+        
+        .rarity-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .rarity-rare {
+            background: #3B82F6;
+            color: white;
+        }
+        
+        .rarity-epic {
+            background: #A855F7;
+            color: white;
+        }
+        
+        .rarity-legendary {
+            background: #EAB308;
+            color: black;
+        }
+        
+        .rarity-mythic {
+            background: linear-gradient(135deg, #FF3E3E 0%, #FFD700 100%);
+            color: white;
+        }
+        
+        /* FAQs Section */
+        .faqs-section {
+            padding: var(--space-6) 0;
+            background: var(--secondary-dark);
+        }
+        
+        .faq-grid {
+            display: grid;
+            gap: var(--space-3);
+            margin-top: var(--space-4);
+        }
+        
+        .faq-item {
+            background: var(--tertiary-dark);
+            border-radius: var(--radius-lg);
+            padding: var(--space-3);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .faq-question {
+            font-size: var(--text-lg);
+            color: var(--accent-green);
+            margin-bottom: var(--space-2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            display: none;
+        }
+        
+        details.faq-item {
+            cursor: pointer;
+        }
+        
+        details[open] .faq-answer {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+        
+        .toggle-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        details[open] .toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-container {
+                flex-direction: column;
+            }
+            
+            .wiki-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .wiki-sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">WIKI</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link active">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="wiki-hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <h1 class="hero-title glitch" data-text="GAME WIKI">
+                        GAME WIKI
+                    </h1>
+                    <p class="hero-subtitle">
+                        Wave Survival • UPDATE 2 (Aug 2025) • 163M+ Visits
+                    </p>
+                    
+                    <!-- Search Bar -->
+                    <div class="wiki-search">
+                        <input type="text" class="wiki-search-input" placeholder="Search wiki..." id="wikiSearch">
+                        <button class="wiki-search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/AgmUS0WCkwE?si=2juQoonoad4LIpHI" 
+                            title="Hunty Zombie Wiki Overview" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wiki Content -->
+    <section class="wiki-content-section">
+        <div class="container">
+            <div class="wiki-layout">
+                <!-- Sidebar Navigation -->
+                <aside class="wiki-sidebar">
+                    <div class="sidebar-sticky">
+                        <h3><i class="fas fa-list"></i> Quick Navigation</h3>
+                        <ul class="wiki-nav">
+                            <li><a href="#weapons" class="active"><i class="fas fa-sword"></i> Weapons</a></li>
+                            <li><a href="#perks"><i class="fas fa-flask"></i> Perks</a></li>
+                            <li><a href="#pets"><i class="fas fa-dragon"></i> Pets</a></li>
+                            <li><a href="#traits"><i class="fas fa-sparkles"></i> Traits</a></li>
+                            <li><a href="#zombies"><i class="fas fa-skull"></i> Zombies</a></li>
+                            <li><a href="#maps"><i class="fas fa-map"></i> Maps</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="wiki-main-content">
+                    <!-- Weapons Section -->
+                    <section id="weapons" class="wiki-section">
+                        <h2><i class="fas fa-sword"></i> Weapons Arsenal</h2>
+                        <p>
+                            Weapons are your primary tools for surviving endless zombie waves in Hunty Zombie. Developed by HZ DEV, this popular Roblox wave survival game has over 163 million visits and features 4 weapon rarity tiers. Each weapon has 3 basic abilities (Z, X, C keys) that charge over time, plus an ultimate ability (G key). <strong>Pro Tip:</strong> Unlock the second weapon slot for $50,000 to switch weapons during waves using keys 1-2.
+                        </p>
+                        
+                        <h3>Weapon Rarities & Examples</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Rarity</th>
+                                    <th>Weapon</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-rare">Rare</span></td>
+                                    <td><img src="../assets/images/weapons/Baseball.webp" alt="Baseball" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Baseball</td>
+                                    <td>Melee</td>
+                                    <td>A sturdy bat reliable for knocking down zombie skulls when things get too close</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-epic">Epic</span></td>
+                                    <td><img src="../assets/images/weapons/Axes.webp" alt="Axes" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Axes</td>
+                                    <td>Melee</td>
+                                    <td>A trusty pair of axes great for clearing paths and keeping zombies at a safe distance</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-legendary">Legendary</span></td>
+                                    <td><img src="../assets/images/weapons/Guitar.jpeg" alt="Guitar" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Guitar</td>
+                                    <td>Melee</td>
+                                    <td>Unleash sonic attacks to damage multiple enemies with style</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-legendary">Legendary</span></td>
+                                    <td><img src="../assets/images/weapons/Dual Gun.webp" alt="Dual Gun" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Dual Gun</td>
+                                    <td>Ranged</td>
+                                    <td>Two guns, twice the firepower. Clear out crowds with speed and precision</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-mythic">Mythic</span></td>
+                                    <td><img src="../assets/images/weapons/Katana.webp" alt="Katana" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Katana</td>
+                                    <td>Melee</td>
+                                    <td>A blade forged for legends. Slices through hordes silent, swift and deadly</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rarity-badge rarity-mythic">Mythic</span></td>
+                                    <td><img src="../assets/images/weapons/Greatsword.webp" alt="Greatsword" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Greatsword</td>
+                                    <td>Melee</td>
+                                    <td>A massive red blade, each swing crushes through zombies with overwhelming power</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1);">
+                                    <td><span class="rarity-badge rarity-mythic">Mythic</span></td>
+                                    <td>Scythe</td>
+                                    <td>Melee</td>
+                                    <td><strong>META WEAPON:</strong> Purchase for $1,000,000 at Level 10+ from merchant. Insane AoE damage with enemy stagger</td>
+                                </tr>
+                                <tr style="background: rgba(255, 62, 62, 0.1);">
+                                    <td><span class="rarity-badge rarity-mythic">Mythic</span></td>
+                                    <td>Dagger</td>
+                                    <td>Melee</td>
+                                    <td><strong>UPDATE 2 WEAPON:</strong> Dual-wield daggers obtained through lobby quests. Top-tier with Umbral Pierce ability</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>How to Obtain Weapons</h3>
+                        <p>
+                            Weapons are obtained through the Gacha system (press J to open). <strong>Normal Spins</strong> cost $3,000 each, while <strong>Lucky Spins</strong> (obtained from codes and daily rewards) significantly increase your chances of getting Legendary and Mythic weapons. <br><br>
+                            <strong>Current Meta (UPDATE 2):</strong> Greatsword, Scythe, and Dagger are the top-tier weapons with excellent AoE damage and stagger capabilities. Pair any of these with Prodigy trait, Vampire perk, and Dragon/Raven pets for optimal wave farming.
+                        </p>
+                    </section>
+
+                    <!-- Perks Section -->
+                    <section id="perks" class="wiki-section">
+                        <h2><i class="fas fa-flask"></i> Perks & Abilities</h2>
+                        <p>
+                            Perks are special abilities that enhance your performance in combat. Activate your equipped perk by pressing 'E' after charging it up through zombie kills. Each perk provides unique advantages, from damage boosts to healing effects.
+                        </p>
+                        
+                        <h3>Available Perks</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Perk</th>
+                                    <th>Rarity</th>
+                                    <th>Drop Rate</th>
+                                    <th>Effect</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Berserk</td>
+                                    <td><span class="rarity-badge rarity-rare">Rare</span></td>
+                                    <td>60%</td>
+                                    <td>Temporarily increase attack power for 20 seconds</td>
+                                </tr>
+                                <tr>
+                                    <td>Healer</td>
+                                    <td><span class="rarity-badge rarity-epic">Epic</span></td>
+                                    <td>15%</td>
+                                    <td>Slowly restore health over time during intense fights</td>
+                                </tr>
+                                <tr>
+                                    <td>Flame</td>
+                                    <td><span class="rarity-badge rarity-epic">Epic</span></td>
+                                    <td>15%</td>
+                                    <td>Attacks set zombies on fire, dealing damage over time</td>
+                                </tr>
+                                <tr>
+                                    <td>Critical</td>
+                                    <td><span class="rarity-badge rarity-legendary">Legendary</span></td>
+                                    <td>4%</td>
+                                    <td>60 seconds of increased damage - excellent for burst damage phases</td>
+                                </tr>
+                                <tr>
+                                    <td>Undead</td>
+                                    <td><span class="rarity-badge rarity-legendary">Legendary</span></td>
+                                    <td>4%</td>
+                                    <td>Movement speed boost + reduced cooldowns for better mobility</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1);">
+                                    <td>Vampire</td>
+                                    <td><span class="rarity-badge rarity-mythic">Mythic</span></td>
+                                    <td>1%</td>
+                                    <td><strong>S-TIER META:</strong> Life steal + speed boost + DoT - best for survivability</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p>
+                            <strong>Lucky Spin Rates:</strong> When using Lucky Spins, Epic perks increase from 30% to 60%, Legendary from 4% to 30%, and Mythic from 1% to 10%.
+                        </p>
+                    </section>
+
+                    <!-- Pets Section -->
+                    <section id="pets" class="wiki-section">
+                        <h2><i class="fas fa-dragon"></i> Pet System</h2>
+                        <p>
+                            Pets provide valuable passive bonuses that can significantly impact your survival chances. You can equip up to 2 pets simultaneously, allowing for strategic combinations based on your playstyle.<br><br>
+                            <strong>Meta Recommendation:</strong> <span style="color: var(--accent-gold);">Dragon</span> for damage output, <span style="color: var(--accent-purple);">Raven</span> for farming efficiency. These are the top choices for experienced players pushing high waves.
+                        </p>
+                        
+                        <h3>Lucky Pet Pack ($20,000)</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Pet</th>
+                                    <th>Drop Rate</th>
+                                    <th>Passive Effects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="../assets/images/pets/DOG.webp" alt="Dog Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Dog</td>
+                                    <td>60%</td>
+                                    <td>Keep dropped items</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/CAT.webp" alt="Cat Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Cat</td>
+                                    <td>30%</td>
+                                    <td>Keep dropped items + 1% Drop Chance</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/RABBIT.webp" alt="Rabbit Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Rabbit</td>
+                                    <td>9%</td>
+                                    <td>+2% Drop Chance + 5% Player HP</td>
+                                </tr>
+                                <tr style="background: rgba(184, 51, 255, 0.1);">
+                                    <td><img src="../assets/images/pets/RAVEN.webp" alt="Raven Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"><strong>Raven</strong></td>
+                                    <td>1%</td>
+                                    <td><strong>META:</strong> +30% Drop Chance - Best for farming</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Legendary Pet Pack ($30,000)</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Pet</th>
+                                    <th>Drop Rate</th>
+                                    <th>Passive Effects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="../assets/images/pets/CROCODILE.webp" alt="Crocodile Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Crocodile</td>
+                                    <td>35%</td>
+                                    <td>+5% Walk Speed</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/PIG.webp" alt="Pig Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Pig</td>
+                                    <td>35%</td>
+                                    <td>+10% Player HP</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/GOAT.webp" alt="Goat Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Goat</td>
+                                    <td>15%</td>
+                                    <td>+5% Walk Speed + 10% Player HP</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/TIGER.webp" alt="Tiger Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Tiger</td>
+                                    <td>10%</td>
+                                    <td>+5% chance to inflict Bleed when attacking</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../assets/images/pets/SHARK.webp" alt="Shark Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">Shark</td>
+                                    <td>4%</td>
+                                    <td>10% chance to activate Regen when attacked</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1);">
+                                    <td><img src="../assets/images/pets/DRAGON.webp" alt="Dragon Pet" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"><strong>Dragon</strong></td>
+                                    <td>1%</td>
+                                    <td><strong>META:</strong> +20% Burn chance + 10% Drop chance - Best for damage</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p>
+                            <strong>Duplicate Refunds:</strong> Lucky Pack duplicates refund $6,000, Legendary Pack duplicates refund $9,000.
+                        </p>
+                    </section>
+
+                    <!-- Traits Section -->
+                    <section id="traits" class="wiki-section">
+                        <h2><i class="fas fa-sparkles"></i> Weapon Traits</h2>
+                        <p>
+                            Traits are powerful enhancements that can be applied to weapons. Each weapon can only have one trait at a time. Use Trait Crystals at the Trait NPC in the lobby to reroll traits on your weapons.
+                        </p>
+                        
+                        <h3>All Available Traits</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Chance</th>
+                                    <th>Effect</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Power I</td>
+                                    <td>12%</td>
+                                    <td>Increase Damage by 5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Power II</td>
+                                    <td>8%</td>
+                                    <td>Increase Damage by 10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Power III</td>
+                                    <td>4%</td>
+                                    <td>Increase Damage by 15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Agility I</td>
+                                    <td>12%</td>
+                                    <td>Increase Attack Speed by 2%</td>
+                                </tr>
+                                <tr>
+                                    <td>Agility II</td>
+                                    <td>8%</td>
+                                    <td>Increase Attack Speed by 4%</td>
+                                </tr>
+                                <tr>
+                                    <td>Agility III</td>
+                                    <td>4%</td>
+                                    <td>Increase Attack Speed by 6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Focus I</td>
+                                    <td>12%</td>
+                                    <td>Increase Skill Damage by 5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Focus II</td>
+                                    <td>8%</td>
+                                    <td>Increase Skill Damage by 10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Focus III</td>
+                                    <td>4%</td>
+                                    <td>Increase Skill Damage by 15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Intelligent</td>
+                                    <td>4%</td>
+                                    <td>Gain +10% EXP when killing enemies</td>
+                                </tr>
+                                <tr>
+                                    <td>Fortune</td>
+                                    <td>4%</td>
+                                    <td>+20% chance to drop gold when killing zombies</td>
+                                </tr>
+                                <tr>
+                                    <td>Beast</td>
+                                    <td>2.5%</td>
+                                    <td>+10% Damage and +2% Attack Speed</td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1);">
+                                    <td><strong>Prodigy</strong></td>
+                                    <td>1.5%</td>
+                                    <td><strong>END-GAME META:</strong> +15% Damage, +6% Attack Speed, +15% Skill Damage, movement speed boost. The only viable end-game trait - doubles the stats of any other trait!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p>
+                            <strong>Obtaining Trait Crystals:</strong> Trait Crystals can drop from enemies when clearing stages, from completing secret quests, or by purchasing them with Robux in the Shop.<br><br>
+                            <strong>Secret Quests:</strong> Visit the unmarked NPC to the left of the Weapons NPC in the lobby. Quests refresh every 24 hours and typically require zombie kills or rounds survived for Trait Crystal rewards.
+                        </p>
+                    </section>
+
+                    <!-- Zombies Section -->
+                    <section id="zombies" class="wiki-section">
+                        <h2><i class="fas fa-skull"></i> Zombie Types</h2>
+                        <p>
+                            Hunty Zombie features various types of undead enemies with unique behaviors and attack patterns. The game's wave-based progression system scales enemy difficulty, health, and spawn rates as you advance through rounds.
+                        </p>
+                        
+                        <h3>Common Enemy Types</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Danger Level</th>
+                                    <th>Description</th>
+                                    <th>Counter Strategy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Regular Zombies</td>
+                                    <td>Low</td>
+                                    <td>Standard enemies that appear in every wave</td>
+                                    <td>Basic attacks are effective</td>
+                                </tr>
+                                <tr>
+                                    <td>TNT Zombies</td>
+                                    <td>High</td>
+                                    <td>Explosive zombies that detonate on contact</td>
+                                    <td>Always dodge to avoid instant death</td>
+                                </tr>
+                                <tr>
+                                    <td>Athletic Zombies</td>
+                                    <td>Medium</td>
+                                    <td>Fast zombies that throw basketballs from range</td>
+                                    <td>Close distance quickly or use ranged weapons</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Wave Progression System</h3>
+                        <p>
+                            Each map features progressive waves with scaling difficulty. Enemy health, damage, and spawn rates increase with each wave. <strong>Pro Strategy:</strong> Save your ultimate abilities (G key) and charged perks (E key) for later waves when zombie density peaks. Death resets your current wave progress but you retain all permanent upgrades, coins, and weapon unlocks.
+                        </p>
+                    </section>
+
+                    <!-- Maps Section -->
+                    <section id="maps" class="wiki-section">
+                        <h2><i class="fas fa-map"></i> Maps & Arenas</h2>
+                        <p>
+                            Hunty Zombie features multiple well-crafted arenas where players battle against zombie hordes. Each map offers unique layouts, challenges, and strategic opportunities. The map pool is updated frequently with new arenas and special event maps.
+                        </p>
+                        
+                        <h3>Difficulty Modes</h3>
+                        <table class="wiki-table">
+                            <thead>
+                                <tr>
+                                    <th>Mode</th>
+                                    <th>Recommended For</th>
+                                    <th>Enemy Scaling</th>
+                                    <th>Rewards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Normal</td>
+                                    <td>Beginners learning basics</td>
+                                    <td>Standard enemy stats</td>
+                                    <td>Basic rewards</td>
+                                </tr>
+                                <tr>
+                                    <td>Hard</td>
+                                    <td>Experienced players</td>
+                                    <td>+50% enemy health/damage</td>
+                                    <td>Enhanced rewards</td>
+                                </tr>
+                                <tr>
+                                    <td>Nightmare</td>
+                                    <td>Expert players seeking challenge</td>
+                                    <td>+100% enemy stats, faster spawns</td>
+                                    <td>Best rewards, exclusive items</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Game Modes</h3>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li><strong>Solo Play:</strong> Test your skills alone against the zombie hordes (1 player)</li>
+                            <li><strong>Co-op Mode:</strong> Team up with up to 6 players for coordinated survival</li>
+                            <li><strong>Private Servers:</strong> Practice with custom settings and friends-only lobbies</li>
+                            <li><strong>Infinite Mode:</strong> Push your limits against endless escalating waves</li>
+                        </ul>
+                        
+                        <p>
+                            <strong>Current Meta Strategy (UPDATE 2):</strong> The top weapons are Greatsword, Scythe, and Dagger - all with excellent AoE damage and stagger capabilities. Apply Prodigy trait to your weapon, use Vampire perk for survivability, and equip Dragon (damage) + Raven (farming) pets. In co-op mode, coordinate ability usage and revive fallen teammates quickly. Complete secret quests for trait crystals.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-question-circle"></i>
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How do I get better weapons?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Weapons are obtained through the Gacha system (press J to open). Normal Spins cost $3,000 while Lucky Spins give better chances at Mythic weapons. <strong>Pro Tip:</strong> Unlock the second weapon slot for $50,000 to switch weapons mid-game using keys 1-2.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        What are the best pets for beginners?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        For beginners, focus on pets that increase survivability. The Pig (+10% HP) from the Legendary Pack is excellent for staying alive. <strong>Meta Choice:</strong> Dragon (damage) and Raven (farming) are the best pets for experienced players pushing high waves.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How do I reroll weapon traits?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Visit the Trait NPC in the lobby with a Trait Crystal. Select the weapon you want to enhance and click the Reroll button. Trait Crystals can be obtained from enemy drops, secret quests, or the Robux shop.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        What's the difference between difficulty modes?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Normal mode is for learning the basics with standard enemy stats. Hard mode increases enemy health and damage by 50% but offers better rewards. Nightmare mode doubles enemy stats and spawn rates but provides the best rewards and exclusive items - not recommended for beginners.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How do I redeem codes in the game?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Codes can only be redeemed in the lobby. Click the CODES button on the right side of your screen, enter the code exactly as shown (they're case-sensitive), and click Confirm to receive your rewards. Check our <a href="/codes/" style="color: var(--accent-green);">codes page</a> for the latest active codes.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Can I trade weapons or pets with other players?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Currently, Hunty Zombie does not support trading between players. All weapons and pets must be obtained through the game's systems - Gacha for weapons and Pet Packs for pets. Focus on building your own collection through gameplay.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        What's the current meta build?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <strong>UPDATE 2 Meta:</strong> Greatsword or Scythe with Prodigy trait, paired with Vampire perk, and Dragon + Raven pets. The Dagger (limited quest weapon) is also S-tier if you can unlock it. This setup dominates wave farming and high-level progression.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How do Secret Quests work?
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        Secret Quests are obtained from the unmarked NPC to the left of the Weapons NPC in the lobby. These quests refresh every 24 hours and typically require zombie kills or surviving rounds. Rewards include Trait Crystals for rerolling weapon traits - essential for getting Prodigy trait.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../assets/js/app.js"></script>
+    <script>
+        // Wiki search functionality
+        document.getElementById('wikiSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value.toLowerCase();
+                console.log('Searching for:', searchTerm);
+                // In production, this would search the wiki database
+            }
+        });
+
+        // Smooth scroll for sidebar navigation
+        document.querySelectorAll('.wiki-nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                // Update active state
+                document.querySelectorAll('.wiki-nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Smooth scroll
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Update active nav item on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.wiki-section');
+            const navLinks = document.querySelectorAll('.wiki-nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

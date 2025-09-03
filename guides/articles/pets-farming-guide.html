@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunty Zombie Complete Pet System & Drop Farming Guide 2025 - Master Pet Collection</title>
+    <meta name="description" content="Master the Pet System and Drop Farming in Hunty Zombie with our complete guide. Learn pet abilities, optimal farming routes, drop rates, and efficient collection strategies.">
+    <meta name="keywords" content="Hunty Zombie, pets guide, farming guide, drop rates, pet collection, cash farming, Roblox">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --accent-orange: #ff8c42;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+            --gradient-5: linear-gradient(135deg, #ff8c42 0%, #00ff88 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-purple);
+            color: var(--text-primary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-green);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector .lang-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .language-selector .lang-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.1) 0%, rgba(0, 255, 136, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-orange);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 140, 66, 0.2);
+            color: var(--accent-orange);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-orange);
+            border-left-color: var(--accent-orange);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-orange);
+            border-left-color: var(--accent-orange);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-5);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-blue);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Special Blocks */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .farming-box {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.1) 0%, rgba(0, 255, 136, 0.1) 100%);
+            border: 1px solid var(--accent-orange);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .farming-box-title {
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stats-table {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-table th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .stats-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Rarity Colors */
+        .rarity-common { color: #9ca3af; }
+        .rarity-uncommon { color: #10b981; }
+        .rarity-rare { color: #3b82f6; }
+        .rarity-epic { color: #8b5cf6; }
+        .rarity-legendary { color: #f59e0b; }
+        .rarity-mythical { color: #ef4444; }
+
+        /* Pet Type Colors */
+        .pet-combat { color: var(--accent-red); }
+        .pet-support { color: var(--accent-green); }
+        .pet-utility { color: var(--accent-blue); }
+        .pet-farming { color: var(--accent-orange); }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-orange);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-5);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">GUIDES</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">COLLECTION MASTERY</div>
+            <h1 class="article-title">Complete Pet System & Drop Farming Guide</h1>
+            <img src="/assets/images/hunty-zombie1.webp" alt="Hunty Zombie Pets and Farming Guide" style="width: 100%; max-width: 800px; margin: 2rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>35 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">All Levels</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#pet-system">Pet System Overview</a></li>
+                <li><a href="#pet-categories">Pet Categories</a></li>
+                <li><a href="#acquisition-methods">Acquisition Methods</a></li>
+                <li><a href="#drop-rates">Drop Rates & Probabilities</a></li>
+                <li><a href="#farming-strategies">Farming Strategies</a></li>
+                <li><a href="#pet-optimization">Pet Optimization</a></li>
+                <li><a href="#economic-analysis">Economic Analysis</a></li>
+                <li><a href="#endgame-collection">Endgame Collection</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <section id="introduction">
+                <h2>Introduction to Pet System & Farming</h2>
+                <p>
+                    The Pet System in Hunty Zombie represents one of the most complex and rewarding progression mechanics in the game. Pets provide substantial combat bonuses, utility effects, and economic advantages that can dramatically improve your effectiveness across all game modes. This comprehensive guide will transform you from a casual pet collector into a master strategist who understands every aspect of pet acquisition, optimization, and utilization.
+                </p>
+                <p>
+                    Beyond their combat applications, pets serve as the cornerstone of efficient Cash farming and resource optimization. Understanding drop rates, farming routes, and economic strategies is essential for competitive play and progression efficiency. Whether you're seeking your first Legendary pet or optimizing a collection worth millions of Cash, this guide provides the knowledge you need to succeed.
+                </p>
+
+                <div class="farming-box">
+                    <div class="farming-box-title">
+                        <i class="fas fa-coins"></i>
+                        Economic Impact of Pets
+                    </div>
+                    <p>
+                        A properly optimized pet collection can increase your Cash per hour by 200-400% compared to playing without pets. The Legendary Raven alone provides a 25% Cash bonus, while combat pets can increase clear speeds by 30-50%, creating compound benefits for farming efficiency.
+                    </p>
+                </div>
+            </section>
+
+            <section id="pet-system">
+                <h2>Pet System Overview & Mechanics</h2>
+                <p>
+                    The pet system in Hunty Zombie provides crucial combat bonuses, farming efficiency, and survivability improvements. With 10 unique pets available, each offering different passive abilities and stat boosts, choosing the right pets for your playstyle is essential for success.
+                </p>
+
+                <h3>Core Pet Mechanics</h3>
+                
+                <h4>How Pets Work</h4>
+                <p>
+                    Pets provide passive bonuses that are always active when equipped:
+                </p>
+                <ul>
+                    <li><strong>Passive Effects:</strong> Each pet provides unique stat boosts or abilities</li>
+                    <li><strong>Always Active:</strong> Pet bonuses work continuously during gameplay</li>
+                    <li><strong>No Upgrades:</strong> Pets cannot be leveled up - their stats are fixed by rarity</li>
+                    <li><strong>Duplicate System:</strong> Getting duplicate pets provides partial refunds</li>
+                </ul>
+
+                <h4>Pet Slot System</h4>
+                <div class="code-block">
+Pet Equipment Slots:
+
+Available Slots:
+- Slot 1: Unlocked from start
+- Slot 2: Unlocked after progression
+- Maximum: 2 pets can be equipped simultaneously
+
+Strategic Combinations:
+- Combat + Farming: Dragon + Raven (most popular)
+- Pure Farming: Raven + Rabbit (maximum drops)
+- Survival: Shark + Goat (health + mobility)
+- Balanced: Tiger + Dragon (damage synergy)
+
+Important: Choose your two pets carefully based on your current goals
+                </div>
+
+                <h3>Pet Rarity System</h3>
+                
+                <h4>Rarity Tiers and Base Stats</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rarity</th>
+                            <th>Base Health</th>
+                            <th>Base Damage</th>
+                            <th>Ability Power</th>
+                            <th>Special Effects</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-common">Common</td>
+                            <td>100 HP</td>
+                            <td>25 DPS</td>
+                            <td>1x</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-uncommon">Uncommon</td>
+                            <td>150 HP</td>
+                            <td>40 DPS</td>
+                            <td>1.5x</td>
+                            <td>Basic passive</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Rare</td>
+                            <td>225 HP</td>
+                            <td>65 DPS</td>
+                            <td>2.25x</td>
+                            <td>Active ability</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-epic">Epic</td>
+                            <td>350 HP</td>
+                            <td>105 DPS</td>
+                            <td>3.5x</td>
+                            <td>Powerful passive + active</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-legendary">Legendary</td>
+                            <td>550 HP</td>
+                            <td>170 DPS</td>
+                            <td>5.5x</td>
+                            <td>Game-changing effects</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-mythical">Mythical</td>
+                            <td>900 HP</td>
+                            <td>280 DPS</td>
+                            <td>9x</td>
+                            <td>Unique mechanics</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Rarity Evolution System</h4>
+                <p>
+                    Higher-tier pets can only be obtained through specific methods - there is no upgrade system to promote lower-rarity pets. This makes acquisition planning crucial for collection development.
+                </p>
+
+                <h3>How to Obtain Pets</h3>
+                
+                <h4>Pet Packs & Pricing</h4>
+                <p>
+                    Pets are obtained through two types of packs using a gacha system:
+                </p>
+                <ol>
+                    <li><strong>Lucky Pet Pack:</strong> 20,000 Cash or 199 Robux</li>
+                    <li><strong>Legendary Pet Pack:</strong> 30,000 Cash or 239 Robux</li>
+                </ol>
+
+                <h4>Drop Rate Strategy</h4>
+                <ul>
+                    <li><strong>Lucky Pack:</strong> Better value for Cash, lower mythic rates</li>
+                    <li><strong>Legendary Pack:</strong> Higher chance for Dragon and Raven</li>
+                    <li><strong>Duplicate System:</strong> Duplicates give partial refunds</li>
+                    <li><strong>Target Priority:</strong> Aim for Raven or Dragon first</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Smart Pack Strategy
+                    </div>
+                    <p>
+                        Start with Lucky Pet Packs for value. Once you have basic pets, save for Legendary Packs to target Dragon and Raven. The 10,000 Cash difference is worth it for the increased mythic rates.
+                    </p>
+                </div>
+            </section>
+
+            <section id="pet-categories">
+                <h2>All 10 Pets - Complete List & Abilities</h2>
+                <p>
+                    Hunty Zombie features 10 unique pets, each providing different passive bonuses. Understanding each pet's strengths helps you choose the perfect combination for your playstyle.
+                </p>
+
+                <h3>S-Tier Pets (Mythic Rarity)</h3>
+                
+                <h4>The Best Pets in the Game</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Rarity</th>
+                            <th>Primary Ability</th>
+                            <th>Stats/Effects</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pet-combat">Dragon</td>
+                            <td class="rarity-mythical">Mythic</td>
+                            <td>Burn Damage (DoT)</td>
+                            <td>+10% drop chance, +20% burn chance</td>
+                            <td>Combat + Farming</td>
+                        </tr>
+                        <tr>
+                            <td class="pet-farming">Raven</td>
+                            <td class="rarity-mythical">Mythic</td>
+                            <td>Drop Rate Boost</td>
+                            <td>+30% drop chance</td>
+                            <td>Best farming pet</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Why Dragon and Raven Dominate</h4>
+                <p>
+                    Dragon provides the perfect balance of combat power through burn damage while also boosting drops. Raven offers the highest drop rate increase in the game, making it essential for efficient farming. Most top players run Dragon + Raven as their standard loadout.
+                </p>
+
+                <h3>Legendary Tier Pets</h3>
+                
+                <h4>Tiger</h4>
+                <div class="code-block">
+Tiger Pet Abilities:
+
+- Ferocious Attack: Adds bleeding effect to player attacks
+- Damage Boost: +30% physical damage
+- Movement Speed: +20% player speed
+- Special: Tiger's Fury mode increases attack speed by 50% for 10 seconds
+- Ideal for: Aggressive playstyles with melee weapons
+                </code>
+
+                <h4>Shark</h4>
+                <p>
+                    The Shark is a powerful offensive pet that excels in continuous damage:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Ability</th>
+                            <th>Effect</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pet-offense">Blood Frenzy</td>
+                            <td>+40% damage when enemy health below 50%</td>
+                            <td>Passive</td>
+                        </tr>
+                        <tr>
+                            <td class="pet-offense">Feeding Time</td>
+                            <td>Heals player for 20% of damage dealt</td>
+                            <td>15 seconds</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Epic Tier Pets</h3>
+                
+                <h4>Bunny/Rabbit</h4>
+                <ul>
+                    <li><strong>Lucky Hop:</strong> 25% chance to dodge incoming attacks</li>
+                    <li><strong>Speed Boost:</strong> +35% movement speed</li>
+                    <li><strong>Cash Bonus:</strong> +15% Cash earned from zombie kills</li>
+                    <li><strong>Special:</strong> Triple jump ability for enhanced mobility</li>
+                </ul>
+
+                <h4>Goat</h4>
+                <div class="code-block">
+Goat Pet Abilities:
+
+- Headbutt: Knockback enemies on contact
+- Stubborn Defense: 20% damage reduction
+- Ram Charge: Dash ability that stuns enemies
+- Mountain Climber: No fall damage
+- Best for: Tank builds and crowd control
+                </code>
+
+                <h3>Rare Tier Pets</h3>
+                
+                <h4>Pig</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Pet</th>
+                            <th>Type</th>
+                            <th>Primary Ability</th>
+                            <th>Best Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pet-offense">Pig</td>
+                            <td>Defensive</td>
+                            <td>+25% health regeneration</td>
+                            <td>Survival builds</td>
+                        </tr>
+                        <tr>
+                            <td class="pet-support">Cat</td>
+                            <td>Agility</td>
+                            <td>+30% dodge chance</td>
+                            <td>Speed runs</td>
+                        </tr>
+                        <tr>
+                            <td class="pet-support">Dog</td>
+                            <td>Balanced</td>
+                            <td>+15% all stats</td>
+                            <td>Beginners</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Crocodile (Special Tier)</h4>
+                <ul>
+                    <li><strong>Snap Attack:</strong> Instant kill on zombies below 30% health</li>
+                    <li><strong>Armor Scales:</strong> 35% damage reduction from all sources</li>
+                    <li><strong>Water Sprint:</strong> Movement speed boost near water areas</li>
+                    <li><strong>Death Roll:</strong> Area damage attack with knockback</li>
+                </ul>
+
+                <div class="farming-box">
+                    <div class="farming-box-title">
+                        <i class="fas fa-calculator"></i>
+                        Pet Selection Strategy
+                    </div>
+                    <p>
+                        With only 2 pet slots available, choosing the right combination is crucial. Most experienced players recommend pairing one offensive pet (Dragon, Tiger, or Shark) with one utility pet (Raven for Cash farming or Bunny for mobility). This balanced approach maximizes both combat effectiveness and resource generation.
+                    </p>
+                </div>
+            </section>
+
+            <section id="acquisition-methods">
+                <h2>Pet Acquisition Methods & Strategies</h2>
+                <p>
+                    Pet acquisition in Hunty Zombie involves multiple methods, each with different costs, probabilities, and optimal usage strategies. Understanding these systems is crucial for efficient collection building.
+                </p>
+
+                <h3>Primary Acquisition Methods</h3>
+                
+                <h4>Pet Packs (Gacha System)</h4>
+                <p>
+                    The primary method for acquiring pets involves purchasing pet packs with Cash or Robux:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Pack Type</th>
+                            <th>Cost</th>
+                            <th>Drop Rates</th>
+                            <th>Recommended For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Pet Pack</td>
+                            <td>20,000 Cash</td>
+                            <td>70% Common, 25% Rare, 5% Epic</td>
+                            <td>New players</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Pet Pack</td>
+                            <td>30,000 Cash</td>
+                            <td>50% Rare, 35% Epic, 14% Legendary, 1% Mythic</td>
+                            <td>Mid-game players</td>
+                        </tr>
+                        <tr>
+                            <td>Mythic Pet Pack</td>
+                            <td>599 Robux</td>
+                            <td>60% Legendary, 40% Mythic</td>
+                            <td>Robux spenders only</td>
+                        </tr>
+                        <tr>
+                            <td>Mythical Pet Pack</td>
+                            <td>999 Robux</td>
+                            <td>Mythical pet</td>
+                            <td>Whale territory</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Direct Purchase Options</h4>
+                <p>
+                    Some pets can be purchased directly from the shop:
+                </p>
+                <ul>
+                    <li><strong>Common Raven:</strong> 75,000 Cash (guaranteed)</li>
+                    <li><strong>Basic Combat Pets:</strong> 50,000-100,000 Cash each</li>
+                    <li><strong>Starter Support Pets:</strong> 60,000-120,000 Cash each</li>
+                </ul>
+
+                <h3>Drop-Based Acquisition</h3>
+                
+                <h4>Wave Completion Rewards</h4>
+                <p>
+                    Pets can rarely drop from completing specific waves:
+                </p>
+                <div class="code-block">
+Pet Drop Locations and Rates:
+
+Wave 7 Final Boss:
+- Any pet: 2-5% chance (varies by difficulty)
+- Higher difficulties increase drop rates
+- Boss kills have better rates than regular zombies
+
+Pet Pack System:
+- Basic Pack (20,000 Cash): Common focus
+- Premium Pack (30,000 Cash): Better odds
+- Mythic Pack (Robux only): Guaranteed high-tier
+
+Daily Rewards:
+- Login bonuses occasionally include pets
+- Complete daily challenges for pet fragments
+- Weekly streaks unlock pet crates
+                </code>
+
+                <h4>Alternative Acquisition Methods</h4>
+                <p>
+                    Beyond pet packs, several methods exist for obtaining pets:
+                </p>
+                <ul>
+                    <li><strong>Trading System:</strong> Trade with other players for specific pets</li>
+                    <li><strong>Achievement Rewards:</strong> Complete milestones for guaranteed pets</li>
+                    <li><strong>Battle Pass:</strong> Premium tiers include exclusive pets</li>
+                    <li><strong>Direct Purchase:</strong> Some pets available for fixed Cash prices</li>
+                </ul>
+
+                <h3>Optimal Acquisition Strategy</h3>
+                
+                <h4>Progression-Based Approach</h4>
+                <ol>
+                    <li><strong>Early Game (0-50K Cash):</strong> Save for first Basic Pet Pack (20K)</li>
+                    <li><strong>Mid Game (50K-200K):</strong> Buy Premium Packs for better odds</li>
+                    <li><strong>Late Game (200K+):</strong> Focus on specific pets you need</li>
+                    <li><strong>Endgame:</strong> Consider Robux packs for Mythic pets</li>
+                </ol>
+
+                <h4>Budget Optimization</h4>
+                <div class="code-block">
+Cost-Effective Pet Acquisition Plan:
+
+Phase 1: First Pet (20-30K Cash)
+- 1x Basic Pet Pack (20K) - Get your first pet
+- Focus on wave 7 completions for Cash farming
+- Save additional Cash for next pack
+
+Phase 2: Build Collection (50-100K Cash)  
+- 2-3x Premium Packs (30K each)
+- Trade duplicates with other players
+- Complete achievements for bonus pets
+
+Phase 3: Target Specific Pets (100K+ Cash)
+- Save for pets that match your playstyle
+- Consider Robux packs if targeting Mythics
+- Focus on optimizing your 2-pet loadout
+                </code>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Gacha Reality Check
+                    </div>
+                    <p>
+                        Pet packs use RNG mechanics with varying drop rates. While Premium Packs (30K Cash) offer better odds than Basic Packs (20K), there's no guarantee of specific pets. Consider your budget carefully and remember that patience and consistent play often yield better results than excessive spending.
+                    </p>
+                </div>
+            </section>
+
+            <section id="drop-rates">
+                <h2>Complete Drop Rates & Probability Analysis</h2>
+                <p>
+                    Understanding the mathematical probabilities behind pet acquisition allows for informed decision-making and realistic expectation setting. This section provides comprehensive data on all drop rates and acquisition probabilities.
+                </p>
+
+                <h3>Pet Pack Probabilities</h3>
+                
+                <h4>Premium Pet Pack Analysis (30,000 Cash)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rarity</th>
+                            <th>Drop Rate</th>
+                            <th>Average Packs Needed</th>
+                            <th>Expected Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-rare">Rare</td>
+                            <td>50%</td>
+                            <td>2 packs</td>
+                            <td>60,000 Cash</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-epic">Epic</td>
+                            <td>35%</td>
+                            <td>3 packs</td>
+                            <td>90,000 Cash</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-legendary">Legendary</td>
+                            <td>14%</td>
+                            <td>7 packs</td>
+                            <td>210,000 Cash</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-mythical">Mythical</td>
+                            <td>1%</td>
+                            <td>100 packs</td>
+                            <td>3,000,000 Cash</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Basic Pet Pack Analysis (20,000 Cash)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rarity</th>
+                            <th>Drop Rate</th>
+                            <th>Average Packs Needed</th>
+                            <th>Expected Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-common">Common</td>
+                            <td>70%</td>
+                            <td>1-2 packs</td>
+                            <td>20,000-40,000 Cash</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Rare</td>
+                            <td>25%</td>
+                            <td>4 packs</td>
+                            <td>80,000 Cash</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-epic">Epic</td>
+                            <td>5%</td>
+                            <td>20 packs</td>
+                            <td>400,000 Cash</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Boss Drop Probabilities</h3>
+                
+                <h4>Nightmare Mode Boss Drops</h4>
+                <p>
+                    Nightmare mode provides the best drop rates for high-tier pets:
+                </p>
+                <div class="code-block">
+Nightmare Mode Drop Analysis:
+
+Wave 21 Boss Clear:
+- Epic Pet: 5% chance (1 in 20 clears)
+- Legendary Pet: 1% chance (1 in 100 clears)  
+- Mythical Pet: 0.01% chance (1 in 10,000 clears)
+
+Wave 30+ Boss Clear:
+- Epic Pet: 8% chance (1 in 12.5 clears)
+- Legendary Pet: 2% chance (1 in 50 clears)
+- Mythical Pet: 0.05% chance (1 in 2,000 clears)
+
+Expected Time Investment:
+- First Legendary from drops: 50-150 hours
+- First Mythical from drops: 1000-3000 hours
+- These assume consistent Nightmare clear capability
+                </code>
+
+                <h4>Cumulative Drop Probability</h4>
+                <p>
+                    Understanding cumulative probabilities helps set realistic expectations:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Attempts</th>
+                            <th>Legendary (1%)</th>
+                            <th>Mythical (0.01%)</th>
+                            <th>Time Investment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>9.56%</td>
+                            <td>0.10%</td>
+                            <td>5-10 hours</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>39.50%</td>
+                            <td>0.49%</td>
+                            <td>25-50 hours</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>63.40%</td>
+                            <td>0.99%</td>
+                            <td>50-100 hours</td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td>99.33%</td>
+                            <td>4.93%</td>
+                            <td>250-500 hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Special Event Drop Rates</h3>
+                
+                <h4>Daily Boss Events</h4>
+                <p>
+                    Daily bosses provide guaranteed higher-tier pets with limited attempts:
+                </p>
+                <ul>
+                    <li><strong>Attempts Per Day:</strong> 3 maximum</li>
+                    <li><strong>Epic Rate:</strong> 60% (guaranteed minimum)</li>
+                    <li><strong>Legendary Rate:</strong> 35%</li>
+                    <li><strong>Mythical Rate:</strong> 5%</li>
+                    <li><strong>Monthly Expected Value:</strong> ~10-12 Epic, 3-4 Legendary, 0.5 Mythical pets</li>
+                </ul>
+
+                <h4>Seasonal Event Analysis</h4>
+                <div class="code-block">
+Halloween Event Drop Rates (Example):
+
+Shadow Pet Collection:
+- Shadow Cat: 15% from event bosses
+- Shadow Dragon: 5% from event bosses  
+- Shadow Phoenix: 1% from event bosses
+- Nightmare Shadow: 0.1% from final event boss
+
+Event Currency Exchange:
+- 100 Shadow Tokens = Guaranteed Epic Shadow pet
+- 500 Shadow Tokens = Guaranteed Legendary Shadow pet
+- 2000 Shadow Tokens = Guaranteed Mythical Shadow pet
+
+Token Generation:
+- Normal event wave: 5-8 tokens
+- Hard event wave: 12-18 tokens
+- Nightmare event wave: 25-35 tokens
+                </code>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Drop Rate Strategy
+                    </div>
+                    <p>
+                        Focus your drop farming efforts on daily events and seasonal activities rather than regular boss farming. The improved rates and guaranteed minimums make events significantly more efficient for acquiring high-tier pets. Plan your gaming schedule around event rotations for maximum efficiency.
+                    </p>
+                </div>
+            </section>
+
+            <section id="farming-strategies">
+                <h2>Optimal Farming Strategies & Routes</h2>
+                <p>
+                    Efficient farming requires understanding the relationship between time investment, difficulty selection, and expected returns. This section outlines proven strategies for maximizing both Cash per hour and pet acquisition rates.
+                </p>
+
+                <h3>Cash Farming Optimization</h3>
+                
+                <h4>Difficulty vs. Efficiency Analysis</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Difficulty</th>
+                            <th>Base Cash</th>
+                            <th>Multiplier</th>
+                            <th>Clear Time</th>
+                            <th>Cash/Hour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Normal</td>
+                            <td>8,000</td>
+                            <td>1x</td>
+                            <td>6 minutes</td>
+                            <td>80,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hard</td>
+                            <td>12,000</td>
+                            <td>1.5x</td>
+                            <td>12 minutes</td>
+                            <td>90,000</td>
+                        </tr>
+                        <tr>
+                            <td>Nightmare</td>
+                            <td>24,000</td>
+                            <td>3x</td>
+                            <td>25 minutes</td>
+                            <td>172,800</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Pet-Enhanced Farming</h4>
+                <p>
+                    Adding a Legendary Raven to the above calculations:
+                </p>
+                <div class="code-block">
+Enhanced Cash Rates (with Legendary Raven +25%):
+
+Normal Mode with Raven:
+- Base: 10,000 Cash per run
+- Rate: 100,000 Cash per hour
+- Best for: Consistent farming, skill development
+
+Hard Mode with Raven:  
+- Base: 15,000 Cash per run
+- Rate: 112,500 Cash per hour
+- Best for: Balanced risk/reward
+
+Nightmare Mode with Raven:
+- Base: 30,000 Cash per run  
+- Rate: 216,000 Cash per hour
+- Best for: Maximum efficiency (if consistent clears)
+
+Recommendation: Focus on the highest difficulty you can clear with 90%+ success rate
+                </code>
+
+                <h3>Pet Drop Farming Routes</h3>
+                
+                <h4>Daily Event Optimization</h4>
+                <p>
+                    Daily events provide the best pet drop rates per time invested:
+                </p>
+                <ol>
+                    <li><strong>Login at Event Reset:</strong> Complete all 3 attempts immediately</li>
+                    <li><strong>Difficulty Selection:</strong> Choose highest you can complete reliably</li>
+                    <li><strong>Pet Loadout:</strong> Use combat-focused pets for faster clears</li>
+                    <li><strong>Time Window:</strong> 15-30 minutes for all attempts</li>
+                    <li><strong>Expected Value:</strong> 1.4 Epic-tier pets per day average</li>
+                </ol>
+
+                <h4>Boss Rush Strategy</h4>
+                <p>
+                    For players seeking specific boss drops:
+                </p>
+                <div class="code-block">
+Boss Rush Methodology:
+
+Target: Wave 7 and Wave 14 bosses for Epic+ pet drops
+
+Optimal Route:
+1. Play waves 1-7 normally (5-7 minutes)
+2. Reset after Wave 7 completion and loot collection
+3. Repeat process targeting Wave 14 if seeking Legendary drops
+4. Track attempts and drops in spreadsheet
+
+Expected Results (per hour):
+- Wave 7 rushes: 8-10 attempts = 0.4-0.5 Epic pets
+- Wave 14 rushes: 4-5 attempts = 0.04-0.05 Legendary pets
+- Time efficiency: Better than full runs for drop hunting
+                </code>
+
+                <h3>Long-Term Farming Strategies</h3>
+                
+                <h4>Collection Completion Roadmap</h4>
+                <p>
+                    Systematic approach to building complete pet collection:
+                </p>
+                <ol>
+                    <li><strong>Phase 1 - Foundation (Months 1-2):</strong>
+                        <ul>
+                            <li>Acquire Legendary Raven for farming bonus</li>
+                            <li>Get 2-3 Epic combat pets for versatility</li>
+                            <li>Establish consistent farming routine</li>
+                        </ul>
+                    </li>
+                    <li><strong>Phase 2 - Specialization (Months 3-4):</strong>
+                        <ul>
+                            <li>Target specific pet families for synergies</li>
+                            <li>Begin serious drop farming from bosses</li>
+                            <li>Participate in all seasonal events</li>
+                        </ul>
+                    </li>
+                    <li><strong>Phase 3 - Optimization (Months 5-6):</strong>
+                        <ul>
+                            <li>Pursue Legendary pets in each category</li>
+                            <li>Consider Robux investment for guaranteed acquisitions</li>
+                            <li>Focus on pet leveling and optimization</li>
+                        </ul>
+                    </li>
+                    <li><strong>Phase 4 - Completion (Months 7+):</strong>
+                        <ul>
+                            <li>Hunt for Mythical pets through events and drops</li>
+                            <li>Perfect pet loadouts for different scenarios</li>
+                            <li>Help community with pet trading and advice</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Seasonal Event Maximization</h4>
+                <p>
+                    Events provide the highest value acquisition opportunities:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Event Type</th>
+                            <th>Frequency</th>
+                            <th>Duration</th>
+                            <th>Unique Rewards</th>
+                            <th>Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Major Holiday</td>
+                            <td>4x per year</td>
+                            <td>2-3 weeks</td>
+                            <td>Exclusive Mythical pets</td>
+                            <td>All-in participation</td>
+                        </tr>
+                        <tr>
+                            <td>Mini Event</td>
+                            <td>Monthly</td>
+                            <td>1 week</td>
+                            <td>Legendary variants</td>
+                            <td>Targeted farming</td>
+                        </tr>
+                        <tr>
+                            <td>Community Goal</td>
+                            <td>Quarterly</td>
+                            <td>Variable</td>
+                            <td>Rare achievement pets</td>
+                            <td>Contribution focused</td>
+                        </tr>
+                        <tr>
+                            <td>Daily Rotation</td>
+                            <td>Ongoing</td>
+                            <td>24 hours</td>
+                            <td>Enhanced drop rates</td>
+                            <td>Daily consistency</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="farming-box">
+                    <div class="farming-box-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        Event Calendar Strategy
+                    </div>
+                    <p>
+                        Track event schedules and plan your gaming time accordingly. Major events often provide 3-6 months worth of normal progression in 2-3 weeks. Missing a major event can set back collection goals significantly. Set reminders for event start dates and prepare resources in advance.
+                    </p>
+                </div>
+            </section>
+
+            <section id="pet-optimization">
+                <h2>Pet Optimization & Loadout Strategies</h2>
+                <p>
+                    Owning powerful pets is only the beginning - optimizing their usage through proper loadouts, leveling priorities, and situational deployment separates casual collectors from true pet masters.
+                </p>
+
+                <h3>Pet Leveling Priorities</h3>
+                
+                <h4>Investment Order Strategy</h4>
+                <p>
+                    Pet leveling requires significant time and resource investment. Prioritize based on impact and frequency of use:
+                </p>
+                <ol>
+                    <li><strong>Legendary Raven (Priority 1):</strong> Pays for itself through increased Cash generation</li>
+                    <li><strong>Primary Combat Pet (Priority 2):</strong> Your most-used damage dealer</li>
+                    <li><strong>Support Pet (Priority 3):</strong> Phoenix or Angel for survivability</li>
+                    <li><strong>Utility Pet (Priority 4):</strong> Situational pets for specific challenges</li>
+                    <li><strong>Collection Pets (Priority 5):</strong> Pets used rarely or for specific scenarios</li>
+                </ol>
+
+                <h4>Level Investment Breakpoints</h4>
+                <div class="code-block">
+Efficient Leveling Strategy:
+
+Levels 1-10 (Quick wins):
+- Cost: ~2,000 XP total
+- Benefit: 80% damage, 100% health increase
+- Method: Combat participation only
+- Time: 10-15 hours active play
+
+Levels 11-25 (Moderate investment):
+- Cost: ~15,000 XP total  
+- Benefit: Additional 120% damage, 150% health
+- Method: Combat + daily feeding
+- Time: 50-75 hours total
+
+Levels 26-50 (Major investment):
+- Cost: ~110,000 XP total
+- Benefit: Final 200% damage, 250% health + maxed abilities
+- Method: Training items + dedicated XP farming
+- Time: 150-200 hours total OR significant Cash investment
+
+Recommendation: Get priority pets to Level 25, then decide on Level 50 investments
+                </code>
+
+                <h3>Optimal Loadout Combinations</h3>
+                
+                <h4>Meta Loadouts by Game Mode</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Scenario</th>
+                            <th>Slot 1</th>
+                            <th>Slot 2</th>
+                            <th>Slot 3</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cash Farming</td>
+                            <td>Legendary Raven</td>
+                            <td>Combat Dragon</td>
+                            <td>Speed Rabbit</td>
+                            <td>Maximum Cash/hour</td>
+                        </tr>
+                        <tr>
+                            <td>Nightmare Mode</td>
+                            <td>Mythical Phoenix</td>
+                            <td>Legendary Dragon</td>
+                            <td>Support Angel</td>
+                            <td>Survivability + DPS</td>
+                        </tr>
+                        <tr>
+                            <td>Solo Speedrun</td>
+                            <td>Legendary Dragon</td>
+                            <td>Epic Wolf Pack</td>
+                            <td>Speed Rabbit</td>
+                            <td>Maximum clear speed</td>
+                        </tr>
+                        <tr>
+                            <td>Learning/Practice</td>
+                            <td>Greater Phoenix</td>
+                            <td>Guardian Angel</td>
+                            <td>Wise Owl</td>
+                            <td>Safety + information</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Synergy Analysis</h4>
+                <p>
+                    Certain pet combinations create powerful synergistic effects:
+                </p>
+                <ul>
+                    <li><strong>Dragon + Phoenix:</strong> Massive DPS with safety net revival</li>
+                    <li><strong>Wolf Pack + Speed Rabbit:</strong> Ultra-fast clear times</li>
+                    <li><strong>Angel + Owl:</strong> Perfect information with maximum survivability</li>
+                    <li><strong>Raven + Any Combat:</strong> Optimal farming efficiency</li>
+                </ul>
+
+                <h3>Situational Pet Deployment</h3>
+                
+                <h4>Dynamic Loadout Strategies</h4>
+                <p>
+                    Advanced players adjust pet loadouts based on anticipated challenges:
+                </p>
+                <div class="code-block">
+Adaptive Pet Strategy Examples:
+
+Boss Wave Preparation:
+- Switch to: Combat DPS + Phoenix + Angel
+- Reason: Maximum survivability for high-damage phases
+- Timing: Before Waves 7, 14, 21, etc.
+
+High-Density Waves:
+- Switch to: AoE Dragons + Speed pets
+- Reason: Clear large crowds quickly
+- Timing: Before Waves 16, 18, 20, etc.
+
+Event Farming:
+- Switch to: Event bonus pets + Raven
+- Reason: Maximize event currency/drops
+- Timing: Duration of event
+
+Practice Sessions:
+- Switch to: Information pets + Safety nets  
+- Reason: Learning focus over optimization
+- Timing: When learning new strategies
+                </code>
+
+                <h4>Emergency Protocols</h4>
+                <p>
+                    Plan backup strategies for when primary loadouts fail:
+                </p>
+                <ol>
+                    <li><strong>High Death Rate:</strong> Switch to maximum survivability loadout</li>
+                    <li><strong>Time Pressure:</strong> Prioritize speed pets and DPS combinations</li>
+                    <li><strong>Resource Constraints:</strong> Use farming-focused loadouts temporarily</li>
+                    <li><strong>Learning Curve:</strong> Information and safety pets until comfortable</li>
+                </ol>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-cogs"></i>
+                        Loadout Management
+                    </div>
+                    <p>
+                        Save multiple loadout presets for quick switching between scenarios. Most successful players maintain 4-6 saved loadouts for different purposes: farming, progression, events, practice, speedrun, and experimentation. Quick adaptation is crucial for optimization.
+                    </p>
+                </div>
+            </section>
+
+            <section id="economic-analysis">
+                <h2>Economic Analysis & Investment Planning</h2>
+                <p>
+                    Pet collection represents a major economic commitment in Hunty Zombie. Understanding the return on investment, opportunity costs, and long-term financial planning helps optimize resource allocation across the entire progression system.
+                </p>
+
+                <h3>Return on Investment Analysis</h3>
+                
+                <h4>Pet Investment ROI Calculations</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Investment</th>
+                            <th>Cost</th>
+                            <th>Benefit</th>
+                            <th>Break-Even</th>
+                            <th>ROI Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First Pet (Any)</td>
+                            <td>20,000 Cash</td>
+                            <td>Major power boost</td>
+                            <td>5-10 games</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Second Pet Slot</td>
+                            <td>30,000 Cash</td>
+                            <td>Doubles pet abilities</td>
+                            <td>10-15 games</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Pack</td>
+                            <td>30,000 Cash</td>
+                            <td>Better pet odds</td>
+                            <td>Varies by luck</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Mythic Pack</td>
+                            <td>599 Robux</td>
+                            <td>Guaranteed high-tier</td>
+                            <td>N/A (Robux)</td>
+                            <td>Premium only</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Pet Value Over Time</h4>
+                <p>
+                    Pets provide consistent value throughout your progression:
+                </p>
+                <div class="code-block">
+Pet Value Analysis:
+
+Early Game (0-50K Cash):
+- First pet dramatically improves survival
+- Enables higher wave completion
+- Unlocks faster Cash farming
+
+Mid Game (50K-200K):
+- Two pets create powerful synergies
+- Better pets from Premium Packs
+- Consistent progression boost
+
+Late Game (200K+ Cash):
+- Focus on specific powerful pets
+- Optimize 2-pet combinations
+- Consider Robux packs for Mythics
+
+Conclusion: Pets are essential at all stages of progression
+                </code>
+
+                <h3>Budget Allocation Strategy</h3>
+                
+                <h4>Resource Distribution Framework</h4>
+                <p>
+                    Optimal resource allocation across all progression systems:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Progression Area</th>
+                            <th>Early Game %</th>
+                            <th>Mid Game %</th>
+                            <th>Late Game %</th>
+                            <th>Rationale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weapon Slots/Upgrades</td>
+                            <td>60%</td>
+                            <td>40%</td>
+                            <td>25%</td>
+                            <td>Foundation for all content</td>
+                        </tr>
+                        <tr>
+                            <td>Pet System</td>
+                            <td>25%</td>
+                            <td>35%</td>
+                            <td>45%</td>
+                            <td>Scales with playtime</td>
+                        </tr>
+                        <tr>
+                            <td>Perks & Traits</td>
+                            <td>10%</td>
+                            <td>20%</td>
+                            <td>25%</td>
+                            <td>Endgame optimization</td>
+                        </tr>
+                        <tr>
+                            <td>Cosmetics</td>
+                            <td>5%</td>
+                            <td>5%</td>
+                            <td>5%</td>
+                            <td>Optional enjoyment</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Cash Flow Management</h4>
+                <p>
+                    Managing large Cash investments requires planning:
+                </p>
+                <ol>
+                    <li><strong>Emergency Reserve:</strong> Keep 10-20K Cash for opportunities</li>
+                    <li><strong>Target Savings:</strong> Save for specific pet packs</li>
+                    <li><strong>Balance Spending:</strong> Don't neglect weapons and perks</li>
+                    <li><strong>Patient Approach:</strong> RNG can be cruel - budget accordingly</li>
+                </ol>
+
+                <h3>Advanced Economic Strategies</h3>
+                
+                <h4>Investment Portfolio Approach</h4>
+                <p>
+                    Treating pet collection like an investment portfolio:
+                </p>
+                <ul>
+                    <li><strong>Core Holdings (60%):</strong> Essential pets that provide guaranteed returns</li>
+                    <li><strong>Growth Investments (30%):</strong> Pets that enable new content or strategies</li>
+                    <li><strong>Speculative Plays (10%):</strong> High-risk, high-reward pet acquisitions</li>
+                </ul>
+
+                <h4>Market Efficiency Analysis</h4>
+                <div class="code-block">
+Pet Acquisition Efficiency Rankings:
+
+Tier 1 - Must-Have Investments:
+1. Legendary Raven (farming essential)
+2. Third Pet Slot (flexibility essential)  
+3. Epic Combat Pet (progression essential)
+
+Tier 2 - Strong Value Investments:
+4. Legendary Phoenix (Nightmare enabler)
+5. Epic Support Pet (utility value)
+6. Fourth Pet Slot (advanced strategies)
+
+Tier 3 - Luxury Investments:
+7. Mythical Combat Pet (power/prestige)
+8. Complete collection (completion goals)
+9. Fifth Pet Slot (maximum flexibility)
+
+Investment Strategy: Complete Tier 1 before any Tier 2, complete Tier 2 before any Tier 3
+                </code>
+
+                <div class="farming-box">
+                    <div class="farming-box-title">
+                        <i class="fas fa-piggy-bank"></i>
+                        Long-Term Wealth Building
+                    </div>
+                    <p>
+                        The pet system is designed to reward long-term players who reinvest their earnings efficiently. A player who acquires a Legendary Raven in their first month will earn literally millions more Cash over a year of play compared to someone without farming pets. Early investment in farming infrastructure pays exponential dividends.
+                    </p>
+                </div>
+            </section>
+
+            <section id="endgame-collection">
+                <h2>Endgame Collection Goals & Mastery</h2>
+                <p>
+                    The endgame pet collection represents the ultimate expression of mastery in Hunty Zombie's progression systems. This section covers completion goals, advanced strategies, and the path to becoming a true pet collection expert.
+                </p>
+
+                <h3>Complete Collection Overview</h3>
+                
+                <h4>Collection Completion Statistics</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Collection Tier</th>
+                            <th>Pet Count</th>
+                            <th>Estimated Cost</th>
+                            <th>Time Investment</th>
+                            <th>Player %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Collection</td>
+                            <td>15 pets</td>
+                            <td>500K Cash</td>
+                            <td>2-3 months</td>
+                            <td>65%</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Collection</td>
+                            <td>35 pets</td>
+                            <td>2M Cash</td>
+                            <td>6-8 months</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Expert Collection</td>
+                            <td>55 pets</td>
+                            <td>8M Cash</td>
+                            <td>12-18 months</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Complete Collection</td>
+                            <td>75+ pets</td>
+                            <td>20M+ Cash</td>
+                            <td>2+ years</td>
+                            <td>&lt;1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Rarity Distribution Goals</h4>
+                <p>
+                    Target distribution for a well-rounded collection:
+                </p>
+                <ul>
+                    <li><strong>Mythical Pets:</strong> 3-5 pets (one per major category)</li>
+                    <li><strong>Legendary Pets:</strong> 12-15 pets (multiple options per role)</li>
+                    <li><strong>Epic Pets:</strong> 20-25 pets (comprehensive coverage)</li>
+                    <li><strong>Rare+ Pets:</strong> 35+ pets (complete flexibility)</li>
+                </ul>
+
+                <h3>Advanced Collection Strategies</h3>
+                
+                <h4>Mythical Pet Acquisition Plan</h4>
+                <p>
+                    Mythical pets require specific strategies due to their extreme rarity:
+                </p>
+                <div class="code-block">
+Mythical Acquisition Roadmap:
+
+Phase 1: Foundation Building (Months 1-6)
+- Establish consistent Nightmare Mode clear capability
+- Build 5M+ Cash reserve for guaranteed purchases
+- Participate in every major event
+- Track Mythical pet rotation schedules
+
+Phase 2: Focused Hunting (Months 7-12)
+- Target 1-2 specific Mythical pets
+- Use combination of drops, events, and direct purchase
+- Consider strategic Robux investment
+- Join community trading networks if available
+
+Phase 3: Collection Completion (Months 13+)
+- Acquire remaining Mythical pets through patient farming
+- Help other players with knowledge and resources
+- Document strategies and create guides
+- Become community resource for pet collection
+
+Expected Timeline: 18-36 months for complete Mythical collection
+                </code>
+
+                <h4>Event Mastery Strategy</h4>
+                <p>
+                    Events become increasingly important for endgame collection:
+                </p>
+                <ol>
+                    <li><strong>Event Calendar Mastery:</strong> Track all event schedules and prepare in advance</li>
+                    <li><strong>Resource Stockpiling:</strong> Save Currency and items for major events</li>
+                    <li><strong>Strategy Optimization:</strong> Develop event-specific farming routes</li>
+                    <li><strong>Community Coordination:</strong> Work with others for community goals</li>
+                </ol>
+
+                <h3>Collection Showcase & Prestige</h3>
+                
+                <h4>Achievement Recognition</h4>
+                <p>
+                    The game provides various recognition systems for collection achievements:
+                </p>
+                <ul>
+                    <li><strong>Collection Titles:</strong> Special titles for milestone achievements</li>
+                    <li><strong>Showcase Features:</strong> Profile displays for rare pet collections</li>
+                    <li><strong>Community Recognition:</strong> Leaderboards and community awards</li>
+                    <li><strong>Exclusive Access:</strong> Special events for dedicated collectors</li>
+                </ul>
+
+                <h4>Knowledge Sharing and Mentorship</h4>
+                <p>
+                    Endgame collectors often become community leaders:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Time Investment</th>
+                            <th>Community Value</th>
+                            <th>Personal Benefit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Guide Writing</td>
+                            <td>10-20 hours</td>
+                            <td>Very High</td>
+                            <td>Recognition, satisfaction</td>
+                        </tr>
+                        <tr>
+                            <td>New Player Mentoring</td>
+                            <td>2-5 hours/week</td>
+                            <td>High</td>
+                            <td>Teaching reinforces knowledge</td>
+                        </tr>
+                        <tr>
+                            <td>Strategy Development</td>
+                            <td>Ongoing</td>
+                            <td>High</td>
+                            <td>Cutting-edge optimization</td>
+                        </tr>
+                        <tr>
+                            <td>Community Events</td>
+                            <td>Variable</td>
+                            <td>Medium</td>
+                            <td>Social connections</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Future-Proofing Your Collection</h3>
+                
+                <h4>Update Adaptation Strategies</h4>
+                <p>
+                    Game updates can significantly impact pet value and utility:
+                </p>
+                <ul>
+                    <li><strong>Diversification:</strong> Maintain pets across all categories to adapt to changes</li>
+                    <li><strong>Meta Monitoring:</strong> Stay informed about balance changes and new additions</li>
+                    <li><strong>Resource Flexibility:</strong> Keep substantial Cash reserves for new opportunities</li>
+                    <li><strong>Community Engagement:</strong> Participate in discussions about upcoming changes</li>
+                </ul>
+
+                <h4>Long-Term Sustainability</h4>
+                <div class="code-block">
+Sustainable Collection Practices:
+
+Economic Sustainability:
+- Maintain farming income streams
+- Avoid overextending on speculative investments
+- Balance collection goals with other progression needs
+- Plan for long-term rather than short-term gains
+
+Time Management:
+- Set realistic collection timelines
+- Balance grinding with enjoyment
+- Take breaks to prevent burnout
+- Remember that collection is a journey, not a destination
+
+Community Contribution:
+- Share knowledge and strategies
+- Help newer players avoid mistakes
+- Contribute to community resources
+- Maintain positive attitude and sportsmanship
+                </code>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-heart"></i>
+                        Remember the Journey
+                    </div>
+                    <p>
+                        Complete pet collection represents hundreds of hours and significant resources. Remember that the journey of learning, improving, and connecting with the community is often more rewarding than the destination itself. Set realistic goals, celebrate milestones, and enjoy the process of becoming a pet master in Hunty Zombie.
+                    </p>
+                </div>
+
+                <p>
+                    The pet system in Hunty Zombie offers virtually unlimited depth for those willing to invest the time and effort to master it. Whether you're seeking optimal farming efficiency, competitive advantage, or simply the satisfaction of building the perfect collection, the strategies in this guide provide the roadmap to success. The zombie apocalypse awaits, and with your perfectly optimized pet companions at your side, no challenge is insurmountable.
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./beginners-guide.html" class="related-guide-item">
+                    <i class="fas fa-seedling"></i> Beginner's Guide
+                </a>
+                <a href="./meta-weapons-guide.html" class="related-guide-item">
+                    <i class="fas fa-sword"></i> Meta Weapons & Builds
+                </a>
+                <a href="./nightmare-mode-guide.html" class="related-guide-item">
+                    <i class="fas fa-skull"></i> Nightmare Mode Guide
+                </a>
+                <a href="./perks-traits-guide.html" class="related-guide-item">
+                    <i class="fas fa-star"></i> Perks & Traits Guide
+                </a>
+                <a href="./solo-speedrun-guide.html" class="related-guide-item">
+                    <i class="fas fa-running"></i> Solo Speedrun Guide
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

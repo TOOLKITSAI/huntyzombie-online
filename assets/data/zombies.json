@@ -1,0 +1,601 @@
+{
+  "zombies": [
+    {
+      "id": "zombie-king",
+      "name": "Zombie King",
+      "category": "boss",
+      "type": "Final Boss",
+      "difficulty": "extreme",
+      "description": "The ultimate ruler of the undead. Commands an army of zombies and possesses devastating magical powers.",
+      "image": "/assets/images/zombies/zombie-king.jpg",
+      "stats": {
+        "health": 50000,
+        "damage": 500,
+        "speed": 60,
+        "defense": 90,
+        "attackSpeed": 1.5,
+        "detectionRange": 50,
+        "attackRange": 10
+      },
+      "abilities": [
+        {
+          "name": "Fire Breath",
+          "icon": "fire",
+          "description": "Breathes fire in a cone dealing massive damage",
+          "cooldown": 10,
+          "damage": 1000
+        },
+        {
+          "name": "Summon Minions",
+          "icon": "users",
+          "description": "Summons 10 elite zombies to fight",
+          "cooldown": 30
+        },
+        {
+          "name": "Royal Armor",
+          "icon": "shield-alt",
+          "description": "Reduces all damage by 50% for 10 seconds",
+          "cooldown": 45
+        }
+      ],
+      "weaknesses": [
+        "Headshots deal 2x damage",
+        "Vulnerable after using abilities",
+        "Fire damage reduced by 50%"
+      ],
+      "recommendedWeapons": ["raygun-omega", "m249-fortress", "ak47-inferno"],
+      "spawnWave": "50+",
+      "rewards": {
+        "coins": 10000,
+        "gems": 500,
+        "exp": 5000,
+        "items": ["Crown of the Undead", "Royal Scepter"]
+      },
+      "strategy": "Focus fire on the head when his armor is down. Use explosive weapons to clear summoned minions quickly. Keep medium distance to avoid fire breath."
+    },
+    {
+      "id": "tank-zombie",
+      "name": "Tank Zombie",
+      "category": "elite",
+      "type": "Heavy Unit",
+      "difficulty": "hard",
+      "description": "Heavily armored zombie with incredible strength. Slow but extremely dangerous.",
+      "image": "/assets/images/zombies/tank-zombie.jpg",
+      "stats": {
+        "health": 5000,
+        "damage": 200,
+        "speed": 20,
+        "defense": 85,
+        "attackSpeed": 0.8,
+        "detectionRange": 30,
+        "attackRange": 3
+      },
+      "abilities": [
+        {
+          "name": "Ground Slam",
+          "icon": "fist-raised",
+          "description": "Slams the ground, stunning nearby players",
+          "cooldown": 15,
+          "damage": 300,
+          "stunDuration": 2
+        },
+        {
+          "name": "Heavy Armor",
+          "icon": "shield-alt",
+          "description": "Passive: Takes 50% less damage from bullets",
+          "passive": true
+        }
+      ],
+      "weaknesses": [
+        "Slow movement speed",
+        "Vulnerable to explosives",
+        "Back is less armored"
+      ],
+      "recommendedWeapons": ["crossbow-explosive", "spas12-frost", "raygun-omega"],
+      "spawnWave": "20+",
+      "rewards": {
+        "coins": 1000,
+        "gems": 50,
+        "exp": 500,
+        "items": ["Tank Armor Piece"]
+      },
+      "strategy": "Use explosives or shotguns at close range. Circle strafe to avoid ground slam. Attack from behind for bonus damage."
+    },
+    {
+      "id": "toxic-zombie",
+      "name": "Toxic Zombie",
+      "category": "special",
+      "type": "Hazard Type",
+      "difficulty": "medium",
+      "description": "Mutated zombie that spreads poison. Leaves toxic trails and explodes on death.",
+      "image": "/assets/images/zombies/toxic-zombie.jpg",
+      "stats": {
+        "health": 1500,
+        "damage": 150,
+        "speed": 70,
+        "defense": 30,
+        "attackSpeed": 2.0,
+        "detectionRange": 25,
+        "attackRange": 2
+      },
+      "abilities": [
+        {
+          "name": "Poison Trail",
+          "icon": "skull-crossbones",
+          "description": "Leaves a toxic trail that damages players",
+          "passive": true,
+          "damage": 10,
+          "duration": 5
+        },
+        {
+          "name": "Toxic Cloud",
+          "icon": "cloud",
+          "description": "Releases poison cloud on death",
+          "damage": 200,
+          "radius": 5
+        }
+      ],
+      "weaknesses": [
+        "Low defense",
+        "Fire damage clears poison",
+        "Headshots prevent explosion"
+      ],
+      "recommendedWeapons": ["awp-thunder", "ak47-inferno", "mp5-venom"],
+      "spawnWave": "15+",
+      "rewards": {
+        "coins": 500,
+        "gems": 25,
+        "exp": 250,
+        "items": ["Antidote", "Toxic Sample"]
+      },
+      "strategy": "Keep distance and use long-range weapons. Aim for headshots to prevent toxic explosion. Avoid poison trails."
+    },
+    {
+      "id": "walker",
+      "name": "Walker",
+      "category": "common",
+      "type": "Basic Zombie",
+      "difficulty": "easy",
+      "description": "The most common zombie type. Slow and weak, but dangerous in large numbers.",
+      "image": "/assets/images/zombies/walker.jpg",
+      "stats": {
+        "health": 100,
+        "damage": 10,
+        "speed": 30,
+        "defense": 10,
+        "attackSpeed": 1.0,
+        "detectionRange": 15,
+        "attackRange": 1.5
+      },
+      "abilities": [],
+      "weaknesses": [
+        "Slow movement",
+        "Low health",
+        "No special abilities"
+      ],
+      "recommendedWeapons": ["glock17", "any weapon"],
+      "spawnWave": "1+",
+      "rewards": {
+        "coins": 10,
+        "gems": 0,
+        "exp": 10,
+        "items": []
+      },
+      "strategy": "Basic zombie that can be killed with any weapon. Group them up for efficient clearing."
+    },
+    {
+      "id": "golden-zombie",
+      "name": "Golden Zombie",
+      "category": "event",
+      "type": "Treasure Zombie",
+      "difficulty": "special",
+      "description": "Rare zombie that drops massive rewards but flees quickly. Catch it before it escapes!",
+      "image": "/assets/images/zombies/golden-zombie.jpg",
+      "stats": {
+        "health": 1000,
+        "damage": 0,
+        "speed": 90,
+        "defense": 20,
+        "attackSpeed": 0,
+        "detectionRange": 50,
+        "fleeRange": 100
+      },
+      "abilities": [
+        {
+          "name": "Flee",
+          "icon": "running",
+          "description": "Runs away from players",
+          "passive": true
+        },
+        {
+          "name": "Drop Gold",
+          "icon": "coins",
+          "description": "Drops coins while running",
+          "passive": true
+        },
+        {
+          "name": "Despawn Timer",
+          "icon": "clock",
+          "description": "Disappears after 30 seconds",
+          "timer": 30
+        }
+      ],
+      "weaknesses": [
+        "No attack capability",
+        "Low defense",
+        "Predictable movement pattern"
+      ],
+      "recommendedWeapons": ["mp5-venom", "desert-eagle-gold", "awp-thunder"],
+      "spawnWave": "Random",
+      "rewards": {
+        "coins": 5000,
+        "gems": 100,
+        "exp": 1000,
+        "items": ["Mystery Box", "Golden Ticket"]
+      },
+      "strategy": "Use fast firing weapons or high damage snipers. Predict its path and cut it off. Work with teammates to trap it."
+    },
+    {
+      "id": "sprinter",
+      "name": "Sprinter",
+      "category": "common",
+      "type": "Fast Zombie",
+      "difficulty": "easy",
+      "description": "Fast-moving zombie that charges at players. Low health but hard to hit.",
+      "image": "/assets/images/zombies/sprinter.jpg",
+      "stats": {
+        "health": 150,
+        "damage": 20,
+        "speed": 85,
+        "defense": 5,
+        "attackSpeed": 2.0,
+        "detectionRange": 30,
+        "attackRange": 1.5
+      },
+      "abilities": [
+        {
+          "name": "Sprint",
+          "icon": "running",
+          "description": "Charges at high speed toward players",
+          "passive": true
+        }
+      ],
+      "weaknesses": [
+        "Very low health",
+        "No armor",
+        "Straight-line movement"
+      ],
+      "recommendedWeapons": ["spas12-frost", "mp5-venom"],
+      "spawnWave": "5+",
+      "rewards": {
+        "coins": 20,
+        "gems": 0,
+        "exp": 15,
+        "items": []
+      },
+      "strategy": "Use shotguns or SMGs for close range. Backpedal while shooting. Freeze effects are very effective."
+    },
+    {
+      "id": "bomber-zombie",
+      "name": "Bomber Zombie",
+      "category": "special",
+      "type": "Explosive Type",
+      "difficulty": "medium",
+      "description": "Suicide bomber zombie that explodes when near players. Extremely dangerous in groups.",
+      "image": "/assets/images/zombies/bomber-zombie.jpg",
+      "stats": {
+        "health": 500,
+        "damage": 500,
+        "speed": 50,
+        "defense": 20,
+        "attackSpeed": 0,
+        "detectionRange": 20,
+        "explosionRadius": 8
+      },
+      "abilities": [
+        {
+          "name": "Self Destruct",
+          "icon": "bomb",
+          "description": "Explodes when close to players",
+          "damage": 500,
+          "radius": 8
+        },
+        {
+          "name": "Beeping",
+          "icon": "volume-up",
+          "description": "Makes beeping sounds when about to explode",
+          "passive": true
+        }
+      ],
+      "weaknesses": [
+        "Explodes when killed",
+        "Slow acceleration",
+        "Audio warning"
+      ],
+      "recommendedWeapons": ["awp-thunder", "ak47-inferno"],
+      "spawnWave": "10+",
+      "rewards": {
+        "coins": 200,
+        "gems": 10,
+        "exp": 100,
+        "items": ["Bomb Defusal Kit"]
+      },
+      "strategy": "Kill from long range before they get close. Listen for beeping sounds. Use knockback weapons to keep distance."
+    },
+    {
+      "id": "electric-zombie",
+      "name": "Electric Zombie",
+      "category": "elite",
+      "type": "Elemental Type",
+      "difficulty": "hard",
+      "description": "Charged with electricity. Damages nearby players and is immune to stun effects.",
+      "image": "/assets/images/zombies/electric-zombie.jpg",
+      "stats": {
+        "health": 3000,
+        "damage": 175,
+        "speed": 65,
+        "defense": 60,
+        "attackSpeed": 1.5,
+        "detectionRange": 25,
+        "attackRange": 5
+      },
+      "abilities": [
+        {
+          "name": "Electric Field",
+          "icon": "bolt",
+          "description": "Damages all nearby players continuously",
+          "passive": true,
+          "damage": 20,
+          "radius": 5
+        },
+        {
+          "name": "Lightning Strike",
+          "icon": "bolt",
+          "description": "Calls down lightning on a player",
+          "cooldown": 20,
+          "damage": 400
+        },
+        {
+          "name": "Stun Immunity",
+          "icon": "shield-alt",
+          "description": "Immune to all stun effects",
+          "passive": true
+        }
+      ],
+      "weaknesses": [
+        "Water increases damage taken",
+        "Slow attack animation",
+        "EMP grenades disable abilities"
+      ],
+      "recommendedWeapons": ["awp-thunder", "crossbow-explosive"],
+      "spawnWave": "25+",
+      "rewards": {
+        "coins": 1500,
+        "gems": 75,
+        "exp": 750,
+        "items": ["Thunder Core", "Insulated Armor"]
+      },
+      "strategy": "Stay at maximum range. Use explosives to deal damage quickly. Avoid grouping up to minimize lightning strike damage."
+    },
+    {
+      "id": "invisible-stalker",
+      "name": "Invisible Stalker",
+      "category": "special",
+      "type": "Stealth Type",
+      "difficulty": "hard",
+      "description": "Can turn invisible and sneak up on players. Only visible when attacking or damaged.",
+      "image": "/assets/images/zombies/invisible-stalker.jpg",
+      "stats": {
+        "health": 2000,
+        "damage": 250,
+        "speed": 75,
+        "defense": 40,
+        "attackSpeed": 3.0,
+        "detectionRange": 40,
+        "attackRange": 2
+      },
+      "abilities": [
+        {
+          "name": "Invisibility",
+          "icon": "eye-slash",
+          "description": "Becomes invisible when not attacking",
+          "cooldown": 5,
+          "duration": 10
+        },
+        {
+          "name": "Backstab",
+          "icon": "knife",
+          "description": "Deals 3x damage from behind",
+          "passive": true
+        }
+      ],
+      "weaknesses": [
+        "Visible when hit",
+        "Makes footstep sounds",
+        "Thermal vision reveals it"
+      ],
+      "recommendedWeapons": ["spas12-frost", "mp5-venom", "katana-shadow"],
+      "spawnWave": "30+",
+      "rewards": {
+        "coins": 2000,
+        "gems": 100,
+        "exp": 1000,
+        "items": ["Cloaking Device", "Shadow Essence"]
+      },
+      "strategy": "Listen for footsteps. Use area damage weapons. Watch your back constantly. Thermal scope attachments help track it."
+    },
+    {
+      "id": "necromancer",
+      "name": "Necromancer",
+      "category": "boss",
+      "type": "Mini Boss",
+      "difficulty": "extreme",
+      "description": "Dark wizard zombie that resurrects fallen zombies and casts deadly spells.",
+      "image": "/assets/images/zombies/necromancer.jpg",
+      "stats": {
+        "health": 15000,
+        "damage": 300,
+        "speed": 40,
+        "defense": 70,
+        "attackSpeed": 2.0,
+        "detectionRange": 60,
+        "attackRange": 30
+      },
+      "abilities": [
+        {
+          "name": "Resurrect",
+          "icon": "redo",
+          "description": "Brings 5 dead zombies back to life",
+          "cooldown": 30
+        },
+        {
+          "name": "Dark Orb",
+          "icon": "circle",
+          "description": "Fires homing dark orbs at players",
+          "cooldown": 5,
+          "damage": 200
+        },
+        {
+          "name": "Death Shield",
+          "icon": "shield-alt",
+          "description": "Creates shield that absorbs 5000 damage",
+          "cooldown": 45,
+          "shieldHealth": 5000
+        }
+      ],
+      "weaknesses": [
+        "Holy damage deals 2x",
+        "Can't resurrect burned corpses",
+        "Vulnerable while casting"
+      ],
+      "recommendedWeapons": ["raygun-omega", "ak47-inferno", "katana-shadow"],
+      "spawnWave": "40+",
+      "rewards": {
+        "coins": 5000,
+        "gems": 250,
+        "exp": 2500,
+        "items": ["Necromancer Staff", "Dark Tome"]
+      },
+      "strategy": "Burn zombie corpses to prevent resurrection. Focus fire when shield is down. Dodge dark orbs by moving perpendicular to their path."
+    }
+  ],
+  "categories": [
+    {
+      "id": "common",
+      "name": "Common",
+      "description": "Basic zombie types that spawn frequently",
+      "spawnRate": 60
+    },
+    {
+      "id": "elite",
+      "name": "Elite",
+      "description": "Stronger zombies with special abilities",
+      "spawnRate": 20
+    },
+    {
+      "id": "special",
+      "name": "Special",
+      "description": "Unique zombies with specific mechanics",
+      "spawnRate": 15
+    },
+    {
+      "id": "boss",
+      "name": "Boss",
+      "description": "Powerful enemies that require teamwork",
+      "spawnRate": 4
+    },
+    {
+      "id": "event",
+      "name": "Event",
+      "description": "Limited time or special event zombies",
+      "spawnRate": 1
+    }
+  ],
+  "difficulties": [
+    {
+      "id": "easy",
+      "name": "Easy",
+      "color": "#28A745",
+      "multiplier": 1.0
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "color": "#FFC107",
+      "multiplier": 1.5
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "color": "#DC3545",
+      "multiplier": 2.0
+    },
+    {
+      "id": "extreme",
+      "name": "Extreme",
+      "color": "#6F42C1",
+      "multiplier": 3.0
+    },
+    {
+      "id": "special",
+      "name": "Special",
+      "color": "#FFD700",
+      "multiplier": 1.0
+    }
+  ],
+  "spawnRules": [
+    {
+      "wave": 1,
+      "types": ["walker"],
+      "maxZombies": 10,
+      "healthMultiplier": 1.0
+    },
+    {
+      "wave": 5,
+      "types": ["walker", "sprinter"],
+      "maxZombies": 20,
+      "healthMultiplier": 1.2
+    },
+    {
+      "wave": 10,
+      "types": ["walker", "sprinter", "bomber-zombie"],
+      "maxZombies": 30,
+      "healthMultiplier": 1.5
+    },
+    {
+      "wave": 15,
+      "types": ["walker", "sprinter", "bomber-zombie", "toxic-zombie"],
+      "maxZombies": 40,
+      "healthMultiplier": 2.0
+    },
+    {
+      "wave": 20,
+      "types": ["all"],
+      "maxZombies": 50,
+      "healthMultiplier": 2.5,
+      "bossChance": 0.1
+    },
+    {
+      "wave": 30,
+      "types": ["all"],
+      "maxZombies": 75,
+      "healthMultiplier": 3.0,
+      "bossChance": 0.2
+    },
+    {
+      "wave": 40,
+      "types": ["all"],
+      "maxZombies": 100,
+      "healthMultiplier": 4.0,
+      "bossChance": 0.3
+    },
+    {
+      "wave": 50,
+      "types": ["all"],
+      "maxZombies": 150,
+      "healthMultiplier": 5.0,
+      "bossChance": 1.0,
+      "guaranteedBoss": "zombie-king"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Redirects for Cloudflare Pages
+
+# Redirect old URLs to new structure
+/codes.html /codes/ 301
+/wiki.html /wiki/ 301
+/guide /guides/ 301
+/script /scripts/ 301
+
+# Language redirects
+/cn/* /zh/:splat 301
+/jp/* /ja/:splat 301
+/kr/* /ko/:splat 301
+
+# Trailing slash redirects
+/codes /codes/ 301
+/wiki /wiki/ 301
+/guides /guides/ 301
+/scripts /scripts/ 301
+
+# 404 fallback
+/* /404.html 404

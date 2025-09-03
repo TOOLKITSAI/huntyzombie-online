@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunty Zombie Complete Perks & Traits Optimization Guide 2025 - Build Your Perfect Setup</title>
+    <meta name="description" content="Master the Perks & Traits system in Hunty Zombie with our complete optimization guide. Learn perk synergies, trait combinations, and advanced build strategies for maximum power.">
+    <meta name="keywords" content="Hunty Zombie, perks guide, traits guide, build optimization, perk synergies, character builds, Roblox">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-purple);
+            color: var(--text-primary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-green);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector .lang-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .language-selector .lang-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(184, 51, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-purple);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(184, 51, 255, 0.2);
+            color: var(--accent-purple);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-purple);
+            border-left-color: var(--accent-purple);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-purple);
+            border-left-color: var(--accent-purple);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-3);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-blue);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Special Blocks */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .synergy-box {
+            background: linear-gradient(135deg, rgba(184, 51, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-purple);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .synergy-box-title {
+            color: var(--accent-purple);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stats-table {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-table th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        .stats-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Rarity Colors */
+        .rarity-common { color: #9ca3af; }
+        .rarity-uncommon { color: #10b981; }
+        .rarity-rare { color: #3b82f6; }
+        .rarity-epic { color: #8b5cf6; }
+        .rarity-legendary { color: #f59e0b; }
+        .rarity-mythical { color: #ef4444; }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-purple);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-3);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">GUIDES</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">BUILD OPTIMIZATION</div>
+            <h1 class="article-title">Complete Perks & Traits Optimization Guide</h1>
+            <img src="/assets/images/hunty-zombie4.webp" alt="Hunty Zombie Perks and Traits Guide" style="width: 100%; max-width: 800px; margin: 2rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>25 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">Intermediate+</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#perk-system">Perk System Guide</a></li>
+                <li><a href="#trait-system">Trait System Guide</a></li>
+                <li><a href="#synergy-builds">Synergy Builds</a></li>
+                <li><a href="#meta-combinations">Meta Combinations</a></li>
+                <li><a href="#situational-builds">Situational Builds</a></li>
+                <li><a href="#optimization-tips">Optimization Tips</a></li>
+                <li><a href="#endgame-builds">Endgame Builds</a></li>
+                <li><a href="#build-calculator">Build Calculator</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <section id="introduction">
+                <h2>Introduction to Build Optimization</h2>
+                <p>
+                    The Perks & Traits system in Hunty Zombie is the foundation of character customization, offering hundreds of possible combinations that can dramatically alter your playstyle and effectiveness. Unlike weapons that provide immediate visible power increases, perks and traits work synergistically to create multiplicative improvements that separate average players from elite survivors.
+                </p>
+                <p>
+                    This comprehensive guide will decode the complex interactions between perks and traits, revealing the mathematical foundations behind optimal builds and providing practical strategies for every playstyle. Whether you're aiming for maximum DPS, ultimate survivability, or specialized utility roles, understanding these systems is crucial for progression beyond Normal difficulty.
+                </p>
+
+                <div class="synergy-box">
+                    <div class="synergy-box-title">
+                        <i class="fas fa-magic"></i>
+                        Power of Synergy
+                    </div>
+                    <p>
+                        A perfectly optimized perk and trait combination can increase your effective power by 300-500%, while poor combinations can actually reduce your performance below baseline. The difference between random selections and optimized builds is often the deciding factor in Nightmare mode success.
+                    </p>
+                </div>
+            </section>
+
+            <section id="perk-system">
+                <h2>Complete Perk System Guide - UPDATE 2</h2>
+                <p>
+                    In Hunty Zombie, perks are special abilities that charge through killing zombies and can be activated by pressing the 'E' key. Currently, there are exactly six perks in the game, each offering unique advantages that can dramatically alter your survival strategy. Understanding when and how to use each perk is the difference between barely surviving and completely dominating the zombie hordes.
+                </p>
+
+                <h3>All Six Perks - Complete Breakdown</h3>
+                <p>
+                    The game features six distinct perks spread across multiple rarities. Each perk has three passive effects that activate when equipped, making your selection crucial for your build strategy:
+                </p>
+
+                <h4>S-Tier Perks (Meta Defining)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Perk Name</th>
+                            <th>Rarity</th>
+                            <th>Primary Effect</th>
+                            <th>Duration</th>
+                            <th>Best Use Case</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-legendary">Vampire</td>
+                            <td>Extremely Rare</td>
+                            <td>Lifesteal + Movement Speed Boost + DoT</td>
+                            <td>Active Duration</td>
+                            <td>Solo survival & Tank builds</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-epic">Critical</td>
+                            <td>Epic</td>
+                            <td>Massive attack power boost</td>
+                            <td>60 seconds</td>
+                            <td>Boss waves & DPS phases</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-legendary">DoubleDMG</td>
+                            <td>Legendary</td>
+                            <td>Doubles all team members' damage</td>
+                            <td>Team-wide buff</td>
+                            <td>Team play & Wave 7 boss</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>A-Tier Perks (Strong Choices)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Perk Name</th>
+                            <th>Rarity</th>
+                            <th>Primary Effect</th>
+                            <th>Charge Time</th>
+                            <th>Best Synergy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-rare">Undead</td>
+                            <td>Rare</td>
+                            <td>Zombie transformation abilities</td>
+                            <td>Medium charge</td>
+                            <td>Crowd control builds</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>C-Tier Perks (Situational)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Perk Name</th>
+                            <th>Rarity</th>
+                            <th>Primary Effect</th>
+                            <th>Best Combo</th>
+                            <th>Usage Tips</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-uncommon">Flame</td>
+                            <td>Uncommon</td>
+                            <td>Sets enemies on fire (DoT)</td>
+                            <td>Dragon Pet synergy</td>
+                            <td>Area denial & wave clear</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-uncommon">Healer</td>
+                            <td>Uncommon</td>
+                            <td>Regenerates health during combat</td>
+                            <td>Tank builds</td>
+                            <td>Sustain for long waves</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Shield</td>
+                            <td>Rare</td>
+                            <td>Temporary damage immunity</td>
+                            <td>Glass cannon builds</td>
+                            <td>Emergency survival</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Perk Detailed Analysis</h3>
+                
+                <h4>🩸 Vampire Perk (S-Tier Must-Have)</h4>
+                <div class="code-block">
+The Vampire perk is currently the only perk with THREE passive effects:
+• Lifesteal: Heals you for a percentage of damage dealt
+• Movement Speed: Increases as enemies take damage over time
+• Damage Over Time: Continuous damage to affected enemies
+
+Pro Tip: Vampire makes you nearly unkillable in long fights. 
+Perfect for solo players and essential for high-wave survival.
+                </div>
+
+                <h4>⚡ Critical Perk (Boss Killer)</h4>
+                <div class="code-block">
+Critical provides a MASSIVE damage spike for 60 seconds:
+• Duration: Full minute of enhanced damage
+• Best Use: Save for boss waves or emergency situations
+• Synergy: Pairs perfectly with high-damage weapons like Scythe
+
+Strategy: Time your Critical activation right before Wave 7 boss spawns
+for maximum damage output when it matters most.
+                </div>
+
+                <h4>💥 DoubleDMG Perk (Team MVP)</h4>
+                <div class="code-block">
+DoubleDMG is the strongest team perk in the game:
+• Effect: Doubles damage for ALL team members
+• Added: August 23, 2025 update
+• Meta Impact: Changed entire team composition strategies
+
+Note: In solo play, still valuable but Vampire or Critical might 
+serve you better for personal survival.
+                </div>
+
+                <h3>How to Obtain Perks</h3>
+                <p>
+                    Perks are obtained through the gacha spinning system with two main options:
+                </p>
+
+                <h4>Spinning Methods & Costs</h4>
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-dice"></i>
+                        Normal Spin vs Lucky Spin
+                    </div>
+                    <p>
+                        <strong>Normal Spin:</strong> Costs 2,000 Cash per spin. Available at the "Perks" gacha station. Lower chances for rare perks but accessible to all players.
+                    </p>
+                    <p>
+                        <strong>Lucky Spin:</strong> Obtained through Robux purchase, redemption codes, or Secret Quest rewards. Significantly higher chances for S-tier perks like Vampire and DoubleDMG.
+                    </p>
+                </div>
+
+                <h4>Optimal Acquisition Strategy</h4>
+                <ol>
+                    <li><strong>Priority Target:</strong> Always aim for Vampire first - it's game-changing</li>
+                    <li><strong>Secondary Goals:</strong> Critical for DPS or DoubleDMG for team play</li>
+                    <li><strong>Budget Option:</strong> Flame + Dragon Pet combo is surprisingly effective</li>
+                    <li><strong>Save Resources:</strong> Don't waste spins once you have Vampire + one S-tier</li>
+                </ol>
+            </section>
+
+            <section id="trait-system">
+                <h2>Complete Trait System Guide - UPDATE 2</h2>
+                <p>
+                    Traits in Hunty Zombie provide permanent passive bonuses that fundamentally alter your weapon's effectiveness. Unlike perks which require activation, traits are always active and directly impact your combat performance. The right trait can transform an average weapon into a powerhouse.
+                </p>
+
+                <h3>All Traits Tier List & Analysis</h3>
+                
+                <h4>S-Tier: The Only Endgame Trait</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Trait Name</th>
+                            <th>Rarity</th>
+                            <th>Stat Bonuses</th>
+                            <th>Why It's Essential</th>
+                            <th>Meta Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-legendary">Prodigy</td>
+                            <td>Extremely Rare</td>
+                            <td>+15% Damage, +6% Attack Speed, +15% Skill Damage, Movement Speed</td>
+                            <td>Double the stats of any other trait</td>
+                            <td>THE endgame trait</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>A-Tier: Excellent Alternatives</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Trait Name</th>
+                            <th>Level</th>
+                            <th>Primary Bonus</th>
+                            <th>Best For</th>
+                            <th>Stop Rolling?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-epic">Power III</td>
+                            <td>Level 3</td>
+                            <td>Significant damage increase</td>
+                            <td>All DPS builds</td>
+                            <td>Yes, unless meta weapon</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-epic">Focus III</td>
+                            <td>Level 3</td>
+                            <td>+15% Skill Damage</td>
+                            <td>Ability-heavy weapons</td>
+                            <td>Yes for most weapons</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Beast</td>
+                            <td>Special</td>
+                            <td>Balanced damage & attack speed</td>
+                            <td>Melee weapons</td>
+                            <td>Yes for melee builds</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Fortune</td>
+                            <td>Special</td>
+                            <td>Increased gold drops</td>
+                            <td>Farming runs</td>
+                            <td>Keep one for farming</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>B-Tier: Good Early Game</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Trait Name</th>
+                            <th>Level</th>
+                            <th>Primary Bonus</th>
+                            <th>Viability</th>
+                            <th>Upgrade Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-rare">Power II</td>
+                            <td>Level 2</td>
+                            <td>Moderate damage boost</td>
+                            <td>Mid-game viable</td>
+                            <td>Roll for Power III</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Focus II</td>
+                            <td>Level 2</td>
+                            <td>Moderate skill damage</td>
+                            <td>Decent for abilities</td>
+                            <td>Roll for Focus III</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-rare">Agility III</td>
+                            <td>Level 3</td>
+                            <td>Attack speed boost</td>
+                            <td>Good for fast weapons</td>
+                            <td>Keep if no better option</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>C-Tier: Replace ASAP</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Trait Name</th>
+                            <th>Level</th>
+                            <th>Effect</th>
+                            <th>Issue</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rarity-common">Power I</td>
+                            <td>Level 1</td>
+                            <td>Minor damage</td>
+                            <td>Too weak for endgame</td>
+                            <td>Reroll immediately</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-common">Focus I</td>
+                            <td>Level 1</td>
+                            <td>Minor skill damage</td>
+                            <td>Minimal impact</td>
+                            <td>Reroll immediately</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-common">Agility I/II</td>
+                            <td>Level 1-2</td>
+                            <td>Minor attack speed</td>
+                            <td>Outclassed quickly</td>
+                            <td>Reroll when possible</td>
+                        </tr>
+                        <tr>
+                            <td class="rarity-uncommon">Intelligent</td>
+                            <td>Special</td>
+                            <td>+EXP gain</td>
+                            <td>No combat value</td>
+                            <td>Only for leveling alts</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>How to Get Trait Rerolls</h3>
+                <p>
+                    Trait Rerolls are precious resources that let you change your weapon's trait. Here's how to obtain them:
+                </p>
+
+                <h4>Secret Quest System</h4>
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-question-circle"></i>
+                        Unmarked NPC Location
+                    </div>
+                    <p>
+                        Find the unmarked NPC in the lobby (left of the Weapons NPC). This NPC offers Secret Quests that refresh every 24 hours. Most quests require zombie kills or surviving specific waves and reward Trait Rerolls upon completion.
+                    </p>
+                </div>
+
+                <h4>Trait Rolling Strategy</h4>
+                <div class="code-block">
+The Golden Rule: Prodigy or Bust
+
+For Meta Weapons (Greatsword, Scythe, Dual Guns):
+• Only accept: Prodigy
+• Acceptable temporarily: Power III, Focus III
+• Never settle for less on endgame weapons
+
+For Non-Meta Weapons:
+• Stop at: Power III, Agility III, Beast
+• These are "good enough" for most content
+• Save rerolls for meta weapons
+
+For Farming Weapons:
+• Keep one Fortune trait weapon
+• Use for gold farming runs
+• Don't waste rerolls improving it
+                </div>
+
+                <h3>Mathematical Impact of Traits</h3>
+                <p>
+                    Understanding the actual damage calculations helps optimize your build decisions:
+                </p>
+
+                <h4>Prodigy vs Other Traits - The Numbers</h4>
+                <div class="code-block">
+Damage Comparison (Base 100 damage weapon):
+
+With Prodigy:
+• Base: 100
+• +15% Damage: 115
+• +6% Attack Speed: ~106 effective DPS
+• +15% Skill Damage: 115 on abilities
+• Total effective increase: ~236% overall performance
+
+With Power III:
+• Base: 100
+• Damage boost: ~112
+• No attack speed bonus
+• No skill damage bonus
+• Total effective increase: ~112% overall performance
+
+Conclusion: Prodigy provides MORE THAN DOUBLE the value
+                </div>
+
+                <h3>Trait Acquisition Tips</h3>
+                <p>
+                    Maximize your chances of getting the perfect trait:
+                </p>
+
+                <h4>Efficient Reroll Management</h4>
+                <ul>
+                    <li><strong>Daily Quest Priority:</strong> Complete Secret Quests every 24 hours</li>
+                    <li><strong>Code Redemption:</strong> Check for new codes regularly for free rerolls</li>
+                    <li><strong>Smart Spending:</strong> Only reroll meta weapons (Greatsword, Scythe, Dual Guns)</li>
+                    <li><strong>Patience Pays:</strong> Better to wait for more rerolls than settle for bad traits</li>
+                </ul>
+
+                <div class="synergy-box">
+                    <div class="synergy-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Pro Tip: The Prodigy Hunt
+                    </div>
+                    <p>
+                        Since Prodigy gives more than double the stats of any other trait, it's worth using ALL your rerolls trying to get it on your main weapon. The difference between Prodigy and Power III is the difference between struggling in Wave 6 and easily clearing Wave 7.
+                    </p>
+                </div>
+            </section>
+
+            <section id="synergy-builds">
+                <h2>Powerful Synergy Builds - UPDATE 2 Meta</h2>
+                <p>
+                    The most effective builds in Hunty Zombie leverage synergies between the six available perks, weapon traits, and pet abilities. These combinations have been tested and proven effective in the current September 2025 meta.
+                </p>
+
+                <h3>The "Immortal Vampire" Build (S-Tier Solo)</h3>
+                <p>
+                    The ultimate survival build that makes you nearly unkillable through lifesteal and movement speed:
+                </p>
+
+                <h4>Core Components</h4>
+                <div class="code-block">
+Primary Weapon: Greatsword with Prodigy Trait
+- Insane AoE damage for maximum lifesteal
+- Can permanently stagger enemies with basic attacks
+
+Secondary Weapon: Scythe with Power III or Prodigy
+- Additional AoE coverage
+- Synergizes perfectly with Vampire perk
+
+Primary Perk: Vampire (ESSENTIAL)
+- Lifesteal keeps you alive
+- Movement speed increases as enemies take DoT
+- Three passive effects make this perk irreplaceable
+
+Recommended Trait Priority:
+- Prodigy (if you can get it)
+- Power III (acceptable alternative)
+- Focus III (for skill damage)
+
+Pet: Dragon
+- 30% drop rate boost
+- 20% burn damage synergizes with Vampire DoT
+                </div>
+
+                <h4>Gameplay Strategy</h4>
+                <ul>
+                    <li><strong>Wave 1-6:</strong> Build up kills to charge Vampire, use strategically</li>
+                    <li><strong>Wave 7 Boss:</strong> Activate Vampire immediately for sustained healing</li>
+                    <li><strong>TNT Zombies:</strong> Lifesteal helps recover from explosion damage</li>
+                    <li><strong>Athletic Zombies:</strong> Movement speed boost helps dodge basketballs</li>
+                </ul>
+
+                <h3>The "Critical Burst" Build (S-Tier DPS)</h3>
+                <p>
+                    Maximum damage output for melting bosses and clearing hordes:
+                </p>
+
+                <h4>Core Components</h4>
+                <div class="code-block">
+Primary Weapon: Dual Guns with Prodigy
+- Best weapon overall for range and AoE
+- High DPS potential with Critical perk
+
+Secondary Weapon: Greatsword with Power III+
+- Backup for close-range situations
+- Massive damage during Critical window
+
+Primary Perk: Critical (60-second power spike)
+- Massive attack power boost
+- Perfect for boss waves
+- Synergizes with high-damage weapons
+
+Backup Perk Options:
+- DoubleDMG (for team play)
+- Vampire (for survival)
+
+Pet: Dragon or Raven
+- Dragon for damage synergy
+- Raven for best drop rates
+                </div>
+
+                <h4>Advanced Techniques</h4>
+                <ul>
+                    <li><strong>Critical Timing:</strong> Save for Wave 7 boss spawn</li>
+                    <li><strong>Weapon Swap:</strong> Use Dual Guns normally, swap to Greatsword during Critical</li>
+                    <li><strong>Team Coordination:</strong> Stack Critical with teammate's DoubleDMG for insane damage</li>
+                    <li><strong>Resource Management:</strong> Don't waste Critical on easy waves</li>
+                </ul>
+
+                <h3>The "Team Carry" Build (S-Tier Support)</h3>
+                <p>
+                    Designed to boost entire team performance and enable higher wave clears:
+                </p>
+
+                <h4>Core Components</h4>
+                <div class="code-block">
+Primary Weapon: Any meta weapon with Fortune trait
+- Fortune increases gold for entire team
+- Allows faster upgrades for everyone
+
+Primary Perk: DoubleDMG (TEAM ESSENTIAL)
+- Doubles damage for ALL team members
+- Single most impactful team perk
+- Added in August 23 update, changed the meta
+
+Secondary Perk: Healer
+- Provides sustain for team
+- Helps teammates survive longer
+
+Strategy Focus:
+- Stay alive to maintain buffs
+- Coordinate DoubleDMG timing with team
+- Farm gold efficiently with Fortune trait
+                </div>
+
+                <h3>The "Flame Synergy" Build (A-Tier Budget)</h3>
+                <p>
+                    Cost-effective build using common perks with surprising effectiveness:
+                </p>
+
+                <h4>Core Components</h4>
+                <div class="code-block">
+Primary Perk: Flame
+- Sets enemies on fire (DoT)
+- Common rarity = easier to obtain
+
+Pet: Dragon (ESSENTIAL for this build)
+- Synergizes perfectly with Flame perk
+- Creates burning chains through zombie hordes
+
+Weapon: Any with Beast or Power III trait
+- Don't need Prodigy for this build to work
+- Focus on consistent damage application
+
+Why This Works:
+- Flame + Dragon creates constant AoE burn
+- Very accessible for new players
+- Surprisingly effective up to Wave 6
+                </div>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-trophy"></i>
+                        Current Meta Summary
+                    </div>
+                    <p>
+                        The September 2025 meta revolves around three core elements: Vampire perk for survival, Prodigy trait for maximum stats, and the Greatsword + Scythe weapon combo for AoE dominance. Any build incorporating these elements will perform well in the current version.
+                    </p>
+                </div>
+            </section>
+
+            <section id="meta-combinations">
+                <h2>September 2025 Meta Combinations</h2>
+                <p>
+                    After UPDATE 2, the meta has solidified around specific weapon-perk-trait combinations that dominate both solo and team play. These builds have been thoroughly tested and proven effective across all seven waves.
+                </p>
+
+                <h3>The Undisputed Meta King</h3>
+                
+                <h4>Greatsword + Scythe Domination</h4>
+                <p>
+                    The current meta revolves around this weapon combination that trivializes most content:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Selection</th>
+                            <th>Why It's Meta</th>
+                            <th>Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primary Weapon</td>
+                            <td>Greatsword</td>
+                            <td>Insane AoE, permanent stagger</td>
+                            <td>ESSENTIAL</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Weapon</td>
+                            <td>Scythe</td>
+                            <td>Additional AoE coverage</td>
+                            <td>ESSENTIAL</td>
+                        </tr>
+                        <tr>
+                            <td>Must-Have Perk</td>
+                            <td>Vampire</td>
+                            <td>3 passive effects, lifesteal</td>
+                            <td>CRITICAL</td>
+                        </tr>
+                        <tr>
+                            <td>Required Trait</td>
+                            <td>Prodigy</td>
+                            <td>Double stats of other traits</td>
+                            <td>ENDGAME</td>
+                        </tr>
+                        <tr>
+                            <td>Best Pet</td>
+                            <td>Dragon</td>
+                            <td>30% drops + 20% burn</td>
+                            <td>HIGH</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Why This Combination Dominates</h4>
+                <ul>
+                    <li><strong>Wave 1-3:</strong> Basic attacks clear everything effortlessly</li>
+                    <li><strong>Wave 4-6:</strong> Vampire perk makes you unkillable</li>
+                    <li><strong>Wave 7 Boss:</strong> Stagger lock prevents boss from attacking</li>
+                    <li><strong>TNT Zombies:</strong> AoE clears them before they explode</li>
+                    <li><strong>Athletic Zombies:</strong> Can't throw basketballs when staggered</li>
+                </ul>
+
+                <h3>Alternative Meta Options</h3>
+                
+                <h4>Dual Guns Range Meta</h4>
+                <p>
+                    The safest option with excellent AoE and range:
+                </p>
+                <ul>
+                    <li><strong>Primary:</strong> Dual Guns with Prodigy trait</li>
+                    <li><strong>Perk Choice:</strong> Critical for burst damage</li>
+                    <li><strong>Strength:</strong> Safest positioning, great AoE abilities</li>
+                    <li><strong>Weakness:</strong> Less lifesteal synergy with Vampire</li>
+                </ul>
+
+                <h4>DoubleDMG Team Carry</h4>
+                <p>
+                    Essential for coordinated team play:
+                </p>
+                <ul>
+                    <li><strong>Focus:</strong> Stay alive to maintain team buff</li>
+                    <li><strong>Impact:</strong> Doubles entire team's damage output</li>
+                    <li><strong>Weapon:</strong> Any safe option (Dual Guns preferred)</li>
+                    <li><strong>Communication:</strong> Coordinate activation timing</li>
+                </ul>
+
+                <h3>September 2025 Update Impact</h3>
+                <p>
+                    The August 23 update that added DoubleDMG perk and new weapons has significantly shifted the meta:
+                </p>
+
+                <h4>Key Meta Changes</h4>
+                <ol>
+                    <li><strong>DoubleDMG Revolution:</strong> Team play now revolves around this perk</li>
+                    <li><strong>Weapon Slot Meta:</strong> $50,000 for second slot is now mandatory</li>
+                    <li><strong>Prodigy Dominance:</strong> No other trait comes close to its value</li>
+                    <li><strong>Vampire Necessity:</strong> The only perk with three effects</li>
+                </ol>
+
+                <div class="synergy-box">
+                    <div class="synergy-box-title">
+                        <i class="fas fa-chart-line"></i>
+                        Current Meta Summary
+                    </div>
+                    <p>
+                        If you want to compete at high levels: Get Vampire perk, roll for Prodigy trait, use Greatsword + Scythe combo. Everything else is significantly weaker. This meta has been stable since UPDATE 2 and shows no signs of changing.
+                    </p>
+                </div>
+            </section>
+
+            <section id="situational-builds">
+                <h2>Situational Build Strategies</h2>
+                <p>
+                    While meta builds provide general effectiveness, specialized builds excel in specific scenarios. Understanding when and how to use these specialized builds can significantly improve your success rate.
+                </p>
+
+                <h3>Wave 7 Boss Strategy</h3>
+                <p>
+                    The Wave 7 boss is the ultimate test of your build. Here's how to prepare:
+                </p>
+
+                <h4>Boss Killer Setup</h4>
+                <div class="code-block">
+Optimal Boss Strategy:
+
+Primary Weapon: Greatsword with Prodigy
+- Stagger locks the boss
+- Maximum damage per hit
+
+Secondary Weapon: Scythe with Power III+
+- Additional damage when boss is staggered
+- Clears any adds that spawn
+
+Essential Perks:
+- Critical: Save for boss spawn, activate immediately
+- Vampire: Use for sustain during long fight
+
+Timing Strategy:
+1. Clear Wave 6 completely
+2. Position near spawn point
+3. Activate Critical as boss appears
+4. Stagger lock with Greatsword
+5. Use Vampire if health drops below 50%
+
+Success Rate: 90%+ with proper execution
+                </div>
+
+                <h3>Special Zombie Types</h3>
+                <p>
+                    UPDATE 2 introduced special zombies that require specific strategies:
+                </p>
+
+                <h4>TNT Zombies (Self-Exploding)</h4>
+                <ul>
+                    <li><strong>Threat:</strong> Massive explosion damage on death</li>
+                    <li><strong>Counter:</strong> Kill from maximum range with Dual Guns</li>
+                    <li><strong>Alternative:</strong> Use Vampire lifesteal to recover from damage</li>
+                    <li><strong>Team Strategy:</strong> Designate one player for TNT duty</li>
+                </ul>
+
+                <h4>Athletic Zombies (Basketball Throwers)</h4>
+                <ul>
+                    <li><strong>Threat:</strong> Long-range basketball projectiles</li>
+                    <li><strong>Counter:</strong> Greatsword stagger prevents throwing</li>
+                    <li><strong>Movement:</strong> Vampire speed boost helps dodge</li>
+                    <li><strong>Priority:</strong> Kill these first in mixed waves</li>
+                </ul>
+
+                <h3>Resource Optimization</h3>
+                <p>
+                    Maximize your progression with smart resource management:
+                </p>
+
+                <h4>Efficient Progression Path</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Priority</th>
+                            <th>Item/Action</th>
+                            <th>Cost</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st</td>
+                            <td>Weapon Slot 2</td>
+                            <td>$50,000</td>
+                            <td>Doubles combat options</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>Vampire Perk</td>
+                            <td>2,000/spin</td>
+                            <td>Game-changing survival</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>Prodigy Trait</td>
+                            <td>Rerolls</td>
+                            <td>Double stat value</td>
+                        </tr>
+                        <tr>
+                            <td>4th</td>
+                            <td>Dragon Pet</td>
+                            <td>Varies</td>
+                            <td>30% drops + damage</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Farming Strategy</h4>
+                <ul>
+                    <li><strong>Best Pet:</strong> Raven for maximum drop rates</li>
+                    <li><strong>Fortune Trait:</strong> Keep one weapon with Fortune for gold runs</li>
+                    <li><strong>Optimal Waves:</strong> Farm Wave 5-6 repeatedly for efficiency</li>
+                    <li><strong>Time Investment:</strong> 30 minutes = ~100,000 cash with proper setup</li>
+                </ul>
+
+                <h3>Beginner-Friendly Builds</h3>
+                <p>
+                    Starting out? These builds are accessible and effective for new players:
+                </p>
+
+                <h4>Budget Starter Build</h4>
+                <ul>
+                    <li><strong>Weapon:</strong> Any weapon with Power II or Beast trait</li>
+                    <li><strong>Perk Focus:</strong> Healer for sustain (common, easy to get)</li>
+                    <li><strong>Secondary Perk:</strong> Shield for emergency survival</li>
+                    <li><strong>Goal:</strong> Save for second weapon slot ASAP ($50,000)</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        New Player Priority
+                    </div>
+                    <p>
+                        Focus on getting the second weapon slot first before spinning for better perks. Two weapons, even with mediocre perks, is better than one weapon with good perks. Press 1 and 2 to swap between weapons during combat.
+                    </p>
+                </div>
+            </section>
+
+            <section id="optimization-tips">
+                <h2>Advanced Optimization Tips</h2>
+                <p>
+                    These optimization techniques represent the difference between good builds and truly exceptional character setups that dominate in all game modes.
+                </p>
+
+                <h3>Mathematical Optimization</h3>
+                
+                <h4>Why Prodigy Dominates - The Math</h4>
+                <p>
+                    Let's break down why Prodigy is the only viable endgame trait:
+                </p>
+                <div class="code-block">
+Prodigy vs Other Traits Comparison:
+
+Prodigy Bonuses:
+• +15% Damage
+• +6% Attack Speed  
+• +15% Skill Damage
+• Movement Speed bonus
+• Total value: ~40% overall improvement
+
+Power III:
+• ~12% Damage only
+• Total value: ~12% improvement
+
+The Math:
+Prodigy provides 3.3x MORE value than the next best trait.
+This is why rerolling for Prodigy is always worth it.
+
+Practical Impact:
+- With Power III: Struggle on Wave 6-7
+- With Prodigy: Easily clear all 7 waves
+                </div>
+
+                <h4>Vampire Perk Calculations</h4>
+                <p>
+                    Why Vampire is mandatory for high-level play:
+                </p>
+                <div class="code-block">
+Vampire's Three Effects:
+
+1. Lifesteal Effect:
+   - Heals based on damage dealt
+   - With Greatsword AoE: Massive healing
+   - Synergy with high damage weapons
+
+2. Movement Speed Scaling:
+   - Speed increases as enemies take DoT
+   - Helps kite TNT zombies
+   - Essential for dodging basketballs
+
+3. Damage Over Time:
+   - Additional damage to all affected enemies
+   - Stacks with Dragon pet burn
+   - Creates chain reactions in hordes
+
+Practical Impact:
+- Without Vampire: Die on Wave 5-6
+- With Vampire: Survive Wave 7 boss easily
+                </div>
+
+                <h3>Resource Management Optimization</h3>
+                
+                <h4>Perk Cooldown Management</h4>
+                <p>
+                    Optimal perk usage requires understanding cooldown mathematics:
+                </p>
+                <ul>
+                    <li><strong>Staggered Usage:</strong> Never use both perks simultaneously unless necessary</li>
+                    <li><strong>Uptime Maximization:</strong> Calculate optimal timing for continuous effects</li>
+                    <li><strong>Emergency Reserves:</strong> Always maintain one defensive perk off cooldown</li>
+                    <li><strong>Wave Timing:</strong> Align perk usage with wave difficulty spikes</li>
+                </ul>
+
+                <h4>Spin Strategy Optimization</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Spin Type</th>
+                            <th>Cost</th>
+                            <th>Best For</th>
+                            <th>Expected Value</th>
+                            <th>When to Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Normal Spin</td>
+                            <td>2,000 Cash</td>
+                            <td>Volume attempts</td>
+                            <td>Low rare chance</td>
+                            <td>Early game</td>
+                        </tr>
+                        <tr>
+                            <td>Lucky Spin</td>
+                            <td>Codes/Robux</td>
+                            <td>Targeting rares</td>
+                            <td>High rare chance</td>
+                            <td>Save for Vampire</td>
+                        </tr>
+                        <tr>
+                            <td>Trait Reroll</td>
+                            <td>Quest reward</td>
+                            <td>Prodigy hunting</td>
+                            <td>Game-changing</td>
+                            <td>Meta weapons only</td>
+                        </tr>
+                        <tr>
+                            <td>Pet Gacha</td>
+                            <td>Varies</td>
+                            <td>Dragon/Raven</td>
+                            <td>High impact</td>
+                            <td>After perks</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Advanced Synergy Discovery</h3>
+                
+                <h4>Proven Synergies</h4>
+                <p>
+                    These combinations have been tested and confirmed by the community:
+                </p>
+                <ul>
+                    <li><strong>Flame + Dragon Pet:</strong> Double fire damage creates burn chains</li>
+                    <li><strong>Vampire + Greatsword:</strong> AoE lifesteal from multiple enemies</li>
+                    <li><strong>Critical + DoubleDMG:</strong> Stack for 4x team damage spikes</li>
+                    <li><strong>Prodigy + Any Weapon:</strong> Makes every weapon viable</li>
+                </ul>
+
+                <div class="synergy-box">
+                    <div class="synergy-box-title">
+                        <i class="fas fa-trophy"></i>
+                        Pro Player Consensus
+                    </div>
+                    <p>
+                        After extensive testing since UPDATE 2, the community consensus is clear: Vampire + Prodigy + Greatsword/Scythe is the only truly competitive endgame build. Everything else is significantly weaker.
+                    </p>
+                </div>
+            </section>
+
+            <section id="endgame-builds">
+                <h2>Ultimate Endgame Goals</h2>
+                <p>
+                    After hundreds of hours of grinding, these are the absolute best setups currently possible in Hunty Zombie. This is what you should be working toward.
+                </p>
+
+                <h3>The Perfect Build (September 2025 Meta)</h3>
+                <p>
+                    This is the undisputed best build in the game right now:
+                </p>
+
+                <h4>Complete Endgame Specification</h4>
+                <div class="code-block">
+Investment Required: Significant grinding + luck
+
+Weapons:
+- Primary: Greatsword with PRODIGY trait
+- Secondary: Scythe with PRODIGY trait
+- Cost: $50,000 for second slot + rerolls
+
+Perks (Priority Order):
+1. Vampire (S-tier, ESSENTIAL)
+2. Critical or DoubleDMG (situational)
+
+Why This Setup Dominates:
+- Prodigy gives double stats of any other trait
+- Greatsword + Scythe = permanent enemy stagger
+- Vampire = never die with proper play
+- Can solo all 7 waves consistently
+
+Pet:
+- Dragon (best overall) or Raven (farming)
+
+Key Features:
+- Permanent stagger with Greatsword/Scythe
+- Vampire lifesteal = near immortality  
+- Prodigy trait = double effectiveness
+- Can clear all 7 waves solo
+                </div>
+
+                <h4>Realistic Expectations</h4>
+                <ul>
+                    <li><strong>Time to Build:</strong> 50-100 hours of gameplay</li>
+                    <li><strong>Vampire Acquisition:</strong> May take hundreds of spins</li>
+                    <li><strong>Prodigy Trait:</strong> Extremely rare, prepare for many rerolls</li>
+                    <li><strong>Success Rate:</strong> 90%+ Wave 7 clear with full build</li>
+                </ul>
+
+                <h3>Alternative Endgame Options</h3>
+                <p>
+                    If you can't get the perfect build, these are viable alternatives:
+                </p>
+
+                <h4>The "Good Enough" Build</h4>
+                <div class="code-block">
+More Realistic Goals:
+
+Weapons:
+- Greatsword with Power III (acceptable)
+- Scythe with Beast or Focus III
+
+Perks:
+- Critical (easier to get than Vampire)
+- Healer or Shield for survival
+
+This Build Can:
+- Clear Wave 1-6 consistently
+- Handle Wave 7 with team support
+- Farm efficiently for upgrades
+
+Investment: ~200,000 Cash (much more achievable)
+                </div>
+
+                <h3>Team Synergy Considerations</h3>
+                <p>
+                    In team play, roles become specialized:
+                </p>
+
+                <h4>Optimal Team Composition</h4>
+                <ul>
+                    <li><strong>DPS Player:</strong> Greatsword/Scythe with Critical perk</li>
+                    <li><strong>Support Player:</strong> Any weapon with DoubleDMG perk</li>
+                    <li><strong>Tank Player:</strong> Any weapon with Vampire perk</li>
+                    <li><strong>Flex Player:</strong> Dual Guns for range and safety</li>
+                </ul>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Reality Check
+                    </div>
+                    <p>
+                        Getting Vampire perk and Prodigy trait requires extreme luck or massive grinding. Most players will never achieve the "perfect" build. Focus on incremental improvements and enjoy the progression journey rather than rushing to endgame.
+                    </p>
+                </div>
+            </section>
+
+            <section id="build-calculator">
+                <h2>Quick Build Reference Guide</h2>
+                <p>
+                    Use this reference to quickly evaluate your current build and identify upgrade priorities based on the September 2025 meta.
+                </p>
+
+                <h3>Build Power Calculator</h3>
+                
+                <h4>Simple Build Scoring System</h4>
+                <ol>
+                    <li><strong>Weapon Score:</strong> Greatsword (10pts), Scythe (9pts), Dual Guns (8pts), Others (5pts)</li>
+                    <li><strong>Trait Score:</strong> Prodigy (20pts), Power III (8pts), Focus III (7pts), Others (3pts)</li>
+                    <li><strong>Perk Score:</strong> Vampire (15pts), Critical (10pts), DoubleDMG (10pts), Others (5pts)</li>
+                    <li><strong>Pet Score:</strong> Dragon (8pts), Raven (7pts), Others (4pts)</li>
+                    <li><strong>Second Slot:</strong> Add 10pts if you have it</li>
+                </ol>
+
+                <h3>Build Rating Tiers</h3>
+                
+                <h4>Score Interpretation</h4>
+                <div class="code-block">
+Total Score Ranges:
+
+60-70 Points: S-Tier (Meta Build)
+- Can clear all content solo
+- Wave 7 boss is manageable
+- You've essentially "won" the game
+
+45-59 Points: A-Tier (Strong Build)  
+- Clears Wave 1-6 easily
+- Wave 7 requires skill/team
+- Focus on getting Vampire or Prodigy
+
+30-44 Points: B-Tier (Decent Build)
+- Can farm efficiently
+- Struggles with Wave 6-7
+- Priority: Get second weapon slot
+
+15-29 Points: C-Tier (Starter Build)
+- Focus on farming cash
+- Avoid difficult content
+- Save for major upgrades
+
+Quick Check Your Build:
+- Have Vampire? +15 instant points
+- Have Prodigy? +20 instant points  
+- Have both? You're already S-tier
+                </div>
+
+                <h3>Common Build Mistakes</h3>
+                
+                <h4>Avoid These Traps</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Mistake</th>
+                            <th>Why It's Bad</th>
+                            <th>What to Do Instead</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Settling for bad traits</td>
+                            <td>Massive power loss</td>
+                            <td>Keep rerolling for Prodigy</td>
+                        </tr>
+                        <tr>
+                            <td>Ignoring second slot</td>
+                            <td>Half your potential</td>
+                            <td>Save $50,000 ASAP</td>
+                        </tr>
+                        <tr>
+                            <td>Wrong weapon choice</td>
+                            <td>Meta weapons dominate</td>
+                            <td>Use Greatsword/Scythe</td>
+                        </tr>
+                        <tr>
+                            <td>No Vampire perk</td>
+                            <td>Can't survive late waves</td>
+                            <td>Prioritize getting Vampire</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Progression Roadmap</h3>
+                
+                <h4>From Zero to Hero Path</h4>
+                <ul>
+                    <li><strong>Hours 0-10:</strong> Farm cash, get any weapon with decent trait</li>
+                    <li><strong>Hours 10-20:</strong> Save for second weapon slot ($50,000)</li>
+                    <li><strong>Hours 20-40:</strong> Spin for Vampire perk (game-changer)</li>
+                    <li><strong>Hours 40-60:</strong> Hunt for Prodigy trait on main weapon</li>
+                    <li><strong>Hours 60+:</strong> Perfect your build, help others</li>
+                </ul>
+
+                <h4>Daily Routine for Progress</h4>
+                <ol>
+                    <li><strong>Secret Quests:</strong> Complete for trait rerolls (24hr cooldown)</li>
+                    <li><strong>Code Check:</strong> Look for new codes daily</li>
+                    <li><strong>Farm Runs:</strong> 30-minute sessions at Wave 5-6</li>
+                    <li><strong>Team Play:</strong> Join groups for DoubleDMG synergy</li>
+                </ol>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Final Meta Truth
+                    </div>
+                    <p>
+                        The September 2025 meta is solved: Vampire + Prodigy + Greatsword/Scythe is objectively the best. Everything else is a stepping stone to this build. Accept this reality and work toward it, or experiment for fun knowing you're handicapping yourself.
+                    </p>
+                </div>
+
+                <h3>Community Resources</h3>
+                <p>
+                    Stay updated with the latest meta changes and strategies:
+                </p>
+
+                <h4>Where to Learn More</h4>
+                <ul>
+                    <li><strong>YouTube:</strong> Search "Hunty Zombie UPDATE 2" for build videos</li>
+                    <li><strong>Discord:</strong> Join community servers for team finding</li>
+                    <li><strong>Wiki:</strong> Check for latest perk/trait statistics</li>
+                    <li><strong>Reddit:</strong> r/roblox discussions on current meta</li>
+                </ul>
+
+                <h4>Key Takeaways</h4>
+                <ol>
+                    <li><strong>Meta is Clear:</strong> Vampire + Prodigy + Greatsword/Scythe</li>
+                    <li><strong>No Shortcuts:</strong> Grinding is required for top builds</li>
+                    <li><strong>Team Play Helps:</strong> DoubleDMG makes everything easier</li>
+                    <li><strong>Updates Matter:</strong> Meta can shift with balance changes</li>
+                </ol>
+
+                <p>
+                    This guide reflects the September 2025 UPDATE 2 meta. The game continues to evolve, but the fundamental principle remains: proper perk and trait optimization is the key to success in Hunty Zombie!
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./beginners-guide.html" class="related-guide-item">
+                    <i class="fas fa-seedling"></i> Beginner's Guide
+                </a>
+                <a href="./meta-weapons-guide.html" class="related-guide-item">
+                    <i class="fas fa-sword"></i> Meta Weapons & Builds
+                </a>
+                <a href="./nightmare-mode-guide.html" class="related-guide-item">
+                    <i class="fas fa-skull"></i> Nightmare Mode Guide
+                </a>
+                <a href="./solo-speedrun-guide.html" class="related-guide-item">
+                    <i class="fas fa-running"></i> Solo Speedrun Guide
+                </a>
+                <a href="./pets-farming-guide.html" class="related-guide-item">
+                    <i class="fas fa-paw"></i> Pet System Guide
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

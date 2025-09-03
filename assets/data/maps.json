@@ -1,0 +1,698 @@
+{
+  "maps": [
+    {
+      "id": "abandoned-factory",
+      "name": "Abandoned Factory",
+      "category": "survival",
+      "difficulty": "hard",
+      "size": "large",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "description": "Industrial nightmare with tight corridors and open warehouse areas. Perfect for close-quarters combat.",
+      "image": "/assets/images/maps/abandoned-factory.jpg",
+      "features": [
+        {
+          "name": "Multiple Floors",
+          "icon": "door-open",
+          "description": "3 floors connected by elevators and stairs"
+        },
+        {
+          "name": "Mystery Box",
+          "icon": "box",
+          "description": "4 possible spawn locations"
+        },
+        {
+          "name": "Power Switch",
+          "icon": "bolt",
+          "description": "Activates doors and perks"
+        },
+        {
+          "name": "Easter Egg",
+          "icon": "puzzle-piece",
+          "description": "Hidden quest for Wonder Weapon"
+        }
+      ],
+      "objectives": {
+        "main": "Survive as many waves as possible",
+        "optional": [
+          "Complete the easter egg quest",
+          "Unlock all areas",
+          "Find all hidden intel"
+        ]
+      },
+      "stats": {
+        "bestWave": 87,
+        "completionRate": 12,
+        "averageTime": "45:30",
+        "popularity": 85
+      },
+      "rewards": {
+        "xp": 1500,
+        "coins": 5000,
+        "unlocks": ["Industrial Camo", "Factory Worker Title"]
+      },
+      "tips": [
+        "Open the power room first for early game advantage",
+        "Train zombies in the warehouse area for high rounds",
+        "The mystery box favors the rooftop location",
+        "Save points for Pack-a-Punch on round 20+"
+      ]
+    },
+    {
+      "id": "hell-colosseum",
+      "name": "Hell Colosseum",
+      "category": "arena",
+      "difficulty": "extreme",
+      "size": "medium",
+      "players": {
+        "min": 2,
+        "max": 8
+      },
+      "description": "Circular arena with no escape. Face endless waves in the ultimate test of survival.",
+      "image": "/assets/images/maps/hell-colosseum.jpg",
+      "features": [
+        {
+          "name": "Boss Waves",
+          "icon": "crown",
+          "description": "Special boss every 10 waves"
+        },
+        {
+          "name": "Lava Pits",
+          "icon": "fire",
+          "description": "Environmental hazards deal damage"
+        },
+        {
+          "name": "Reward Chest",
+          "icon": "gem",
+          "description": "Bonus rewards every 5 waves"
+        },
+        {
+          "name": "Hardcore Mode",
+          "icon": "skull",
+          "description": "No respawns, increased difficulty"
+        }
+      ],
+      "objectives": {
+        "main": "Reach Wave 100",
+        "optional": [
+          "Defeat all boss types",
+          "Complete without going down",
+          "Achieve 1000 kills"
+        ]
+      },
+      "stats": {
+        "bestWave": 100,
+        "completionRate": 2,
+        "averageTime": "120:00",
+        "popularity": 92
+      },
+      "rewards": {
+        "xp": 5000,
+        "coins": 25000,
+        "unlocks": ["Hell Warrior Title", "Lava Weapon Skin", "Legendary Crate"]
+      },
+      "tips": [
+        "Coordinate with team for boss waves",
+        "Save power-ups for emergencies",
+        "Use the arena edges to train zombies",
+        "Focus fire on special zombies first"
+      ]
+    },
+    {
+      "id": "city-streets",
+      "name": "City Streets",
+      "category": "campaign",
+      "difficulty": "medium",
+      "size": "xlarge",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "description": "Navigate through destroyed city blocks to reach the extraction point. Story-driven objectives.",
+      "image": "/assets/images/maps/city-streets.jpg",
+      "features": [
+        {
+          "name": "Story Objectives",
+          "icon": "tasks",
+          "description": "Complete missions to progress"
+        },
+        {
+          "name": "Vehicles",
+          "icon": "car",
+          "description": "Driveable cars and trucks"
+        },
+        {
+          "name": "Buildings",
+          "icon": "building",
+          "description": "Explorable interiors with loot"
+        },
+        {
+          "name": "Extraction",
+          "icon": "helicopter",
+          "description": "Helicopter escape finale"
+        }
+      ],
+      "objectives": {
+        "main": "Reach the extraction point",
+        "optional": [
+          "Rescue all survivors",
+          "Collect all intel documents",
+          "Complete under 20 minutes"
+        ]
+      },
+      "stats": {
+        "bestTime": "18:32",
+        "completionRate": 45,
+        "averageTime": "28:45",
+        "popularity": 78
+      },
+      "rewards": {
+        "xp": 2000,
+        "coins": 8000,
+        "unlocks": ["Urban Camo", "City Survivor Badge"]
+      },
+      "tips": [
+        "Use vehicles to quickly traverse the map",
+        "Search buildings for better weapons",
+        "Save ammo for the final extraction defense",
+        "Stick together in narrow streets"
+      ]
+    },
+    {
+      "id": "halloween-manor",
+      "name": "Halloween Manor",
+      "category": "event",
+      "difficulty": "special",
+      "size": "large",
+      "players": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "Limited-time spooky mansion with unique Halloween zombies and exclusive rewards.",
+      "image": "/assets/images/maps/halloween-manor.jpg",
+      "features": [
+        {
+          "name": "Ghost Zombies",
+          "icon": "ghost",
+          "description": "Special transparent enemies"
+        },
+        {
+          "name": "Candy Rewards",
+          "icon": "candy-cane",
+          "description": "Collect candy for special shop"
+        },
+        {
+          "name": "Magic Items",
+          "icon": "hat-wizard",
+          "description": "Unique Halloween weapons"
+        },
+        {
+          "name": "Time Limited",
+          "icon": "clock",
+          "description": "Available only during Halloween"
+        }
+      ],
+      "objectives": {
+        "main": "Defeat the Pumpkin King boss",
+        "optional": [
+          "Collect 1000 candies",
+          "Find all hidden pumpkins",
+          "Complete the haunted maze"
+        ]
+      },
+      "stats": {
+        "eventEnds": "October 31",
+        "uniqueItems": 12,
+        "completionRate": 28,
+        "popularity": 95
+      },
+      "rewards": {
+        "xp": 3000,
+        "coins": 15000,
+        "unlocks": ["Pumpkin Head Skin", "Witch Hat", "Halloween 2025 Badge", "Exclusive Weapon Skins"]
+      },
+      "tips": [
+        "Ghost zombies can phase through walls",
+        "Candy doubles during full moon nights",
+        "The Pumpkin King is weak to fire damage",
+        "Secret room behind the grandfather clock"
+      ]
+    },
+    {
+      "id": "training-grounds",
+      "name": "Training Grounds",
+      "category": "special",
+      "difficulty": "easy",
+      "size": "small",
+      "players": {
+        "min": 1,
+        "max": 1
+      },
+      "description": "Practice your skills and test weapons in a controlled environment. Perfect for beginners.",
+      "image": "/assets/images/maps/training-grounds.jpg",
+      "features": [
+        {
+          "name": "Tutorial Mode",
+          "icon": "graduation-cap",
+          "description": "Learn game mechanics"
+        },
+        {
+          "name": "Unlimited Ammo",
+          "icon": "infinity",
+          "description": "Never run out of bullets"
+        },
+        {
+          "name": "Target Range",
+          "icon": "bullseye",
+          "description": "Practice aim and accuracy"
+        },
+        {
+          "name": "Instant Respawn",
+          "icon": "redo",
+          "description": "No death penalty"
+        }
+      ],
+      "objectives": {
+        "main": "Complete all training modules",
+        "optional": [
+          "Achieve 90% accuracy",
+          "Test all weapon types",
+          "Complete parkour course"
+        ]
+      },
+      "stats": {
+        "difficulty": "Beginner",
+        "xpGain": "50%",
+        "averageTime": "15:00",
+        "popularity": 65
+      },
+      "rewards": {
+        "xp": 500,
+        "coins": 1000,
+        "unlocks": ["Rookie Badge", "Training Complete Achievement"]
+      },
+      "tips": [
+        "Try different weapons to find your playstyle",
+        "Practice headshots for maximum damage",
+        "Learn zombie movement patterns",
+        "Experiment with different perks"
+      ]
+    },
+    {
+      "id": "arctic-outpost",
+      "name": "Arctic Outpost",
+      "category": "survival",
+      "difficulty": "extreme",
+      "size": "large",
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "description": "Frozen military base in the Arctic. Visibility is limited and the cold slows movement.",
+      "image": "/assets/images/maps/arctic-outpost.jpg",
+      "features": [
+        {
+          "name": "Blizzard Events",
+          "icon": "snowflake",
+          "description": "Periodic storms reduce visibility"
+        },
+        {
+          "name": "Ice Hazards",
+          "icon": "icicles",
+          "description": "Slippery surfaces affect movement"
+        },
+        {
+          "name": "Heating Stations",
+          "icon": "fire",
+          "description": "Warm up to restore speed"
+        },
+        {
+          "name": "Underground Bunker",
+          "icon": "shield-alt",
+          "description": "Secret military facility"
+        }
+      ],
+      "objectives": {
+        "main": "Survive the frozen wasteland",
+        "optional": [
+          "Activate all generators",
+          "Find the secret bunker",
+          "Defeat the Yeti boss"
+        ]
+      },
+      "stats": {
+        "bestWave": 72,
+        "completionRate": 8,
+        "averageTime": "52:00",
+        "popularity": 81
+      },
+      "rewards": {
+        "xp": 3500,
+        "coins": 12000,
+        "unlocks": ["Arctic Camo", "Frost Weapon Effects", "Ice Warrior Title"]
+      },
+      "tips": [
+        "Stay near heating stations during blizzards",
+        "Ice zombies are weak to fire weapons",
+        "The bunker contains the best loot",
+        "Watch for ice breaking underfoot"
+      ]
+    },
+    {
+      "id": "jungle-temple",
+      "name": "Jungle Temple",
+      "category": "adventure",
+      "difficulty": "hard",
+      "size": "medium",
+      "players": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "Ancient temple overrun by undead. Solve puzzles and avoid traps while fighting zombies.",
+      "image": "/assets/images/maps/jungle-temple.jpg",
+      "features": [
+        {
+          "name": "Ancient Traps",
+          "icon": "exclamation-triangle",
+          "description": "Spike pits and dart traps"
+        },
+        {
+          "name": "Puzzle Rooms",
+          "icon": "puzzle-piece",
+          "description": "Solve to unlock rewards"
+        },
+        {
+          "name": "Treasure Chambers",
+          "icon": "coins",
+          "description": "Hidden rooms with loot"
+        },
+        {
+          "name": "Curse System",
+          "icon": "skull-crossbones",
+          "description": "Temporary debuffs from traps"
+        }
+      ],
+      "objectives": {
+        "main": "Retrieve the Golden Idol",
+        "optional": [
+          "Solve all temple puzzles",
+          "Find all treasure rooms",
+          "Complete without triggering traps"
+        ]
+      },
+      "stats": {
+        "bestTime": "35:20",
+        "completionRate": 22,
+        "averageTime": "48:00",
+        "popularity": 76
+      },
+      "rewards": {
+        "xp": 2500,
+        "coins": 10000,
+        "unlocks": ["Explorer Title", "Golden Weapon Skin", "Temple Guardian Pet"]
+      },
+      "tips": [
+        "Look for hieroglyphs that hint at puzzle solutions",
+        "Some walls can be destroyed to reveal secrets",
+        "The idol room has the hardest zombie spawn",
+        "Bring a teammate for co-op puzzles"
+      ]
+    },
+    {
+      "id": "space-station",
+      "name": "Space Station Omega",
+      "category": "special",
+      "difficulty": "hard",
+      "size": "xlarge",
+      "players": {
+        "min": 1,
+        "max": 8
+      },
+      "description": "Zero gravity combat in an infected space station. Unique movement mechanics and alien zombies.",
+      "image": "/assets/images/maps/space-station.jpg",
+      "features": [
+        {
+          "name": "Zero Gravity",
+          "icon": "rocket",
+          "description": "Float and wall-run mechanics"
+        },
+        {
+          "name": "Oxygen System",
+          "icon": "wind",
+          "description": "Manage O2 levels to survive"
+        },
+        {
+          "name": "Alien Zombies",
+          "icon": "alien",
+          "description": "Mutated space creatures"
+        },
+        {
+          "name": "Airlock Defense",
+          "icon": "door-closed",
+          "description": "Blast zombies into space"
+        }
+      ],
+      "objectives": {
+        "main": "Repair the escape shuttle",
+        "optional": [
+          "Restore all station systems",
+          "Collect alien samples",
+          "Survive without oxygen tanks"
+        ]
+      },
+      "stats": {
+        "bestTime": "42:15",
+        "completionRate": 15,
+        "averageTime": "58:30",
+        "popularity": 88
+      },
+      "rewards": {
+        "xp": 4000,
+        "coins": 18000,
+        "unlocks": ["Astronaut Suit", "Plasma Weapons", "Space Explorer Badge", "Alien Pet"]
+      },
+      "tips": [
+        "Use zero gravity to reach hidden areas",
+        "Oxygen stations are crucial checkpoints",
+        "Alien zombies drop rare materials",
+        "The reactor room has the best loot"
+      ]
+    },
+    {
+      "id": "wild-west",
+      "name": "Wild West Town",
+      "category": "themed",
+      "difficulty": "medium",
+      "size": "medium",
+      "players": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "Ghost town in the old west. Duel zombie cowboys and survive high noon showdowns.",
+      "image": "/assets/images/maps/wild-west.jpg",
+      "features": [
+        {
+          "name": "Showdown Events",
+          "icon": "gun",
+          "description": "Quick-draw duels with bosses"
+        },
+        {
+          "name": "Saloon Defense",
+          "icon": "beer",
+          "description": "Fortify and defend the bar"
+        },
+        {
+          "name": "Train Robbery",
+          "icon": "train",
+          "description": "Moving train with loot"
+        },
+        {
+          "name": "Gold Rush",
+          "icon": "coins",
+          "description": "Bonus gold spawns randomly"
+        }
+      ],
+      "objectives": {
+        "main": "Survive until the cavalry arrives",
+        "optional": [
+          "Rob the ghost train",
+          "Win all showdowns",
+          "Find the lost gold mine"
+        ]
+      },
+      "stats": {
+        "bestWave": 65,
+        "completionRate": 35,
+        "averageTime": "40:00",
+        "popularity": 74
+      },
+      "rewards": {
+        "xp": 2200,
+        "coins": 9000,
+        "unlocks": ["Cowboy Hat", "Western Weapons Pack", "Sheriff Badge"]
+      },
+      "tips": [
+        "The saloon has the best defensive position",
+        "Showdowns require precise timing",
+        "The train appears every 10 waves",
+        "TNT barrels can clear hordes"
+      ]
+    },
+    {
+      "id": "underwater-lab",
+      "name": "Underwater Laboratory",
+      "category": "survival",
+      "difficulty": "extreme",
+      "size": "large",
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "description": "Deep sea research facility breach. Manage flooding while fighting aquatic zombies.",
+      "image": "/assets/images/maps/underwater-lab.jpg",
+      "features": [
+        {
+          "name": "Flooding System",
+          "icon": "water",
+          "description": "Water levels affect movement"
+        },
+        {
+          "name": "Pressure Locks",
+          "icon": "compress",
+          "description": "Seal breaches to prevent flooding"
+        },
+        {
+          "name": "Aquatic Zombies",
+          "icon": "fish",
+          "description": "Swim through flooded areas"
+        },
+        {
+          "name": "Submarine Dock",
+          "icon": "ship",
+          "description": "Emergency escape vehicle"
+        }
+      ],
+      "objectives": {
+        "main": "Reach the surface alive",
+        "optional": [
+          "Prevent total facility flooding",
+          "Recover research data",
+          "Defeat the Kraken boss"
+        ]
+      },
+      "stats": {
+        "bestTime": "55:00",
+        "completionRate": 6,
+        "averageTime": "75:00",
+        "popularity": 79
+      },
+      "rewards": {
+        "xp": 5000,
+        "coins": 20000,
+        "unlocks": ["Deep Sea Diver Suit", "Harpoon Gun", "Aquatic Survival Expert Title"]
+      },
+      "tips": [
+        "Keep pressure locks sealed at all costs",
+        "Aquatic zombies are slower on dry land",
+        "The submarine requires team coordination",
+        "Electric weapons are powerful but risky in water"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "survival",
+      "name": "Survival",
+      "icon": "shield-alt",
+      "description": "Classic wave-based survival gameplay"
+    },
+    {
+      "id": "arena",
+      "name": "Arena",
+      "icon": "circle",
+      "description": "Compact maps with intense combat"
+    },
+    {
+      "id": "campaign",
+      "name": "Campaign",
+      "icon": "flag",
+      "description": "Story-driven objectives and missions"
+    },
+    {
+      "id": "special",
+      "name": "Special",
+      "icon": "star",
+      "description": "Unique gameplay mechanics"
+    },
+    {
+      "id": "event",
+      "name": "Event",
+      "icon": "calendar",
+      "description": "Limited-time seasonal maps"
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure",
+      "icon": "compass",
+      "description": "Exploration and puzzle-solving"
+    },
+    {
+      "id": "themed",
+      "name": "Themed",
+      "icon": "palette",
+      "description": "Maps with unique themes and settings"
+    }
+  ],
+  "difficulties": [
+    {
+      "id": "easy",
+      "name": "Easy",
+      "color": "#00FF88",
+      "description": "Perfect for beginners"
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "color": "#FFD700",
+      "description": "Standard difficulty"
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "color": "#FF6B00",
+      "description": "Challenging gameplay"
+    },
+    {
+      "id": "extreme",
+      "name": "Extreme",
+      "color": "#FF0000",
+      "description": "For expert players only"
+    },
+    {
+      "id": "special",
+      "name": "Special",
+      "color": "#FF00FF",
+      "description": "Unique difficulty scaling"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-01",
+    "totalMaps": 30,
+    "activeMaps": 28,
+    "upcomingMaps": [
+      {
+        "name": "Cyberpunk City",
+        "releaseDate": "2025-02-01",
+        "category": "special"
+      },
+      {
+        "name": "Medieval Castle",
+        "releaseDate": "2025-03-01",
+        "category": "themed"
+      }
+    ]
+  }
+}

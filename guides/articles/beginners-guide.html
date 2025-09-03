@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunty Zombie Ultimate Beginner's Guide 2025 - Complete Tutorial | HZ DEV</title>
+    <meta name="description" content="Master Hunty Zombie by HZ DEV with our comprehensive beginner's guide 2025. Learn weapon spins strategy, best perks & traits, wave survival tactics, and coin farming tips for this Roblox anime wave defense experience.">
+    <meta name="keywords" content="Hunty Zombie, HZ DEV, beginner guide 2025, Roblox wave defense, weapon spins, perks traits, coin farming, UPDATE 2, Greatsword Scythe meta">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-purple);
+            color: var(--primary-dark);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent-green);
+        }
+
+        .nav-link.active {
+            background: rgba(0, 255, 136, 0.2);
+            color: var(--accent-green);
+        }
+
+        .nav-link i {
+            font-size: 1rem;
+        }
+
+        .nav-link span {
+            font-weight: 500;
+        }
+
+        /* Language Selector */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector {
+            position: relative;
+        }
+
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: rgba(0, 255, 136, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-green);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(0, 255, 136, 0.2);
+            color: var(--accent-green);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-green);
+            border-left-color: var(--accent-green);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-green);
+            border-left-color: var(--accent-green);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-1);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-blue);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Special Blocks */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-table {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-table th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .stats-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-green);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-1);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+        }
+
+        .footer-bottom a {
+            color: var(--accent-green);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary-dark);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">GUIDES</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">BEGINNER GUIDE</div>
+            <h1 class="article-title">Hunty Zombie Ultimate Beginner's Guide - September 2025</h1>
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>15 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">Beginner Friendly</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#game-modes">Understanding Game Modes</a></li>
+                <li><a href="#controls">Basic Controls</a></li>
+                <li><a href="#first-investment">Your First 50K Coins</a></li>
+                <li><a href="#weapon-progression">Weapon & Spins System</a></li>
+                <li><a href="#wave-strategy">Wave Strategy & Enemies</a></li>
+                <li><a href="#pets-traits">Pets & Traits System</a></li>
+                <li><a href="#tips">Essential Tips</a></li>
+                <li><a href="#mistakes">Common Mistakes</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <!-- Featured Image -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="/assets/images/hunty-zombie1.webp" alt="Hunty Zombie Gameplay" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            </div>
+            
+            <section id="introduction">
+                <h2>Introduction to Hunty Zombie</h2>
+                <p>
+                    Welcome to the ultimate beginner's guide for Hunty Zombie, the explosive anime wave defense Roblox experience created by HZ DEV. Since its launch on May 22, 2025, this thrilling zombie survival game has amassed over 145 million plays, making it one of Roblox's most popular wave-based combat experiences. Whether you're a solo warrior or prefer team-based zombie slaying, this comprehensive guide will equip you with everything needed to dominate the undead hordes.
+                </p>
+                <p>
+                    Currently in ALPHA RELEASE, Hunty Zombie delivers non-stop action where you'll use high-quality skills and weapons to destroy epic zombies and massive bosses. The game's unique blend of anime-inspired combat, weapon spinning mechanics, and strategic wave survival has created an addictive formula that keeps players coming back. With the latest UPDATE 2 introducing the meta-defining Scythe and Dagger weapons, plus the powerful DoubleDMG perk, there's never been a better time to master the apocalypse.
+                </p>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Pro Tip
+                    </div>
+                    <p>
+                        Join the official HZ DEV Roblox group and Discord server for the latest updates, codes, and team-finding opportunities. Since the game is in ALPHA, expect frequent updates and potential data resets as development continues.
+                    </p>
+                </div>
+            </section>
+
+            <section id="game-modes">
+                <h2>Understanding Game Modes & Mechanics</h2>
+                <p>
+                    Hunty Zombie is an anime wave defense experience where you battle zombies across various maps in solo or co-op mode. To win each stage, you must survive and defeat seven zombie waves, with each wave introducing progressively tougher enemies and higher spawn rates. The game scales difficulty based on your chosen mode, affecting both enemy strength and coin rewards.
+                </p>
+
+                <h3>Core Game Loop</h3>
+                <p>
+                    Your primary objective is simple yet challenging: survive waves of zombies while managing your resources and abilities. Each successful wave completion rewards you with coins (also called cash) that fuel your progression through weapon spins, trait upgrades, and pet acquisitions. The amount of coins earned scales with difficulty level and team performance.
+                </p>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        ALPHA Release Notice
+                    </div>
+                    <p>
+                        Hunty Zombie is currently in ALPHA development. Expect bugs, balance changes, and potential data resets. HZ DEV actively updates the game, so strategies and mechanics may evolve. Join their Discord for real-time updates and patch notes.
+                    </p>
+                </div>
+
+                <p>
+                    Difficulty modes determine enemy health, speed, and spawn rates. While specific multipliers aren't officially published, experienced players report that Nightmare mode offers significantly better coin rewards but requires coordinated team play and meta weapons to complete successfully.
+                </p>
+
+                <h3>Solo vs Team Play Strategy</h3>
+                <p>
+                    Hunty Zombie supports solo play or teams up to 6 players maximum. Team composition dramatically impacts your success rate, especially in later waves where coordination becomes essential.
+                </p>
+                <ul>
+                    <li><strong>Solo Benefits:</strong> Complete control, all coins to yourself, no coordination needed</li>
+                    <li><strong>Team Benefits:</strong> 5% coin boost per friend (max 25%), shared firepower, revival opportunities</li>
+                    <li><strong>Optimal Team Size:</strong> 4 players - balances firepower with resource availability</li>
+                    <li><strong>Friend Bonus:</strong> Playing with Roblox friends grants up to 25% bonus coins</li>
+                </ul>
+                <p>
+                    Pro tip: Teams smaller than 4 struggle with major zombie waves, while teams larger than 6 face resource scarcity and coordination difficulties. The sweet spot is 4-5 players with complementary weapon loadouts.
+                </p>
+            </section>
+
+            <section id="controls">
+                <h2>Basic Controls & Combat System</h2>
+                <p>
+                    Mastering Hunty Zombie's control scheme is essential for survival. The game features responsive controls across all platforms, with each weapon offering unique abilities and awakening moves that define your playstyle.
+                </p>
+
+                <h3>Complete PC Controls</h3>
+                <div class="code-block">
+Movement: WASD
+M1 Attack: Left Mouse Button
+Weapon Ability 1: Z
+Weapon Ability 2: X
+Weapon Ability 3: C
+Dash: Q (has invincibility frames!)
+Use Perk: E (charges by killing zombies)
+Awakening: G (ultimate ability)
+Block: F (defend against attacks)
+Switch Weapon Left: 1
+Switch Weapon Right: 2
+                </div>
+
+                <h3>Console/Controller Controls</h3>
+                <div class="code-block">
+Movement: Left Stick
+M1 Attack: X / Square
+Weapon Ability 1: L2 / LT
+Weapon Ability 2: L1 / LB
+Weapon Ability 3: R1 / RB
+Dash: B / Circle
+Use Perk: Y / Triangle
+Awakening: D-Pad Down
+Switch Weapon: D-Pad Left/Right
+                </div>
+
+                <p>
+                    Combat mastery comes from understanding ability rotations and animation canceling. Your dash (Q) provides crucial invincibility frames for dodging TNT zombies and boss attacks. Perks charge through kills, so save them for emergency situations or dense zombie waves. Each weapon's awakening delivers massive damage - perfect for clearing screens or melting bosses.
+                </p>
+            </section>
+
+            <section id="first-investment">
+                <h2>Your First 50K Coins Investment Strategy</h2>
+                <p>
+                    Your first 50,000 coins (also called cash) represent a critical turning point in your Hunty Zombie journey. Smart investment of these resources will accelerate your progression from struggling survivor to zombie-slaying powerhouse.
+                </p>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Critical Investment Priority
+                    </div>
+                    <p>
+                        ALWAYS unlock the second weapon slot (50K coins) before anything else! Dual-wielding weapons doubles your combat effectiveness and is essential for surviving past wave 20. This is non-negotiable for serious progression.
+                    </p>
+                </div>
+
+                <h3>Optimal Coin Investment Path</h3>
+                <ol>
+                    <li><strong>Second Weapon Slot (50,000 Coins):</strong> Unlocks dual-wielding capability - absolutely essential</li>
+                    <li><strong>Normal Weapon Spins (2,000 Coins each):</strong> Aim for 10 spins (20K coins) to guarantee at least one Rare+ weapon</li>
+                    <li><strong>Normal Perk Spins (2,000 Coins each):</strong> Target Vampire, Flame, or DoubleDMG perks</li>
+                    <li><strong>Pet Pack (50,000 Coins):</strong> Dragon or Raven pets provide massive coin boost multipliers</li>
+                    <li><strong>Lucky Spins (from codes/Robux):</strong> Save these for late-game when you need Legendary/Mythic items</li>
+                </ol>
+
+                <h3>Understanding the Spins System</h3>
+                <p>
+                    Hunty Zombie uses a gacha-style spins system for acquiring weapons, perks, and traits:
+                </p>
+                <ul>
+                    <li><strong>Normal Spins:</strong> Cost 2,000 coins each, includes all rarities from Common to Mythic</li>
+                    <li><strong>Lucky Spins:</strong> Obtained from codes or Robux, removes Rare items from pool for better odds</li>
+                    <li><strong>Spin Strategy:</strong> Save for bulk spins (10+) rather than single pulls for better statistical outcomes</li>
+                    <li><strong>Priority:</strong> Weapons first, then perks, then traits - in that order</li>
+                </ul>
+            </section>
+
+            <section id="weapon-progression">
+                <h2>Weapon System & Current Meta (UPDATE 2)</h2>
+                <p>
+                    Weapons in Hunty Zombie are obtained through the spins system and define your entire combat approach. Each weapon features unique abilities, attack patterns, and an awakening ultimate. Understanding the current meta is crucial for efficient progression.
+                </p>
+
+                <h3>September 2025 Weapon Tier List</h3>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Weapon</th>
+                            <th>Type</th>
+                            <th>Key Strength</th>
+                            <th>Meta Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S-Tier</td>
+                            <td>Greatsword</td>
+                            <td>Melee</td>
+                            <td>Insane AoE + Stagger</td>
+                            <td>META</td>
+                        </tr>
+                        <tr>
+                            <td>S-Tier</td>
+                            <td>Scythe</td>
+                            <td>Melee</td>
+                            <td>Permanent Stagger</td>
+                            <td>NEW META</td>
+                        </tr>
+                        <tr>
+                            <td>S-Tier</td>
+                            <td>Katana</td>
+                            <td>Extended Melee</td>
+                            <td>Range + Speed</td>
+                            <td>Reliable</td>
+                        </tr>
+                        <tr>
+                            <td>A-Tier</td>
+                            <td>Guitar</td>
+                            <td>Unique</td>
+                            <td>Crowd Control</td>
+                            <td>Fun Build</td>
+                        </tr>
+                        <tr>
+                            <td>A-Tier</td>
+                            <td>Dagger</td>
+                            <td>Melee</td>
+                            <td>Attack Speed</td>
+                            <td>NEW</td>
+                        </tr>
+                        <tr>
+                            <td>B-Tier</td>
+                            <td>Dual Guns</td>
+                            <td>Ranged</td>
+                            <td>Safe Damage</td>
+                            <td>Beginner-Friendly</td>
+                        </tr>
+                        <tr>
+                            <td>C-Tier</td>
+                            <td>Axes</td>
+                            <td>Melee</td>
+                            <td>Early Game</td>
+                            <td>Outclassed</td>
+                        </tr>
+                        <tr>
+                            <td>F-Tier</td>
+                            <td>Baseball Bat</td>
+                            <td>Melee</td>
+                            <td>Starter Only</td>
+                            <td>Replace ASAP</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Current Meta Loadouts</h3>
+                <p>
+                    The September 2025 meta revolves around these proven combinations:
+                </p>
+                <ol>
+                    <li><strong>Greatsword + Scythe:</strong> The ultimate AoE destruction combo with permanent enemy stagger</li>
+                    <li><strong>Katana + Dual Guns:</strong> Balanced build for beginners, offering melee and ranged options</li>
+                    <li><strong>Guitar + Dagger:</strong> High APM build for experienced players who master animation canceling</li>
+                </ol>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Weapon Acquisition Strategy
+                    </div>
+                    <p>
+                        Focus on Normal Spins until you get any Legendary+ weapon. Once you have a solid primary weapon, save Lucky Spins (from codes) for targeting specific S-tier weapons. The Greatsword and Scythe should be your ultimate goals for endgame content.
+                    </p>
+                </div>
+            </section>
+
+            <section id="wave-strategy">
+                <h2>Wave Strategy & Enemy Types</h2>
+                <p>
+                    To win each stage in Hunty Zombie, you must survive and defeat seven zombie waves. Each wave increases in difficulty with more enemies, faster spawn rates, and special zombie types that require specific strategies to counter effectively.
+                </p>
+
+                <h3>Enemy Types & Counter Strategies</h3>
+                <ul>
+                    <li><strong>Basic Zombies:</strong> Standard undead, low threat individually but dangerous in hordes. Group them for AoE abilities</li>
+                    <li><strong>TNT Zombies:</strong> Kamikaze attackers that explode on contact. Use dash i-frames or maintain distance</li>
+                    <li><strong>Athletic Zombies:</strong> Throw basketballs from long range. Priority targets to prevent chip damage accumulation</li>
+                    <li><strong>Boss Zombies:</strong> Massive health pools, devastating attacks. Coordinate team awakening abilities for quick elimination</li>
+                    <li><strong>Special Variants:</strong> Watch for glowing zombies and unique models - they often have enhanced stats or abilities</li>
+                </ul>
+
+                <h3>Wave Progression Strategy</h3>
+                <p>
+                    Master these wave-specific tactics for consistent success:
+                </p>
+                <ol>
+                    <li><strong>Waves 1-3:</strong> Conservation phase - use basic attacks, save abilities for emergency</li>
+                    <li><strong>Waves 4-5:</strong> Escalation phase - TNT zombies appear, practice dash timing</li>
+                    <li><strong>Wave 6:</strong> Preparation phase - clear quickly, position for boss</li>
+                    <li><strong>Wave 7:</strong> Boss phase - coordinate team awakenings, maintain spacing</li>
+                </ol>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Wave Indicators
+                    </div>
+                    <p>
+                        Watch for increased spawn rates, screen shaking, and distant roaring sounds. These audio-visual cues signal major waves or boss arrivals. Environmental effects and zombie behavior changes often precede difficulty spikes.
+                    </p>
+                </div>
+            </section>
+
+            <section id="pets-traits">
+                <h2>Pets & Traits System Guide</h2>
+                <p>
+                    Beyond weapons, your power in Hunty Zombie comes from two critical systems: Pets that provide passive bonuses and Traits that enhance weapon performance. Mastering both systems is essential for tackling Nightmare difficulty and achieving high wave counts.
+                </p>
+
+                <h3>Pet System Overview</h3>
+                <p>
+                    Pets provide passive buffs and coin multipliers that significantly impact your farming efficiency:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Pet</th>
+                            <th>Primary Bonus</th>
+                            <th>Special Effect</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dragon</td>
+                            <td>30% Drop Boost</td>
+                            <td>20% Burn Chance</td>
+                            <td>Combat + Farming</td>
+                        </tr>
+                        <tr>
+                            <td>Raven</td>
+                            <td>Best Drop Rate</td>
+                            <td>Coin Multiplier</td>
+                            <td>Pure Farming</td>
+                        </tr>
+                        <tr>
+                            <td>Shark</td>
+                            <td>Health Buff</td>
+                            <td>Tank Build</td>
+                            <td>Survivability</td>
+                        </tr>
+                        <tr>
+                            <td>Pig</td>
+                            <td>Health Regen</td>
+                            <td>Sustain</td>
+                            <td>Solo Play</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>Acquisition:</strong> Pet Packs cost 50,000 coins or 99 Robux. The Dragon-Flame perk synergy is particularly powerful, dealing damage-over-time to all enemies.
+                </p>
+
+                <h3>Traits System Breakdown</h3>
+                <p>
+                    Weapon Traits are stat modifiers that can transform mediocre weapons into powerhouses:
+                </p>
+                <ul>
+                    <li><strong>Power I/II/III:</strong> +5%/10%/15% Damage - Essential for all builds</li>
+                    <li><strong>Agility I/II/III:</strong> +2%/4%/6% Attack Speed - Best on fast weapons</li>
+                    <li><strong>Focus I/II/III:</strong> +5%/10%/15% Skill Damage - Crucial for ability-focused builds</li>
+                    <li><strong>Prodigy (Ultimate):</strong> +15% Damage, +6% Attack Speed, +15% Skill Damage - The holy grail</li>
+                    <li><strong>Fortune:</strong> Increased coin drops - Essential for farming runs</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Trait Rolling Strategy
+                    </div>
+                    <p>
+                        Don't waste coins rerolling traits on Common/Uncommon weapons. Save trait spins for Legendary+ weapons. Any trait is better than no trait - even Common traits provide significant stat boosts. Aim for Power III or Focus III on your main weapon before pursuing Prodigy.
+                    </p>
+                </div>
+
+                <h3>Perks System</h3>
+                <p>
+                    Six perks currently exist in Hunty Zombie, each offering unique activated abilities:
+                </p>
+                <ul>
+                    <li><strong>Vampire:</strong> Life steal + movement speed - S-tier for survivability</li>
+                    <li><strong>Flame:</strong> AoE burn damage - Synergizes with Dragon pet</li>
+                    <li><strong>DoubleDMG:</strong> Temporary damage doubling - New meta perk for bosses</li>
+                    <li><strong>Healer:</strong> Team healing - Essential for support players</li>
+                    <li><strong>Critical:</strong> Crit chance boost - Best on high attack speed weapons</li>
+                    <li><strong>Shield:</strong> Temporary invincibility - Panic button for dangerous situations</li>
+                </ul>
+                <p>
+                    <strong>Activation:</strong> Press E (PC) or Y/Triangle (Console) after charging the perk meter through kills. Time your perk usage for maximum impact - don't waste them on single zombies!
+                </p>
+            </section>
+
+            <section id="tips">
+                <h2>Essential Tips for New Players</h2>
+                <p>
+                    These proven strategies from the HZ DEV community will fast-track your progression from rookie to elite zombie hunter:
+                </p>
+
+                <h3>Combat Mastery Tips</h3>
+                <ul>
+                    <li><strong>Dash I-Frames:</strong> Your Q dash provides invincibility - use it to phase through TNT explosions</li>
+                    <li><strong>Animation Canceling:</strong> Chain M1 attacks into abilities to maximize DPS output</li>
+                    <li><strong>Ability Management:</strong> Coordinate Z-X-C abilities for continuous damage rather than burst</li>
+                    <li><strong>Block Timing:</strong> F key blocking reduces damage - essential for boss encounters</li>
+                    <li><strong>Awakening Strategy:</strong> Save G ultimate for wave 7 bosses or emergency crowd clear</li>
+                </ul>
+
+                <h3>Coin Farming Optimization</h3>
+                <ul>
+                    <li><strong>Friend Bonus:</strong> Play with Roblox friends for 5% coin boost per friend (max 25%)</li>
+                    <li><strong>Code Redemption:</strong> Check social media weekly - codes provide Lucky Spins and coins</li>
+                    <li><strong>Efficient Routes:</strong> Normal difficulty with Raven pet = best coins/minute for beginners</li>
+                    <li><strong>2x Boost:</strong> 59 Robux for 60-minute double coins - worth it during grinding sessions</li>
+                    <li><strong>Difficulty Scaling:</strong> Nightmare gives more coins but only if you can complete it consistently</li>
+                </ul>
+
+                <h3>Build Synergies</h3>
+                <ul>
+                    <li><strong>Dragon + Flame:</strong> This combo melts waves with stacking burn damage</li>
+                    <li><strong>Vampire + Katana:</strong> Fast attacks = constant healing for survivability</li>
+                    <li><strong>Greatsword + Scythe:</strong> Current meta - permanent stagger locks entire screens</li>
+                    <li><strong>Any Trait > No Trait:</strong> Even Common traits boost stats significantly</li>
+                    <li><strong>DoubleDMG + Boss Timing:</strong> New perk shreds bosses when timed correctly</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Pro Secret
+                    </div>
+                    <p>
+                        Join the official HZ DEV Discord for exclusive codes that aren't posted elsewhere. Active community members often share strategies that haven't reached mainstream guides yet. The developer also announces data resets and major updates there first.
+                    </p>
+                </div>
+            </section>
+
+            <section id="mistakes">
+                <h2>Common Mistakes to Avoid</h2>
+                <p>
+                    Don't let these rookie errors sabotage your zombie-slaying career:
+                </p>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Critical Beginner Mistakes
+                    </div>
+                    <ol>
+                        <li><strong>Not buying second weapon slot first:</strong> 50K coins for dual-wielding is mandatory, not optional</li>
+                        <li><strong>Wasting Lucky Spins early:</strong> Save these for endgame when you need specific Mythics</li>
+                        <li><strong>Ignoring the ALPHA status:</strong> Data resets can happen - don't get too attached</li>
+                        <li><strong>Single spinning:</strong> Always save for 10+ spins for better statistical outcomes</li>
+                        <li><strong>Skipping codes:</strong> Free Lucky Spins worth 399 Robux - check weekly!</li>
+                    </ol>
+                </div>
+
+                <h3>Progression Mistakes</h3>
+                <ul>
+                    <li><strong>Nightmare too early:</strong> Better to complete Normal than fail Nightmare for coins</li>
+                    <li><strong>No traits equipped:</strong> Any trait > no trait, even Commons boost significantly</li>
+                    <li><strong>Ignoring pets:</strong> Dragon/Raven pets multiply coin farming efficiency</li>
+                    <li><strong>Hoarding coins:</strong> Invest constantly - stagnant coins = stagnant progress</li>
+                    <li><strong>Solo only:</strong> Missing 25% friend bonus and revival opportunities</li>
+                </ul>
+
+                <h3>Combat Mistakes</h3>
+                <ul>
+                    <li><strong>Standing still:</strong> ABC = Always Be Circling to avoid zombie surrounds</li>
+                    <li><strong>Panic awakening:</strong> Wasting ultimate on 3 zombies instead of wave 7 boss</li>
+                    <li><strong>Ignoring TNT zombies:</strong> These kamikaze units end runs - priority targets!</li>
+                    <li><strong>No dash discipline:</strong> Spam-dashing leaves you vulnerable when it matters</li>
+                    <li><strong>Poor perk timing:</strong> Using perks on cooldown instead of strategic moments</li>
+                </ul>
+
+                <h3>Technical Optimization</h3>
+                <ul>
+                    <li><strong>Graphics over performance:</strong> 60+ FPS > pretty shadows in wave 7</li>
+                    <li><strong>Default keybinds:</strong> Customize controls for YOUR playstyle</li>
+                    <li><strong>Sound off:</strong> Audio cues warn of special zombie spawns</li>
+                    <li><strong>Wrong server region:</strong> High ping = delayed dash = death to TNT zombies</li>
+                </ul>
+            </section>
+
+            <section id="conclusion">
+                <h2>Your Journey Begins Now</h2>
+                <p>
+                    Armed with this knowledge, you're ready to dominate Hunty Zombie's zombie-infested battlefields. Remember, this game is actively developed by HZ DEV with frequent updates - what works today might evolve tomorrow. Stay connected with the community for the latest strategies and adapt as the meta shifts.
+                </p>
+
+                <h3>Immediate Action Plan</h3>
+                <ol>
+                    <li>Join HZ DEV's official Roblox group and Discord server</li>
+                    <li>Redeem all active codes for free Lucky Spins and coins</li>
+                    <li>Complete Normal mode to earn your first 50K coins</li>
+                    <li>Unlock second weapon slot (non-negotiable first purchase)</li>
+                    <li>Spin for weapons until you get any Rare+ replacement for Baseball Bat</li>
+                    <li>Add friends for that sweet 25% coin bonus</li>
+                    <li>Master the Greatsword + Scythe meta before it potentially changes</li>
+                </ol>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-trophy"></i>
+                        September 2025 Meta Summary
+                    </div>
+                    <p>
+                        Current optimal setup: Greatsword + Scythe weapons, Dragon pet, Vampire or DoubleDMG perk, Power III or Prodigy traits. This combination dominates all content including Nightmare difficulty. Remember: the game is in ALPHA, so enjoy the current meta while it lasts!
+                    </p>
+                </div>
+
+                <p>
+                    Ready to advance beyond beginner strategies? Our advanced guides cover speedrun tactics, Nightmare mode optimization, and coin farming exploits. With UPDATE 2's new content and more updates on the horizon, Hunty Zombie's future looks explosive. See you in the apocalypse, survivor!
+                </p>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Remember: ALPHA Status
+                    </div>
+                    <p>
+                        Hunty Zombie is in active development. Expect bugs, balance changes, and potential data resets. Don't spend Robux you can't afford to lose, and always check the Discord for announcements before major grinding sessions.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./meta-weapons-guide.html" class="related-guide-item">
+                    <i class="fas fa-sword"></i> Meta Weapons & Builds
+                </a>
+                <a href="./perks-traits-guide.html" class="related-guide-item">
+                    <i class="fas fa-star"></i> Perks & Traits Guide
+                </a>
+                <a href="./pets-farming-guide.html" class="related-guide-item">
+                    <i class="fas fa-paw"></i> Pet System Guide
+                </a>
+                <a href="./nightmare-mode-guide.html" class="related-guide-item">
+                    <i class="fas fa-skull"></i> Nightmare Mode
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--primary-dark); border-top: 1px solid var(--border-color); margin-top: 4rem;">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation or HZ DEV. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Language Selector (placeholder functionality)
+        const langBtn = document.getElementById('langBtn');
+        if (langBtn) {
+            langBtn.addEventListener('click', () => {
+                // Placeholder - could be expanded for actual language switching
+                console.log('Language selector clicked');
+            });
+        }
+    </script>
+</body>
+</html>

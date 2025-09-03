@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunty Zombie Elite Solo Speedrun & Survival Tactics 2025 - Master Solo Play</title>
+    <meta name="description" content="Master solo speedrun strategies in Hunty Zombie with our elite guide. Learn optimal routes, weapon loadouts, advanced techniques, and record-breaking tactics for solo dominance.">
+    <meta name="keywords" content="Hunty Zombie, solo speedrun, solo guide, speedrun tactics, solo builds, advanced strategies, Roblox">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --accent-gold: #ffd700;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+            --gradient-4: linear-gradient(135deg, #ffd700 0%, #ff6b35 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-purple);
+            color: var(--text-primary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-green);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector .lang-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .language-selector .lang-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-gold);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--accent-gold);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-gold);
+            border-left-color: var(--accent-gold);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-gold);
+            border-left-color: var(--accent-gold);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-4);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-blue);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Special Blocks */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .speedrun-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .speedrun-box-title {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stats-table {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-table th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .stats-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Record Colors */
+        .record-wr { color: #ffd700; font-weight: bold; }
+        .record-top10 { color: #c0c0c0; font-weight: bold; }
+        .record-top100 { color: #cd7f32; }
+        .record-good { color: var(--accent-green); }
+        .record-average { color: var(--text-secondary); }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-4);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">GUIDES</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">ELITE SPEEDRUN</div>
+            <h1 class="article-title">Elite Solo Speedrun & Survival Tactics</h1>
+            <img src="/assets/images/hunty-zombie5.webp" alt="Hunty Zombie Solo Speedrun Guide" style="width: 100%; max-width: 800px; margin: 2rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>30 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">Elite Only</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#speedrun-categories">Speedrun Categories</a></li>
+                <li><a href="#optimal-builds">Optimal Builds</a></li>
+                <li><a href="#route-optimization">Route Optimization</a></li>
+                <li><a href="#advanced-techniques">Advanced Techniques</a></li>
+                <li><a href="#wave-strategies">Wave Strategies</a></li>
+                <li><a href="#record-analysis">Record Analysis</a></li>
+                <li><a href="#practice-methods">Practice Methods</a></li>
+                <li><a href="#mental-game">Mental Game</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <section id="introduction">
+                <h2>Introduction to Solo Survival Strategies</h2>
+                <p>
+                    Solo survival in Hunty Zombie is extremely challenging and cooperation is essential for long-term success. However, mastering solo play teaches invaluable skills about resource management, positioning, and efficient wave clearing. This guide focuses on optimizing your solo gameplay to efficiently clear all 7 waves, with special emphasis on surviving the brutal Wave 7 boss encounter.
+                </p>
+                <p>
+                    The game's wave defense system requires players to fight through 7 increasingly difficult waves of zombies, including special types like TNT zombies (self-exploding) and Athletic zombies (basketball throwers). Each round begins with three lives, and the key to solo success lies in weapon choice, perk optimization, and understanding zombie behavior patterns.
+                </p>
+
+                <div class="speedrun-box">
+                    <div class="speedrun-box-title">
+                        <i class="fas fa-trophy"></i>
+                        Solo Play Reality Check (September 2025)
+                    </div>
+                    <p>
+                        <strong>Important:</strong> Hunty Zombie is designed for cooperative play. Solo survival is possible but significantly harder than team play.<br>
+                        <strong>Difficulty Tiers:</strong> Normal, Hard, and Nightmare modes available<br>
+                        <strong>Wave Structure:</strong> 7 waves total, with Wave 7 featuring a challenging boss<br>
+                        <strong>Best Strategy:</strong> Focus on efficiency and resource optimization rather than pure speed
+                    </p>
+                </div>
+            </section>
+
+            <section id="speedrun-categories">
+                <h2>Solo Challenge Categories & Strategies</h2>
+                <p>
+                    While Hunty Zombie doesn't have official speedrun categories due to its wave-based survival nature, the community has developed various solo challenges to test skill and optimization. These focus on efficiently clearing all 7 waves with different constraints and goals.
+                </p>
+
+                <h3>Solo Challenge Types</h3>
+                
+                <h4>Wave 7 Completion Challenges</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Challenge</th>
+                            <th>Difficulty</th>
+                            <th>Goal</th>
+                            <th>Average Time</th>
+                            <th>Success Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Normal Solo Clear</td>
+                            <td>Normal</td>
+                            <td>Complete all 7 waves</td>
+                            <td class="record-good">10-15 min</td>
+                            <td>30-40%</td>
+                        </tr>
+                        <tr>
+                            <td>Hard Solo Clear</td>
+                            <td>Hard</td>
+                            <td>Complete all 7 waves</td>
+                            <td class="record-good">15-20 min</td>
+                            <td>10-15%</td>
+                        </tr>
+                        <tr>
+                            <td>Nightmare Solo</td>
+                            <td>Nightmare</td>
+                            <td>Complete all 7 waves</td>
+                            <td class="record-average">20-30 min</td>
+                            <td><5% (Very Rare)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Resource Efficiency Challenges</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Challenge Type</th>
+                            <th>Constraint</th>
+                            <th>Goal</th>
+                            <th>Difficulty</th>
+                            <th>Reward Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No Death Run</td>
+                            <td>Zero deaths</td>
+                            <td>Clear Wave 7</td>
+                            <td>Extreme</td>
+                            <td>Personal achievement</td>
+                        </tr>
+                        <tr>
+                            <td>Speed Clear</td>
+                            <td>Time limit</td>
+                            <td>Clear Wave 5-6</td>
+                            <td>Moderate</td>
+                            <td>Efficiency practice</td>
+                        </tr>
+                        <tr>
+                            <td>Budget Build</td>
+                            <td>No premium items</td>
+                            <td>Clear Wave 7</td>
+                            <td>High</td>
+                            <td>F2P mastery</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Category-Specific Rules</h3>
+                
+                <h4>Universal Rules (All Categories)</h4>
+                <ul>
+                    <li><strong>No External Tools:</strong> No auto-clickers, macros, or third-party software</li>
+                    <li><strong>Single Session:</strong> Run must be completed in one continuous session</li>
+                    <li><strong>Standard Settings:</strong> Default game settings, no accessibility modifications</li>
+                    <li><strong>Solo Only:</strong> No team members, NPCs, or external assistance</li>
+                </ul>
+
+                <h4>Timing Rules</h4>
+                <div class="code-block">
+Timer Starts: When "Ready" button is clicked in lobby
+Timer Ends: When completion screen appears OR when final wave clear text shows
+
+Pauses/Breaks: Not allowed - runs must be continuous
+Retries: Each attempt is separate - no combining segments
+
+Valid Evidence:
+- Full video recording (required for leaderboard)
+- LiveSplit or similar timer software
+- Clear view of game screen and inputs
+- Audio track for verification
+                </div>
+
+                <h3>Community Standards</h3>
+                <p>
+                    The competitive speedrun community maintains high standards for record verification:
+                </p>
+
+                <h4>Evidence Requirements</h4>
+                <ol>
+                    <li><strong>Video Quality:</strong> Minimum 720p, 30fps recording</li>
+                    <li><strong>Full Run Footage:</strong> No cuts or editing allowed</li>
+                    <li><strong>Timer Visibility:</strong> On-screen timer required for verification</li>
+                    <li><strong>Input Display:</strong> Recommended for high-level records</li>
+                </ol>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-video"></i>
+                        Recording Setup
+                    </div>
+                    <p>
+                        Use OBS Studio with these settings: 720p60 minimum, CBR 3000 bitrate, x264 encoder. Record locally (not stream) for best quality. Position timer overlay in top-right corner where it's visible but doesn't obstruct gameplay.
+                    </p>
+                </div>
+            </section>
+
+            <section id="optimal-builds">
+                <h2>Optimal Solo Survival Builds</h2>
+                <p>
+                    Solo builds in Hunty Zombie must balance damage output with survivability. The key is understanding which weapons, perks, and traits synergize best for solo wave clearing. Remember: the second weapon slot costs $50,000 and is absolutely essential for solo success.
+                </p>
+
+                <h3>Meta Solo Build (September 2025)</h3>
+                <p>
+                    The current meta revolves around the Greatsword + Scythe combination with Vampire perk:
+                </p>
+
+                <h4>Core Build Components</h4>
+                <div class="code-block">
+Primary Weapon: Greatsword with Prodigy Trait
+- Insane AoE damage and stagger potential
+- Can permanently lock enemies in place
+- Best weapon for Wave 7 boss
+
+Secondary Weapon: Scythe with Power III or Prodigy
+- Additional AoE coverage
+- Synergizes with Vampire lifesteal
+- Fast attack speed for consistent damage
+
+Essential Perk: Vampire (S-Tier Must-Have)
+- Lifesteal keeps you alive
+- Movement speed boost from DoT
+- Three passive effects in one perk
+
+Alternative Perks:
+- Critical: 60-second damage boost
+- DoubleDMG: Team play focus (less useful solo)
+- Healer: Budget sustain option
+
+Best Traits (Priority Order):
+1. Prodigy (double stats - THE endgame trait)
+2. Power III (damage increase)
+3. Focus III (skill damage)
+4. Beast (balanced melee boost)
+5. Fortune (gold farming)
+
+Pet: Dragon or Raven
+- Dragon: 30% drop + 20% burn damage
+- Raven: Best drop rates for farming
+                </div>
+
+                <h4>Build Performance Expectations</h4>
+                <ul>
+                    <li><strong>Wave 7 Boss:</strong> 30-60 seconds with proper setup</li>
+                    <li><strong>Total Clear Time:</strong> 10-15 minutes on Normal</li>
+                    <li><strong>Success Rate:</strong> 70-80% with full build</li>
+                    <li><strong>Investment Required:</strong> 200,000+ Cash minimum</li>
+                </ul>
+
+                <h3>Hard Mode Solo Strategy</h3>
+                <p>
+                    Hard Mode significantly increases zombie health, speed, and damage. Solo survival requires perfect perk timing and positioning:
+                </p>
+
+                <h4>Hard Mode Adaptations</h4>
+                <div class="code-block">
+Weapon Requirements:
+- MUST have second weapon slot ($50,000)
+- Greatsword remains essential for stagger
+- Consider Dual Guns for safer range play
+
+Perk Priority Changes:
+- Vampire becomes even more critical
+- Shield perk for emergency situations
+- Healer as backup sustain
+
+Special Zombie Threats:
+- TNT Zombies: One-shot potential - maintain distance
+- Athletic Zombies: Basketball spam increases
+- Wave 7 Boss: Double health compared to Normal
+
+Survival Tips:
+- Kite in circles around the map edges
+- Save Vampire activation for Wave 6-7
+- Use narrow passages to funnel zombies
+- Prioritize TNT zombies immediately
+
+Expected Performance:
+- Clear time: 15-20 minutes
+- Success rate: 10-15% solo
+- Deaths allowed: Use all 3 lives wisely
+                </div>
+
+                <h3>Nightmare Mode Reality Check</h3>
+                <p>
+                    Nightmare Mode solo is nearly impossible without perfect gear and execution. It's designed for team play:
+                </p>
+
+                <h4>Why Nightmare Solo is Extreme</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Challenge Factor</th>
+                            <th>Normal Mode</th>
+                            <th>Nightmare Mode</th>
+                            <th>Solo Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zombie Health</td>
+                            <td>100%</td>
+                            <td>300-400%</td>
+                            <td>Triple kill time</td>
+                        </tr>
+                        <tr>
+                            <td>Zombie Speed</td>
+                            <td>100%</td>
+                            <td>150%</td>
+                            <td>Harder kiting</td>
+                        </tr>
+                        <tr>
+                            <td>Zombie Damage</td>
+                            <td>100%</td>
+                            <td>200%</td>
+                            <td>2-3 hit deaths</td>
+                        </tr>
+                        <tr>
+                            <td>Special Zombies</td>
+                            <td>Manageable</td>
+                            <td>Lethal</td>
+                            <td>Instant death risk</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Nightmare Solo Warning
+                    </div>
+                    <p>
+                        Nightmare Mode is designed for team cooperation. Solo attempts require perfect gear including Vampire perk, Prodigy trait on both weapons, and extensive practice. Success rate is below 5% even with optimal builds. Consider mastering Normal and Hard modes first.
+                    </p>
+                </div>
+            </section>
+
+            <section id="route-optimization">
+                <h2>Route Optimization & Movement</h2>
+                <p>
+                    Efficient routing is the foundation of competitive speedrunning. Every movement must be optimized to minimize time loss while maintaining safety and positioning for optimal DPS windows.
+                </p>
+
+                <h3>Map Knowledge & Positioning</h3>
+                
+                <h4>Optimal Starting Positions</h4>
+                <p>
+                    Your spawn position affects the entire run. Here are the optimal starting strategies:
+                </p>
+
+                <ul>
+                    <li><strong>Center Spawn (Preferred):</strong> Equidistant from all corners, optimal for circular kiting</li>
+                    <li><strong>Corner Spawn:</strong> Immediate wall access, good for defensive play but limits mobility</li>
+                    <li><strong>Edge Spawn:</strong> Quick access to kiting routes, moderate positioning options</li>
+                </ul>
+
+                <h4>Movement Efficiency Principles</h4>
+                <div class="code-block">
+1. Shortest Path Rule:
+   - Always take the most direct route to optimal positions
+   - Use diagonal movement when possible
+   - Avoid unnecessary direction changes
+
+2. Momentum Conservation:
+   - Maintain consistent movement speed
+   - Don't stop unless absolutely necessary
+   - Chain movements between objectives
+
+3. Positioning Prediction:
+   - Plan 2-3 moves ahead
+   - Anticipate enemy spawn locations
+   - Pre-position for boss phases
+
+4. Multi-tasking Movement:
+   - Move while attacking when possible
+   - Reload/ability usage during movement
+   - Stack multiple objectives per movement
+                </div>
+
+                <h3>Advanced Kiting Patterns</h3>
+                
+                <h4>The "Perfect Circle" Pattern</h4>
+                <p>
+                    The most efficient crowd control pattern for normal waves:
+                </p>
+                <ol>
+                    <li><strong>Initial Positioning:</strong> Center of largest open area</li>
+                    <li><strong>Circle Radius:</strong> Maximum weapon range + 20% buffer</li>
+                    <li><strong>Speed Control:</strong> Match slowest enemy speed + 15%</li>
+                    <li><strong>Attack Windows:</strong> Every 90-degree arc, fire toward circle center</li>
+                    <li><strong>Emergency Exits:</strong> Pre-planned escape routes at cardinal points</li>
+                </ol>
+
+                <h4>Special Zombie Movement Patterns</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Zombie Type</th>
+                            <th>Optimal Pattern</th>
+                            <th>Safety Distance</th>
+                            <th>Priority Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TNT Zombie</td>
+                            <td>Maximum range engagement</td>
+                            <td>Outside explosion radius</td>
+                            <td>Kill immediately</td>
+                        </tr>
+                        <tr>
+                            <td>Athletic Zombie</td>
+                            <td>Zigzag dodging</td>
+                            <td>Maximum weapon range</td>
+                            <td>Between basketball throws</td>
+                        </tr>
+                        <tr>
+                            <td>Wave 7 Boss</td>
+                            <td>Greatsword stagger lock</td>
+                            <td>Melee range (with Vampire)</td>
+                            <td>Full focus required</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Time-Saving Techniques</h3>
+                
+                <h4>Wave Transition Optimization</h4>
+                <p>
+                    The seconds between waves add up quickly. Optimize these transitions:
+                </p>
+                <ul>
+                    <li><strong>Pre-Positioning:</strong> End each wave in optimal position for next wave spawn</li>
+                    <li><strong>Ability Management:</strong> Time cooldowns to be ready at wave start</li>
+                    <li><strong>Weapon Swapping:</strong> Switch weapons during transition, not during combat</li>
+                    <li><strong>Mental Preparation:</strong> Review next wave strategy during transition</li>
+                </ul>
+
+                <div class="speedrun-box">
+                    <div class="speedrun-box-title">
+                        <i class="fas fa-stopwatch"></i>
+                        Frame-Perfect Techniques
+                    </div>
+                    <p>
+                        Advanced speedrunners use frame-perfect techniques: buffering attacks during movement, animation canceling for faster combos, and input queuing for seamless ability chains. These techniques can save 1-2 seconds per wave, adding up to 30+ seconds over a full run.
+                    </p>
+                </div>
+            </section>
+
+            <section id="advanced-techniques">
+                <h2>Advanced Speedrun Techniques</h2>
+                <p>
+                    These techniques separate world-class speedrunners from skilled casual players. Each technique requires significant practice but provides measurable time improvements when executed correctly.
+                </p>
+
+                <h3>Animation Canceling Mastery</h3>
+                
+                <h4>Weapon Swapping Efficiency</h4>
+                <p>
+                    Master weapon swapping (keys 1 and 2) to maximize damage output:
+                </p>
+                <div class="code-block">
+Basic Weapon Swapping:
+1. Primary weapon (Greatsword) for main damage
+2. Press '2' for secondary weapon (Scythe)
+3. Continue combo without interruption
+4. Result: Continuous AoE coverage
+
+Advanced Combo Patterns:
+Greatsword stagger → Scythe sweep → Greatsword finish
+- Maximizes stagger lock on zombies
+- Essential for Wave 7 boss control
+- Practice timing in Normal mode first
+
+Perk Activation Timing:
+Vampire → Engage → Critical (for boss only)
+- Skips perk wind-down animation
+- Saves 0.3-0.8 seconds per usage
+- Critical for boss burst phases
+                </div>
+
+                <h4>Movement Animation Optimization</h4>
+                <ul>
+                    <li><strong>Dash Canceling:</strong> Cancel dash animation with attack inputs</li>
+                    <li><strong>Attack Walking:</strong> Move during attack animations without speed loss</li>
+                    <li><strong>Slide Techniques:</strong> Maintain momentum through direction changes</li>
+                    <li><strong>Corner Sliding:</strong> Use walls to maintain speed around corners</li>
+                </ul>
+
+                <h3>Resource Management Optimization</h3>
+                
+                <h4>Perfect Ability Rotation</h4>
+                <p>
+                    Optimize ability usage for maximum uptime and effectiveness:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Scenario</th>
+                            <th>Ability Priority</th>
+                            <th>Timing</th>
+                            <th>Expected Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Wave 7 Boss</td>
+                            <td>Critical → Vampire</td>
+                            <td>Boss spawn → When HP drops</td>
+                            <td>60-second damage boost</td>
+                        </tr>
+                        <tr>
+                            <td>Dense Crowd</td>
+                            <td>Vampire → AoE attacks</td>
+                            <td>When surrounded</td>
+                            <td>Lifesteal from multiple enemies</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency</td>
+                            <td>Shield → Reposition</td>
+                            <td>Below 30% HP</td>
+                            <td>Damage immunity window</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Weapon Swap Optimization</h4>
+                <p>
+                    Advanced weapon management for different situations:
+                </p>
+                <ol>
+                    <li><strong>Boss Phases:</strong> Greatsword for stagger lock, Scythe for adds</li>
+                    <li><strong>Crowd Waves:</strong> Start with Scythe AoE, finish with Greatsword</li>
+                    <li><strong>Mixed Waves:</strong> Dynamic swapping based on enemy density</li>
+                    <li><strong>TNT Zombies:</strong> Dual Guns for safe range elimination</li>
+                </ol>
+
+                <h3>Advanced Input Techniques</h3>
+                
+                <h4>Input Buffering</h4>
+                <div class="code-block">
+Buffering allows input queuing during animations:
+
+Attack Buffering:
+- Input next attack during current attack animation
+- Game queues input for immediate execution
+- Results in frame-perfect attack chains
+
+Ability Buffering:
+- Queue ability usage during movement
+- Ability fires immediately when available
+- Eliminates reaction time delays
+
+Movement Buffering:
+- Buffer direction changes during attacks
+- Instant direction change on animation end
+- Maintains optimal positioning
+                </div>
+
+                <h4>Precision Input Techniques</h4>
+                <ul>
+                    <li><strong>Micro-Adjustments:</strong> Tiny movement corrections for optimal positioning</li>
+                    <li><strong>Input Layering:</strong> Multiple simultaneous inputs for complex maneuvers</li>
+                    <li><strong>Timing Windows:</strong> Frame-perfect inputs for maximum effectiveness</li>
+                    <li><strong>Input Sequences:</strong> Pre-planned input chains for complex scenarios</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-keyboard"></i>
+                        Input Training
+                    </div>
+                    <p>
+                        Practice advanced techniques in Normal mode first. Use training sessions to build muscle memory for frame-perfect inputs. Record your practice sessions to analyze timing and identify improvement opportunities. Master one technique at a time before combining them.
+                    </p>
+                </div>
+            </section>
+
+            <section id="wave-strategies">
+                <h2>Wave-by-Wave Strategies</h2>
+                <p>
+                    Each wave type requires specific strategies for optimal clear times. Understanding these patterns and having prepared responses is crucial for consistent speedrun performance.
+                </p>
+
+                <h3>Early Waves (1-6): Foundation Building</h3>
+                
+                <h4>Waves 1-2: Economy Waves</h4>
+                <div class="code-block">
+Objective: Perfect clear with minimal resources
+Strategy: Conservative positioning, basic attacks only
+Time Target: 15-20 seconds each
+Key Points:
+- Save all abilities for later waves
+- Practice movement patterns
+- Establish rhythm and timing
+- No damage taken (optimize for consistency)
+
+Optimal Route:
+1. Move to center position immediately
+2. Gather enemies into tight group
+3. Use basic attacks with movement
+4. Clear stragglers efficiently
+                </div>
+
+                <h4>Waves 3-4: Skill Warm-up</h4>
+                <ul>
+                    <li><strong>Introduction of TNT zombies:</strong> Practice safe detonation timing</li>
+                    <li><strong>Mixed enemy types:</strong> Priority targeting drills</li>
+                    <li><strong>Speed increase:</strong> Begin advanced movement patterns</li>
+                    <li><strong>Ability usage:</strong> Test one ability per wave maximum</li>
+                </ul>
+
+                <h4>Waves 5-6: Pre-Boss Preparation</h4>
+                <ul>
+                    <li><strong>Resource management:</strong> Enter Wave 7 with full abilities</li>
+                    <li><strong>Positioning setup:</strong> End in optimal boss engagement position</li>
+                    <li><strong>Mental preparation:</strong> Review boss strategy during clear</li>
+                    <li><strong>Equipment check:</strong> Ensure optimal weapon for boss phase</li>
+                </ul>
+
+                <h3>Boss Waves: Critical Performance Windows</h3>
+                
+                <h4>Wave 7: First Boss Test</h4>
+                <p>
+                    The first major time save/loss opportunity:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Performance Level</th>
+                            <th>Time Range</th>
+                            <th>Strategy</th>
+                            <th>Key Factors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="record-wr">World Record</td>
+                            <td>12-15 seconds</td>
+                            <td>Perfect burst combo</td>
+                            <td>Frame-perfect execution</td>
+                        </tr>
+                        <tr>
+                            <td class="record-top10">Top 10</td>
+                            <td>18-25 seconds</td>
+                            <td>Optimized ability rotation</td>
+                            <td>Clean positioning</td>
+                        </tr>
+                        <tr>
+                            <td class="record-top100">Competitive</td>
+                            <td>30-45 seconds</td>
+                            <td>Standard strategy</td>
+                            <td>No major mistakes</td>
+                        </tr>
+                        <tr>
+                            <td class="record-average">Average</td>
+                            <td>60-90 seconds</td>
+                            <td>Survive-focused</td>
+                            <td>Multiple ability cycles</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Wave 7: Final Boss Challenge</h4>
+                <p>
+                    The ultimate test of your solo skills and build optimization:
+                </p>
+                <div class="code-block">
+Optimal Boss Strategy (30-45 seconds):
+1. Immediate Critical activation
+2. Greatsword stagger lock
+3. Use Vampire when HP drops
+4. Maintain constant pressure
+5. Scythe for any adds
+6. Don't let boss recover
+
+Key Techniques:
+- Perfect stagger timing
+- Perk rotation management
+- Positioning for safety
+- Emergency Shield if needed
+
+Common Time Losses:
+- Failed stagger lock (+20-30 seconds)
+- Wasted perks early (+15-20 seconds)
+- Deaths requiring respawn (+30+ seconds)
+                </div>
+
+                <h3>Wave 5-6: Pre-Boss Preparation</h3>
+                
+                <h4>Special Zombie Management</h4>
+                <p>
+                    Waves 5-6 introduce TNT and Athletic zombies requiring specific strategies:
+                </p>
+                <ul>
+                    <li><strong>TNT Priority:</strong> Eliminate immediately at max range</li>
+                    <li><strong>Basketball Dodging:</strong> Zigzag movement pattern</li>
+                    <li><strong>Crowd Control:</strong> Use Greatsword stagger effectively</li>
+                    <li><strong>Resource Conservation:</strong> Save Vampire for Wave 7</li>
+                </ul>
+
+                <h4>Wave 7: Boss Fight Optimization</h4>
+                <div class="code-block">
+Final Boss Strategy Variants:
+
+Speed Variant (Aggressive):
+- Greatsword stagger lock from start
+- Activate Critical immediately
+- High risk if stagger fails
+- Target time: 30-45 seconds
+
+Safety Variant (Conservative):
+- Kite first, learn attack patterns
+- Save Vampire for low HP emergency
+- Higher success rate
+- Target time: 60-90 seconds
+
+The choice depends on your gear quality and experience level
+                </div>
+
+                <div class="speedrun-box">
+                    <div class="speedrun-box-title">
+                        <i class="fas fa-chart-line"></i>
+                        Wave Time Distribution
+                    </div>
+                    <p>
+                        In an optimal solo run: Waves 1-3 (25%), Wave 4-5 (30%), Wave 6 (20%), Wave 7 Boss (25%). The boss fight represents 25% of total time despite being only one wave. TNT zombies in later waves significantly impact clear times.
+                    </p>
+                </div>
+            </section>
+
+            <section id="record-analysis">
+                <h2>Solo Performance Analysis & Optimization</h2>
+                <p>
+                    While Hunty Zombie doesn't have official speedrun records due to its survival focus, analyzing top solo performances reveals strategies that maximize efficiency and success rates.
+                </p>
+
+                <h3>Performance Benchmarks</h3>
+                
+                <h4>Solo Clear Time Targets</h4>
+                <p>
+                    Based on community data for solo Wave 7 completion:
+                </p>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Wave Range</th>
+                            <th>Time</th>
+                            <th>Percentage</th>
+                            <th>Key Techniques</th>
+                            <th>Innovation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Waves 1-6</td>
+                            <td>48.3s</td>
+                            <td>18.2%</td>
+                            <td>Perfect movement lines</td>
+                            <td>New corner-cutting route</td>
+                        </tr>
+                        <tr>
+                            <td>Wave 7 Boss</td>
+                            <td>12.1s</td>
+                            <td>4.6%</td>
+                            <td>Frame-perfect burst combo</td>
+                            <td>Animation cancel chain</td>
+                        </tr>
+                        <tr>
+                            <td>Waves 8-13</td>
+                            <td>67.2s</td>
+                            <td>25.4%</td>
+                            <td>Optimal kiting patterns</td>
+                            <td>Predictive positioning</td>
+                        </tr>
+                        <tr>
+                            <td>Wave 14 Boss</td>
+                            <td>31.8s</td>
+                            <td>12.0%</td>
+                            <td>Perfect boss separation</td>
+                            <td>Risk-taking on second boss</td>
+                        </tr>
+                        <tr>
+                            <td>Waves 15-20</td>
+                            <td>79.4s</td>
+                            <td>30.0%</td>
+                            <td>Aggressive crowd tactics</td>
+                            <td>Ability stacking technique</td>
+                        </tr>
+                        <tr>
+                            <td>Wave 7 Boss</td>
+                            <td>45-60s</td>
+                            <td>25-30%</td>
+                            <td>Stagger lock strategy</td>
+                            <td>Vampire perk essential</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Innovation Analysis</h4>
+                <p>
+                    Key innovations that made this record possible:
+                </p>
+                <ul>
+                    <li><strong>Corner-Cutting Route:</strong> Saves 3-5 seconds through diagonal movement optimization</li>
+                    <li><strong>Animation Cancel Chain:</strong> 35% faster boss kill through perfect timing</li>
+                    <li><strong>Predictive Positioning:</strong> Pre-movement based on spawn pattern knowledge</li>
+                    <li><strong>Ability Stacking:</strong> Overlapping buff effects for multiplicative damage</li>
+                </ul>
+
+                <h3>Consistency vs. Time Optimization</h3>
+                
+                <h4>Risk/Reward Analysis</h4>
+                <p>
+                    Understanding when to play safe vs. when to take calculated risks:
+                </p>
+                <div class="code-block">
+Risk Assessment Framework:
+
+High Reward, Low Risk (Always Do):
+- Perfect movement lines
+- Basic animation canceling
+- Standard ability rotations
+- Weapon swap optimization
+
+High Reward, Medium Risk (Situation Dependent):
+- Advanced animation canceling
+- Aggressive positioning
+- Early ability usage
+- Risky damage trades
+
+High Reward, High Risk (Records Only):
+- Frame-perfect techniques
+- All-in strategies
+- No safety margin approaches
+- Untested route variations
+
+Decision Matrix:
+- Personal Best attempts: Medium risk acceptable
+- World Record attempts: High risk necessary
+- Practice runs: Focus on Low/Medium risk
+- Consistency building: Low risk only
+                </div>
+
+                <h3>Route Evolution and Meta Development</h3>
+                
+                <h4>Historical Route Development</h4>
+                <p>
+                    How speedrun strategies have evolved over time:
+                </p>
+                <ol>
+                    <li><strong>Era 1 (Early 2025):</strong> Basic completion focus, 8+ minute times</li>
+                    <li><strong>Era 2 (Mid-2025):</strong> Movement optimization discovered, sub-7 minutes</li>
+                    <li><strong>Era 3 (Current):</strong> Advanced techniques mastered, sub-5 minutes</li>
+                    <li><strong>Era 4 (Future):</strong> Theoretical limit approaches, sub-4 minutes?</li>
+                </ol>
+
+                <h4>Current Meta Predictions</h4>
+                <ul>
+                    <li><strong>Equipment Requirements:</strong> Mythical tier becoming standard</li>
+                    <li><strong>Technique Complexity:</strong> Frame-perfect inputs becoming necessary</li>
+                    <li><strong>Route Optimization:</strong> Mathematical precision replacing intuition</li>
+                    <li><strong>Community Standards:</strong> Higher barriers for competitive times</li>
+                </ul>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Theoretical Limits
+                    </div>
+                    <p>
+                        Theoretical analysis suggests the absolute limit for Normal Any% is around 3:45, assuming perfect execution and optimal RNG. This represents less than 30 seconds of improvement from the current record, indicating the meta is approaching maturity.
+                    </p>
+                </div>
+            </section>
+
+            <section id="practice-methods">
+                <h2>Effective Practice Methods</h2>
+                <p>
+                    Improving speedrun times requires systematic practice focusing on specific skills and techniques. Random attempts rarely lead to significant improvement - structured practice is essential for competitive times.
+                </p>
+
+                <h3>Segmented Practice Approach</h3>
+                
+                <h4>Individual Wave Mastery</h4>
+                <p>
+                    Practice waves independently to perfect specific techniques:
+                </p>
+                <div class="code-block">
+Wave-Specific Practice Routine:
+
+Boss Wave Practice (Waves 7, 14, 21):
+1. Load into game, play normally until target wave
+2. Focus exclusively on boss encounter optimization
+3. Reset immediately after boss clear
+4. Repeat 20-30 times per session
+5. Track improvement in kill times
+
+Crowd Wave Practice (Waves 16, 18, 20):
+1. Develop muscle memory for kiting patterns  
+2. Practice ability timing and positioning
+3. Work on crowd density management
+4. Optimize clear times through repetition
+
+Transition Practice:
+1. Focus on wave-to-wave efficiency
+2. Practice pre-positioning techniques
+3. Optimize ability cooldown management
+4. Work on weapon swap timing
+                </div>
+
+                <h4>Technique Isolation Training</h4>
+                <ul>
+                    <li><strong>Animation Canceling:</strong> Dedicated sessions focusing only on cancel timing</li>
+                    <li><strong>Movement Optimization:</strong> Pure movement practice without combat</li>
+                    <li><strong>Ability Rotation:</strong> Perfect timing practice for combo sequences</li>
+                    <li><strong>Emergency Protocols:</strong> Practice recovery from failed strategies</li>
+                </ul>
+
+                <h3>Full Run Practice Strategy</h3>
+                
+                <h4>Progressive Difficulty Approach</h4>
+                <ol>
+                    <li><strong>Completion Focus:</strong> Achieve consistent clears before optimizing time</li>
+                    <li><strong>Safety Optimization:</strong> Improve times while maintaining high success rate</li>
+                    <li><strong>Risk Integration:</strong> Gradually incorporate higher-risk strategies</li>
+                    <li><strong>Record Attempts:</strong> Full optimization with acceptance of high reset rate</li>
+                </ol>
+
+                <h4>Practice Session Structure</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Session Phase</th>
+                            <th>Duration</th>
+                            <th>Focus</th>
+                            <th>Goal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Warm-up</td>
+                            <td>10-15 minutes</td>
+                            <td>Basic movements</td>
+                            <td>Muscle memory activation</td>
+                        </tr>
+                        <tr>
+                            <td>Technique Practice</td>
+                            <td>20-30 minutes</td>
+                            <td>Specific skills</td>
+                            <td>Improvement in isolated areas</td>
+                        </tr>
+                        <tr>
+                            <td>Full Run Attempts</td>
+                            <td>30-45 minutes</td>
+                            <td>Complete runs</td>
+                            <td>Integration and time improvement</td>
+                        </tr>
+                        <tr>
+                            <td>Analysis</td>
+                            <td>10-15 minutes</td>
+                            <td>Review and planning</td>
+                            <td>Identify next practice targets</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Performance Tracking & Analysis</h3>
+                
+                <h4>Data Collection Methods</h4>
+                <ul>
+                    <li><strong>Split Timing:</strong> Track individual wave/section times</li>
+                    <li><strong>Death Analysis:</strong> Categorize and count failure modes</li>
+                    <li><strong>Technique Success Rate:</strong> Monitor advanced technique execution</li>
+                    <li><strong>Equipment Performance:</strong> Compare different build variations</li>
+                </ul>
+
+                <h4>Improvement Tracking</h4>
+                <div class="code-block">
+Weekly Practice Log Template:
+
+Date: [Current Date]
+Session Type: [Technique Focus/Full Runs/Mixed]
+Duration: [Minutes]
+
+Performance Metrics:
+- Personal Best: [Time]
+- Average Completion Time: [Time]  
+- Success Rate: [Percentage]
+- Key Deaths: [Wave numbers and causes]
+
+Technique Progress:
+- Animation Canceling: [Success rate/10]
+- Movement Optimization: [Subjective rating 1-10]
+- Boss Strategies: [Average kill times]
+
+Next Session Focus:
+- Primary: [Specific area needing work]
+- Secondary: [Backup focus area]
+- Technique: [Specific skill to practice]
+
+Notes: [Observations, breakthroughs, problems]
+                </div>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-chart-line"></i>
+                        Progress Tracking
+                    </div>
+                    <p>
+                        Use tools like LiveSplit to track detailed segment times, and maintain a practice journal to identify patterns in improvement and stagnation. Review your practice logs weekly to ensure you're focusing on areas with the highest improvement potential.
+                    </p>
+                </div>
+            </section>
+
+            <section id="mental-game">
+                <h2>Mental Game & Psychological Optimization</h2>
+                <p>
+                    Speedrunning is as much mental as mechanical. The pressure of record attempts, the frustration of repeated failures, and the need for sustained concentration create unique psychological challenges that must be addressed systematically.
+                </p>
+
+                <h3>Pressure Management</h3>
+                
+                <h4>Performance Under Pressure</h4>
+                <p>
+                    Understanding how pressure affects performance and developing coping strategies:
+                </p>
+                <ul>
+                    <li><strong>Arousal Control:</strong> Finding optimal activation level for peak performance</li>
+                    <li><strong>Attention Focus:</strong> Maintaining concentration on controllable factors</li>
+                    <li><strong>Mistake Recovery:</strong> Bouncing back from errors without mental cascade</li>
+                    <li><strong>Confidence Maintenance:</strong> Sustaining belief in abilities despite setbacks</li>
+                </ul>
+
+                <h4>Pre-Run Mental Preparation</h4>
+                <div class="code-block">
+Pre-Run Routine (5-10 minutes):
+
+1. Physical Preparation:
+   - Hand/wrist stretching
+   - Proper posture adjustment
+   - Breathing exercises (4-7-8 pattern)
+   - Eliminate distractions
+
+2. Mental Preparation:
+   - Visualization of key segments
+   - Positive affirmation statements
+   - Goal setting for the attempt
+   - Strategy review for difficult waves
+
+3. Technical Preparation:
+   - Equipment check
+   - Settings verification
+   - Timer setup
+   - Recording start
+
+4. Focus Activation:
+   - Calm, confident mindset
+   - Present moment awareness
+   - Commitment to execution
+   - Accept outcome uncertainty
+                </div>
+
+                <h3>Failure Management</h3>
+                
+                <h4>Types of Speedrun Failures</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Failure Type</th>
+                            <th>Frequency</th>
+                            <th>Mental Impact</th>
+                            <th>Recovery Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Early Game Death</td>
+                            <td>40%</td>
+                            <td>Low frustration</td>
+                            <td>Quick reset, analyze briefly</td>
+                        </tr>
+                        <tr>
+                            <td>Mid-Game Mistake</td>
+                            <td>35%</td>
+                            <td>Moderate frustration</td>
+                            <td>Learn from error, adjust strategy</td>
+                        </tr>
+                        <tr>
+                            <td>Late Game Choke</td>
+                            <td>20%</td>
+                            <td>High frustration</td>
+                            <td>Take break, mental reset needed</td>
+                        </tr>
+                        <tr>
+                            <td>Record-Pace Death</td>
+                            <td>5%</td>
+                            <td>Extreme frustration</td>
+                            <td>End session, process emotions</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Tilt Prevention and Recovery</h4>
+                <p>
+                    Strategies for maintaining emotional control during difficult sessions:
+                </p>
+                <ol>
+                    <li><strong>Expectation Management:</strong> Accept that most runs will not be personal bests</li>
+                    <li><strong>Process Focus:</strong> Concentrate on execution quality rather than outcomes</li>
+                    <li><strong>Break Scheduling:</strong> Mandatory breaks after frustrating deaths</li>
+                    <li><strong>Perspective Maintenance:</strong> Remember long-term improvement goals</li>
+                </ol>
+
+                <h3>Motivation and Long-Term Development</h3>
+                
+                <h4>Goal Setting Framework</h4>
+                <p>
+                    Structure goals to maintain motivation across different skill levels:
+                </p>
+                <div class="code-block">
+Goal Hierarchy System:
+
+Long-term Goals (6+ months):
+- Achieve specific time targets (sub-5:00, sub-4:30, etc.)
+- Master advanced techniques
+- Reach competitive leaderboard positions
+
+Medium-term Goals (1-3 months):
+- Improve consistency in difficult segments
+- Reduce average completion time
+- Master specific technique sets
+
+Short-term Goals (1-2 weeks):
+- Complete X successful runs
+- Practice specific wave optimizations  
+- Implement new strategies
+
+Daily Goals:
+- Complete practice routine
+- Attempt Y full runs
+- Work on specific technique
+- Maintain positive mindset
+                </code>
+
+                <h4>Community and Support Systems</h4>
+                <ul>
+                    <li><strong>Practice Partners:</strong> Regular practice sessions with other speedrunners</li>
+                    <li><strong>Mentorship:</strong> Learning from more experienced runners</li>
+                    <li><strong>Community Events:</strong> Races and group challenges for motivation</li>
+                    <li><strong>Content Creation:</strong> Sharing progress and teaching others</li>
+                </ul>
+
+                <h3>Peak Performance Psychology</h3>
+                
+                <h4>Flow State Cultivation</h4>
+                <p>
+                    Creating conditions for optimal performance states:
+                </p>
+                <ul>
+                    <li><strong>Challenge-Skill Balance:</strong> Attempt times slightly above current ability</li>
+                    <li><strong>Clear Objectives:</strong> Specific, measurable goals for each attempt</li>
+                    <li><strong>Immediate Feedback:</strong> Real-time awareness of performance quality</li>
+                    <li><strong>Total Concentration:</strong> Complete absorption in the task</li>
+                </ul>
+
+                <h4>Confidence Building</h4>
+                <p>
+                    Systematic approach to building unshakeable confidence:
+                </p>
+                <ol>
+                    <li><strong>Skill Mastery:</strong> Develop genuine competence through practice</li>
+                    <li><strong>Success Visualization:</strong> Mental rehearsal of successful runs</li>
+                    <li><strong>Positive Self-Talk:</strong> Replace doubt with encouraging internal dialogue</li>
+                    <li><strong>Past Success Review:</strong> Regularly remind yourself of achievements</li>
+                </ol>
+
+                <div class="speedrun-box">
+                    <div class="speedrun-box-title">
+                        <i class="fas fa-brain"></i>
+                        Mental Performance
+                    </div>
+                    <p>
+                        Elite speedrunners report that mental skills account for 40-60% of their performance improvement beyond intermediate levels. Technical skill gets you to competitive times, but mental mastery separates world record holders from the rest.
+                    </p>
+                </div>
+
+                <h3>Burnout Prevention</h3>
+                <p>
+                    Speedrunning requires intense focus and repetition, making burnout a serious risk. Sustainable practice is more valuable than intensive but short-lived effort.
+                </p>
+
+                <h4>Warning Signs of Burnout</h4>
+                <ul>
+                    <li><strong>Decreased Enjoyment:</strong> Speedrunning feels like work rather than play</li>
+                    <li><strong>Performance Plateau:</strong> Times stop improving despite continued practice</li>
+                    <li><strong>Increased Frustration:</strong> Greater emotional reaction to failures</li>
+                    <li><strong>Motivation Loss:</strong> Difficulty starting practice sessions</li>
+                </ul>
+
+                <h4>Prevention Strategies</h4>
+                <ol>
+                    <li><strong>Variety Integration:</strong> Mix speedrunning with casual play and other activities</li>
+                    <li><strong>Regular Breaks:</strong> Scheduled time away from the game</li>
+                    <li><strong>Goal Adjustment:</strong> Modify expectations based on current life circumstances</li>
+                    <li><strong>Community Engagement:</strong> Focus on social aspects, not just personal achievement</li>
+                </ol>
+
+                <p>
+                    Remember that speedrunning should enhance your gaming experience, not dominate it. The journey of improvement, the satisfaction of mastering difficult techniques, and the community of fellow speedrunners are often more rewarding than the times themselves. Stay patient, stay positive, and enjoy the process of becoming the best solo player you can be.
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./beginners-guide.html" class="related-guide-item">
+                    <i class="fas fa-seedling"></i> Beginner's Guide
+                </a>
+                <a href="./meta-weapons-guide.html" class="related-guide-item">
+                    <i class="fas fa-sword"></i> Meta Weapons & Builds
+                </a>
+                <a href="./nightmare-mode-guide.html" class="related-guide-item">
+                    <i class="fas fa-skull"></i> Nightmare Mode Guide
+                </a>
+                <a href="./perks-traits-guide.html" class="related-guide-item">
+                    <i class="fas fa-star"></i> Perks & Traits Guide
+                </a>
+                <a href="./pets-farming-guide.html" class="related-guide-item">
+                    <i class="fas fa-paw"></i> Pet System Guide
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

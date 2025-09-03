@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#0A0E1A"/>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- HZ Letters with Zombie Style -->
+  <g filter="url(#glow)">
+    <!-- H -->
+    <path d="M 6 8 L 6 24 M 6 16 L 12 16 M 12 8 L 12 24" 
+          stroke="url(#neonGradient)" 
+          stroke-width="2.5" 
+          fill="none" 
+          stroke-linecap="round"/>
+    
+    <!-- Z with zombie bite effect -->
+    <path d="M 18 8 L 26 8 L 18 24 L 26 24" 
+          stroke="url(#neonGradient)" 
+          stroke-width="2.5" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    
+    <!-- Zombie bite marks on Z -->
+    <circle cx="22" cy="12" r="1.5" fill="#0A0E1A"/>
+    <circle cx="20" cy="20" r="1.5" fill="#0A0E1A"/>
+  </g>
+  
+  <!-- Small accent dots for gaming effect -->
+  <circle cx="4" cy="4" r="1" fill="#00FF88" opacity="0.6"/>
+  <circle cx="28" cy="28" r="1" fill="#00D4FF" opacity="0.6"/>
+</svg>

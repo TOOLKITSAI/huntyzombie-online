@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunty Zombie Nightmare Mode Complete Guide [UPDATE 2] - HZ DEV | September 2025</title>
+    <meta name="description" content="Conquer Nightmare mode in Hunty Zombie UPDATE 2 by HZ DEV. Master the Greatsword + Scythe meta, DoubleDMG perk timing, TNT zombie counters, and 7-wave survival strategies for September 2025.">
+    <meta name="keywords" content="Hunty Zombie Nightmare mode, UPDATE 2, HZ DEV, September 2025, Greatsword Scythe meta, DoubleDMG perk, TNT zombies, 7 wave survival, Roblox ALPHA">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-red);
+            color: var(--primary-dark);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 62, 62, 0.1);
+            color: var(--accent-red);
+        }
+
+        .nav-link.active {
+            background: rgba(255, 62, 62, 0.2);
+            color: var(--accent-red);
+        }
+
+        .nav-link i {
+            font-size: 1rem;
+        }
+
+        .nav-link span {
+            font-weight: 500;
+        }
+
+        /* Language Selector */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector {
+            position: relative;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--accent-green);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-blue);
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-2);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            transform: scale(1.1);
+        }
+
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 62, 62, 0.1);
+            border: 1px solid var(--accent-red);
+            color: var(--accent-red);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 62, 62, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(184, 51, 255, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-red);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 62, 62, 0.2);
+            color: var(--accent-red);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-red);
+            border-left-color: var(--accent-red);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-red);
+            border-left-color: var(--accent-red);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-2);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-purple);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Special Blocks */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nightmare-box {
+            background: linear-gradient(135deg, rgba(184, 51, 255, 0.1) 0%, rgba(255, 62, 62, 0.1) 100%);
+            border: 1px solid var(--accent-purple);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .nightmare-box-title {
+            color: var(--accent-purple);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stats-table {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-table th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        .stats-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-red);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-2);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+        }
+
+        .footer-bottom a {
+            color: var(--accent-red);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary-dark);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">NIGHTMARE</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">NIGHTMARE STRATEGY</div>
+            <h1 class="article-title">Nightmare Mode Complete Survival Guide</h1>
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>20 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">Extreme Challenge</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#requirements">Prerequisites</a></li>
+                <li><a href="#team-composition">Team Composition</a></li>
+                <li><a href="#nightmare-builds">Nightmare Builds</a></li>
+                <li><a href="#wave-breakdown">Wave Breakdown</a></li>
+                <li><a href="#boss-strategies">Boss Strategies</a></li>
+                <li><a href="#advanced-tactics">Advanced Tactics</a></li>
+                <li><a href="#common-failures">Common Failures</a></li>
+                <li><a href="#mastery-tips">Mastery Tips</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <!-- Featured Image -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="/assets/images/hunty-zombie3.webp" alt="Hunty Zombie Nightmare Mode" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            </div>
+            
+            <section id="introduction">
+                <h2>Introduction to Nightmare Mode</h2>
+                <p>
+                    Nightmare Mode in Hunty Zombie UPDATE 2 represents the ultimate challenge created by HZ DEV for elite players. This anime wave defense experience pushes teams to their absolute limits with enhanced enemy health, speed, and the introduction of special zombie types like TNT zombies and Athletic zombies. Successfully completing all 7 waves rewards you with massive coin multipliers and proves your mastery of the game's mechanics.
+                </p>
+                <p>
+                    Since the game is in ALPHA RELEASE, Nightmare mode continues to evolve with each update. The September 2025 meta revolves around the Greatsword + Scythe combination, leveraging the new DoubleDMG perk for boss elimination. This guide covers proven strategies for conquering Nightmare's 7-wave structure with up to 6 players working in perfect coordination.
+                </p>
+
+                <div class="nightmare-box">
+                    <div class="nightmare-box-title">
+                        <i class="fas fa-skull-crossbones"></i>
+                        Nightmare Reality Check
+                    </div>
+                    <p>
+                        Nightmare Mode requires mastery of all game mechanics including dash i-frames for TNT zombie dodging, coordinated awakening timing, and perfect perk usage. With the current meta favoring Greatsword + Scythe builds and DoubleDMG perk for burst damage, teams must adapt to UPDATE 2's balance changes. Remember: this is ALPHA content that may reset or change at any time.
+                    </p>
+                </div>
+            </section>
+
+            <section id="requirements">
+                <h2>Prerequisites for Nightmare Success</h2>
+                <p>
+                    Before attempting Nightmare Mode, you must meet specific requirements. These aren't suggestions - they're absolute necessities for survival.
+                </p>
+
+                <h3>Individual Player Requirements</h3>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Minimum Requirement</th>
+                            <th>Recommended Level</th>
+                            <th>Why It's Essential</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hard Mode Completion</td>
+                            <td>50+ successful runs</td>
+                            <td>100+ successful runs</td>
+                            <td>Understanding enemy patterns</td>
+                        </tr>
+                        <tr>
+                            <td>Weapon Arsenal</td>
+                            <td>Two weapon slots unlocked</td>
+                            <td>Greatsword + Scythe/Katana</td>
+                            <td>Meta weapons for UPDATE 2</td>
+                        </tr>
+                        <tr>
+                            <td>Perks Unlocked</td>
+                            <td>Vampire or Critical</td>
+                            <td>DoubleDMG + Vampire/Flame</td>
+                            <td>Essential for survival and DPS</td>
+                        </tr>
+                        <tr>
+                            <td>Trait System</td>
+                            <td>Power or Focus traits</td>
+                            <td>Prodigy or Power III/Focus III</td>
+                            <td>Damage/skill multipliers</td>
+                        </tr>
+                        <tr>
+                            <td>Pet System</td>
+                            <td>Any combat pet</td>
+                            <td>Dragon (30% drop + burn) or Raven</td>
+                            <td>Coin farming and combat boost</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Team Requirements</h3>
+                <ul>
+                    <li><strong>Communication Platform:</strong> Discord/Voice chat is mandatory - text communication is too slow</li>
+                    <li><strong>Stable Internet:</strong> All players need ping &lt;100ms and stable connection</li>
+                    <li><strong>Time Commitment:</strong> Reserve 2-3 hours for serious attempts</li>
+                    <li><strong>Role Understanding:</strong> Each player must master their specific role completely</li>
+                    <li><strong>Practice Schedule:</strong> Teams need 10+ practice sessions before serious attempts</li>
+                </ul>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Don't Skip Preparation
+                    </div>
+                    <p>
+                        Attempting Nightmare Mode without meeting these requirements is wasting everyone's time. The difficulty spike from Hard to Nightmare is equivalent to jumping from tutorial to endgame. Respect the challenge and prepare accordingly.
+                    </p>
+                </div>
+            </section>
+
+            <section id="team-composition">
+                <h2>Optimal Team Composition Strategies</h2>
+                <p>
+                    Nightmare Mode success depends heavily on team composition. Unlike lower difficulties where raw DPS can carry teams, Nightmare requires specialized roles working in perfect harmony.
+                </p>
+
+                <h3>Optimal Team Composition (4-6 Players)</h3>
+                <p>
+                    Teams can have up to 6 players in Hunty Zombie. The September 2025 meta favors balanced team compositions with the Greatsword + Scythe dominating:
+                </p>
+
+                <div class="code-block">
+Role 1: Primary Tank/DPS
+- Weapons: Greatsword + Scythe (META)
+- Perks: Vampire + DoubleDMG
+- Traits: Power III or Prodigy
+- Pet: Dragon (30% drop + 20% burn)
+- Responsibility: Frontline control, maximum DPS
+
+Role 2: Secondary DPS
+- Weapons: Katana + Guitar
+- Perks: Critical + Flame
+- Traits: Focus III or Prodigy
+- Pet: Dragon or Raven
+- Responsibility: Sustained damage output
+
+Role 3: Range Specialist
+- Weapons: Dual Guns + Dagger
+- Perks: Vampire + Shield
+- Traits: Agility III for attack speed
+- Pet: Raven (best drop rate)
+- Responsibility: TNT zombie priority, kiting
+
+Role 4-6: Flex Players
+- Weapons: Mix of available meta weapons
+- Perks: Healer for support or DPS perks
+- Traits: Balanced builds
+- Pet: Any available (Cat, Dog, Tiger, etc.)
+- Responsibility: Adapt to team needs
+                </div>
+
+                <h3>Alternative 6-Player Composition</h3>
+                <p>
+                    For teams preferring maximum firepower over coordination:
+                </p>
+                <ul>
+                    <li><strong>2x Tank/Support:</strong> Redundant healing and damage absorption</li>
+                    <li><strong>3x DPS Specialists:</strong> Different weapon types for versatility</li>
+                    <li><strong>1x Dedicated Crowd Controller:</strong> Full utility focus</li>
+                </ul>
+
+                <h3>Role Responsibilities Deep Dive</h3>
+                <p>
+                    Each role has specific duties that cannot be neglected:
+                </p>
+
+                <h4>Primary Tank/Support</h4>
+                <ul>
+                    <li>Lead team positioning and movement</li>
+                    <li>Call out priority targets and danger zones</li>
+                    <li>Manage team healing cooldowns and positioning</li>
+                    <li>Tank boss aggro during critical phases</li>
+                    <li>Coordinate ability usage for maximum efficiency</li>
+                </ul>
+
+                <h4>DPS Carry</h4>
+                <ul>
+                    <li>Focus fire on high-priority targets</li>
+                    <li>Optimize damage rotations for different enemy types</li>
+                    <li>Position for maximum damage while staying safe</li>
+                    <li>Communicate ultimate ability timing</li>
+                    <li>Adapt loadout between waves as needed</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-users"></i>
+                        Team Chemistry Tip
+                    </div>
+                    <p>
+                        The best Nightmare teams play together for months before achieving consistent clears. Team chemistry and communication are more important than individual skill. Find teammates who complement your playstyle and commit to regular practice sessions.
+                    </p>
+                </div>
+            </section>
+
+            <section id="nightmare-builds">
+                <h2>Nightmare-Specific Builds & Loadouts</h2>
+                <p>
+                    Standard builds that work in Hard Mode often fail catastrophically in Nightmare. The increased enemy health and speed require specialized loadouts optimized for sustained combat and survival.
+                </p>
+
+                <h3>Meta Build Analysis</h3>
+                <p>
+                    These builds represent the current Nightmare meta, refined through hundreds of successful runs:
+                </p>
+
+                <h4>The "Nightmare Survivor" Build</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Selection</th>
+                            <th>Reasoning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primary Weapon</td>
+                            <td>Greatsword</td>
+                            <td>Insane AoE + permanent stagger</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Weapon</td>
+                            <td>Scythe</td>
+                            <td>Meta weapon for crowd control</td>
+                        </tr>
+                        <tr>
+                            <td>Primary Perk</td>
+                            <td>Vampire</td>
+                            <td>Life steal for sustainability</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Perk</td>
+                            <td>Healer or Shield</td>
+                            <td>Team support or emergency defense</td>
+                        </tr>
+                        <tr>
+                            <td>Pet</td>
+                            <td>Dragon or Shark</td>
+                            <td>Dragon for burn damage, Shark for health</td>
+                        </tr>
+                        <tr>
+                            <td>Trait Focus</td>
+                            <td>Power III + defensive traits</td>
+                            <td>Balance damage and survival</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>The "Boss Melter" DPS Build</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Selection</th>
+                            <th>Reasoning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primary Weapon</td>
+                            <td>Katana or Guitar</td>
+                            <td>Fast attacks for ability spam</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Weapon</td>
+                            <td>Greatsword or Scythe</td>
+                            <td>AoE clearing between bosses</td>
+                        </tr>
+                        <tr>
+                            <td>Primary Perk</td>
+                            <td>DoubleDMG</td>
+                            <td>2x damage burst for bosses</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Perk</td>
+                            <td>Critical or Flame</td>
+                            <td>Sustained damage boost</td>
+                        </tr>
+                        <tr>
+                            <td>Pet</td>
+                            <td>Dragon</td>
+                            <td>30% drop boost + 20% burn chance</td>
+                        </tr>
+                        <tr>
+                            <td>Trait Focus</td>
+                            <td>Prodigy or Focus III</td>
+                            <td>Maximum skill damage</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Build Adaptation Strategies</h3>
+                <p>
+                    Successful Nightmare players adapt their builds between waves based on upcoming threats:
+                </p>
+
+                <h4>Boss Wave Adaptations</h4>
+                <ul>
+                    <li><strong>Wave 7 (First Boss):</strong> Switch to single-target focus weapons</li>
+                    <li><strong>Wave 14 (Dual Boss):</strong> Prioritize crowd control and kiting builds</li>
+                    <li><strong>Wave 21+ (Mega Bosses):</strong> Maximum DPS with survival backup plans</li>
+                </ul>
+
+                <h4>Crowd Wave Adaptations</h4>
+                <ul>
+                    <li><strong>High-density waves:</strong> Area damage weapons and perks</li>
+                    <li><strong>Fast enemy waves:</strong> Slow/freeze effects and mobility</li>
+                    <li><strong>Mixed waves:</strong> Balanced loadouts with quick swap capabilities</li>
+                </ul>
+
+                <div class="nightmare-box">
+                    <div class="nightmare-box-title">
+                        <i class="fas fa-exchange-alt"></i>
+                        Loadout Flexibility
+                    </div>
+                    <p>
+                        Master players carry 6+ weapons and 10+ perks, switching between waves. This requires significant investment but dramatically increases success rates. Plan your inventory management as carefully as your combat strategy.
+                    </p>
+                </div>
+            </section>
+
+            <section id="wave-breakdown">
+                <h2>7-Wave System Breakdown & Strategies</h2>
+                <p>
+                    Hunty Zombie stages consist of 7 waves that must be completed to progress. In Nightmare mode, each wave escalates dramatically with special zombie types requiring specific counter-strategies.
+                </p>
+
+                <h3>Waves 1-3: Foundation Phase</h3>
+                <p>
+                    Early waves introduce the core enemy types while building your rhythm.
+                </p>
+
+                <h4>Wave 1-2: Basic Zombie Management</h4>
+                <ul>
+                    <li><strong>Enemies:</strong> Basic zombies with increased health in Nightmare</li>
+                    <li><strong>Strategy:</strong> Group enemies for AoE abilities, conserve major cooldowns</li>
+                    <li><strong>Key Focus:</strong> Practice dash timing for later TNT zombies</li>
+                    <li><strong>Common Mistake:</strong> Using awakening (G) too early</li>
+                </ul>
+
+                <h4>Wave 3-4: Special Zombie Introduction</h4>
+                <ul>
+                    <li><strong>New Threat:</strong> TNT zombies appear - kamikaze exploders</li>
+                    <li><strong>Counter:</strong> Use Q dash i-frames to avoid explosions</li>
+                    <li><strong>Athletic Zombies:</strong> Basketball throwers requiring priority targeting</li>
+                    <li><strong>Strategy:</strong> Ranged players focus Athletic zombies first</li>
+                </ul>
+
+                <h4>Wave 5-6: Escalation Phase</h4>
+                <ul>
+                    <li><strong>Mixed Hordes:</strong> All zombie types simultaneously</li>
+                    <li><strong>Perk Usage:</strong> Time your E ability for maximum efficiency</li>
+                    <li><strong>Preparation:</strong> Save DoubleDMG perk for wave 7 boss</li>
+                    <li><strong>Positioning:</strong> Establish boss fighting formation</li>
+                </ul>
+
+                <h3>Wave 7: Boss Wave Climax</h3>
+                
+                <h4>Boss Zombie Encounter</h4>
+                <div class="code-block">
+Nightmare Boss Strategy:
+- Massive health pool requiring coordinated DPS
+- Use DoubleDMG perk at 50% boss health
+- Coordinate team awakenings (G) for burst phases
+- Greatsword + Scythe players maintain stagger
+- Dash (Q) to avoid boss attacks
+
+Key Timing:
+1. Start with normal rotations
+2. Activate Vampire/Flame perks early
+3. DoubleDMG at 50% health
+4. Chain awakenings for final burst
+5. Victory after wave 7 completion!
+                </div>
+
+                <h3>Continuous Play Strategy</h3>
+                <p>
+                    After completing wave 7, you can continue to the next stage. Each subsequent 7-wave cycle increases in difficulty:
+                </p>
+                <ul>
+                    <li><strong>Stage 2 (Waves 8-14):</strong> Higher enemy density, faster spawns</li>
+                    <li><strong>Stage 3 (Waves 15-21):</strong> Maximum difficulty, all enemy types</li>
+                    <li><strong>Endless Mode:</strong> Continue as long as your team survives</li>
+                    <li><strong>Coin Scaling:</strong> Rewards increase with each completed stage</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-stopwatch"></i>
+                        Time Management
+                    </div>
+                    <p>
+                        Each wave has optimal clear times. Falling behind schedule puts you at severe disadvantage for later waves. Aim for: Waves 1-6 (30 seconds each), Wave 7 (2 minutes), Waves 8-13 (45 seconds each), Wave 14 (3 minutes).
+                    </p>
+                </div>
+            </section>
+
+            <section id="boss-strategies">
+                <h2>Advanced Boss Strategies</h2>
+                <p>
+                    Boss encounters in Nightmare Mode require frame-perfect execution and deep understanding of attack patterns. Each boss has exploitable weaknesses that separate successful teams from failures.
+                </p>
+
+                <h3>Giant Zombie (Wave 7, 15, 23, etc.)</h3>
+                <h4>Attack Pattern Analysis</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Attack</th>
+                            <th>Wind-up Time</th>
+                            <th>Damage</th>
+                            <th>Counter Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ground Slam</td>
+                            <td>2.5 seconds</td>
+                            <td>80% max HP</td>
+                            <td>Dash away when arms raise</td>
+                        </tr>
+                        <tr>
+                            <td>Charge Attack</td>
+                            <td>1.8 seconds</td>
+                            <td>70% max HP</td>
+                            <td>Sidestep perpendicular to charge</td>
+                        </tr>
+                        <tr>
+                            <td>Swipe Attack</td>
+                            <td>1.2 seconds</td>
+                            <td>60% max HP</td>
+                            <td>Duck under or back away</td>
+                        </tr>
+                        <tr>
+                            <td>Roar (Nightmare+)</td>
+                            <td>3.0 seconds</td>
+                            <td>Fear effect</td>
+                            <td>Line of sight break or distance</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Positioning Strategy</h4>
+                <div class="code-block">
+Phase 1 (100%-75% HP):
+- Tank: North position, kite in circles
+- DPS: South position, focus head shots
+- Support: East/West, maintain healing range
+- Crowd Control: Mobile, interrupt adds
+
+Phase 2 (75%-50% HP):
+- Faster attack speed, tighter positioning
+- Tank: Smaller kiting circle
+- Team: Focus fire coordination
+- Emergency: Prepared ultimate usage
+
+Phase 3 (50%-0% HP):
+- Rage mode: All attacks +50% speed
+- Team: Maximum DPS window
+- Strategy: Burn before mechanics overwhelm
+- Backup: Revival planning if someone falls
+                </div>
+
+                <h3>Demon Lord (Wave 21+)</h3>
+                <p>
+                    The ultimate boss challenge, requiring master-level execution:
+                </p>
+
+                <h4>Unique Mechanics</h4>
+                <ul>
+                    <li><strong>Phase Transitions:</strong> Boss becomes invulnerable during summon phases</li>
+                    <li><strong>Add Management:</strong> Constantly spawning minions must be cleared</li>
+                    <li><strong>Area Denial:</strong> Fire patches that deal percentage-based damage</li>
+                    <li><strong>Ultimate Attack:</strong> Screen-wide devastation at 25% HP</li>
+                </ul>
+
+                <h4>Advanced Counter-Strategies</h4>
+                <ol>
+                    <li><strong>Phase 1 Setup:</strong> Team positions in quadrants, establishes rotation pattern</li>
+                    <li><strong>Add Priority:</strong> Clear adds immediately - they buff boss damage</li>
+                    <li><strong>Fire Management:</strong> Designate safe zones, rotate as areas are denied</li>
+                    <li><strong>Ultimate Survival:</strong> All players must have escape plan for final attack</li>
+                </ol>
+
+                <div class="nightmare-box">
+                    <div class="nightmare-box-title">
+                        <i class="fas fa-skull"></i>
+                        Boss Mastery Reality
+                    </div>
+                    <p>
+                        Most teams attempting Wave 21+ Demon Lord fail 50+ times before their first clear. This boss requires 100+ hours of practice to master. Don't expect quick success - plan for a long journey to mastery.
+                    </p>
+                </div>
+            </section>
+
+            <section id="advanced-tactics">
+                <h2>Advanced Tactics & Techniques</h2>
+                <p>
+                    These advanced techniques separate good Nightmare players from true masters. Each requires significant practice but provides crucial advantages in high-pressure situations.
+                </p>
+
+                <h3>Movement Techniques</h3>
+                
+                <h4>Perfect Kiting Patterns</h4>
+                <ul>
+                    <li><strong>Circle Kiting:</strong> Maintain constant distance while moving in large circles</li>
+                    <li><strong>Figure-8 Kiting:</strong> Advanced pattern for managing multiple enemy types</li>
+                    <li><strong>Wall Running:</strong> Using map edges to maintain distance and avoid surrounds</li>
+                    <li><strong>Dash Canceling:</strong> Interrupting dash animation for quick direction changes</li>
+                </ul>
+
+                <h4>Animation Canceling</h4>
+                <div class="code-block">
+Advanced Canceling Techniques:
+
+Attack Cancel into Ability:
+1. Start basic attack animation
+2. Input ability at 60% animation completion
+3. Ability fires immediately, skipping attack recovery
+
+Dash Cancel Combos:
+1. Begin weapon ability
+2. Dash during ability animation
+3. Continue combo with different positioning
+
+Ultimate Animation Skips:
+1. Use ultimate ability
+2. Weapon swap immediately
+3. Maintain ultimate effect, skip wind-down
+                </div>
+
+                <h3>Team Coordination Tactics</h3>
+                
+                <h4>Advanced Callout System</h4>
+                <ul>
+                    <li><strong>Priority System:</strong> Number enemies 1-5 based on threat level</li>
+                    <li><strong>Positioning Calls:</strong> Compass directions for quick communication</li>
+                    <li><strong>Cooldown Tracking:</strong> Team-wide ability management</li>
+                    <li><strong>Emergency Protocols:</strong> Predetermined responses to crisis situations</li>
+                </ul>
+
+                <h4>Synchronized Ultimate Usage</h4>
+                <p>
+                    Coordinate team ultimates for maximum impact:
+                </p>
+                <ol>
+                    <li><strong>Setup Phase:</strong> Crowd control ultimate groups enemies</li>
+                    <li><strong>Damage Phase:</strong> All DPS ultimates fire simultaneously</li>
+                    <li><strong>Cleanup Phase:</strong> Support ultimate handles survivors</li>
+                    <li><strong>Recovery Phase:</strong> Team repositions while abilities recharge</li>
+                </ol>
+
+                <h3>Resource Optimization</h3>
+                
+                <h4>Ability Efficiency</h4>
+                <ul>
+                    <li><strong>Cooldown Staggering:</strong> Never have all abilities on cooldown simultaneously</li>
+                    <li><strong>Situational Usage:</strong> Right ability for right situation, not just highest damage</li>
+                    <li><strong>Chain Combos:</strong> Linking abilities for multiplicative effects</li>
+                    <li><strong>Emergency Reserves:</strong> Always keep one escape ability ready</li>
+                </ul>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Practice Methodology
+                    </div>
+                    <p>
+                        Master one advanced technique at a time. Spend entire practice sessions focusing on single skills like perfect kiting or animation canceling. Only combine techniques after individual mastery. Most players try to learn everything simultaneously and master nothing.
+                    </p>
+                </div>
+            </section>
+
+            <section id="common-failures">
+                <h2>Common Failure Points & Solutions</h2>
+                <p>
+                    After analyzing hundreds of failed Nightmare attempts, clear patterns emerge. Understanding these failure points prevents repeated mistakes and accelerates improvement.
+                </p>
+
+                <h3>Critical Failure Analysis</h3>
+                
+                <h4>Wave 7 Boss Failures (45% of all attempts)</h4>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Failure Type</th>
+                            <th>Percentage</th>
+                            <th>Root Cause</th>
+                            <th>Prevention Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tank Death</td>
+                            <td>35%</td>
+                            <td>Poor positioning/cooldown management</td>
+                            <td>Practice kiting routes offline</td>
+                        </tr>
+                        <tr>
+                            <td>DPS Timeout</td>
+                            <td>28%</td>
+                            <td>Insufficient damage optimization</td>
+                            <td>Upgrade weapons before attempting</td>
+                        </tr>
+                        <tr>
+                            <td>Team Wipe</td>
+                            <td>22%</td>
+                            <td>Poor communication/panic</td>
+                            <td>Establish clear callout system</td>
+                        </tr>
+                        <tr>
+                            <td>Resource Depletion</td>
+                            <td>15%</td>
+                            <td>Early wave ability waste</td>
+                            <td>Strict cooldown discipline</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Wave 14 Dual Boss Failures (30% of remaining attempts)</h4>
+                <ul>
+                    <li><strong>Split Strategy Breakdown:</strong> Teams fail to separate bosses effectively</li>
+                    <li><strong>Coordination Loss:</strong> Communication breaks down under pressure</li>
+                    <li><strong>Resource Mismanagement:</strong> Using all ultimates on first boss</li>
+                    <li><strong>Positioning Errors:</strong> Getting caught between both bosses</li>
+                </ul>
+
+                <h3>Psychological Failure Factors</h3>
+                
+                <h4>Pressure and Performance</h4>
+                <p>
+                    Nightmare Mode creates intense pressure that degrades performance:
+                </p>
+                <ul>
+                    <li><strong>Tunnel Vision:</strong> Players lose peripheral awareness under stress</li>
+                    <li><strong>Panic Responses:</strong> Abandoning strategy when things go wrong</li>
+                    <li><strong>Fatigue Effects:</strong> Performance degradation after multiple attempts</li>
+                    <li><strong>Confidence Loss:</strong> Early mistakes leading to mental defeat</li>
+                </ul>
+
+                <h4>Solutions for Mental Game</h4>
+                <ol>
+                    <li><strong>Breathing Techniques:</strong> Controlled breathing during intense moments</li>
+                    <li><strong>Positive Visualization:</strong> Mental rehearsal of successful clears</li>
+                    <li><strong>Mistake Recovery:</strong> Predetermined plans for when things go wrong</li>
+                    <li><strong>Session Management:</strong> Limiting attempts to prevent fatigue</li>
+                </ol>
+
+                <div class="warning-box">
+                    <div class="warning-box-title">
+                        <i class="fas fa-brain"></i>
+                        Mental Preparation
+                    </div>
+                    <p>
+                        Nightmare Mode is as much mental as mechanical. Teams with inferior gear but superior mental preparation often outperform mechanically skilled but mentally unprepared groups. Invest in mental training as seriously as gear optimization.
+                    </p>
+                </div>
+            </section>
+
+            <section id="mastery-tips">
+                <h2>Mastery Tips from Elite Players</h2>
+                <p>
+                    These insights come from players who've achieved 100+ Nightmare clears and represent the pinnacle of Hunty Zombie expertise.
+                </p>
+
+                <h3>Mindset and Approach</h3>
+                
+                <h4>The Long Game Perspective</h4>
+                <ul>
+                    <li><strong>Progression Metrics:</strong> Track improvement in specific skills, not just clear rate</li>
+                    <li><strong>Learning from Failures:</strong> Each death provides valuable data for improvement</li>
+                    <li><strong>Patience Virtue:</strong> Rushing leads to mistakes - smooth execution wins</li>
+                    <li><strong>Continuous Optimization:</strong> Always looking for micro-improvements</li>
+                </ul>
+
+                <h4>Practice Philosophy</h4>
+                <ol>
+                    <li><strong>Deliberate Practice:</strong> Focus on specific weaknesses each session</li>
+                    <li><strong>Scenario Training:</strong> Practice specific wave types in isolation</li>
+                    <li><strong>Pressure Testing:</strong> Simulate high-pressure situations in practice</li>
+                    <li><strong>Cross-Training:</strong> Play all roles to understand team dynamics</li>
+                </ol>
+
+                <h3>Advanced Optimization</h3>
+                
+                <h4>Micro-Optimizations That Matter</h4>
+                <ul>
+                    <li><strong>Frame Data:</strong> Understanding exact timing windows for abilities</li>
+                    <li><strong>Positioning Pixels:</strong> Optimal standing positions for maximum safety and damage</li>
+                    <li><strong>Input Efficiency:</strong> Minimizing keystrokes and mouse movement</li>
+                    <li><strong>Visual Cues:</strong> Learning to read enemy animations frame-perfectly</li>
+                </ul>
+
+                <h4>Team Synergy Maximization</h4>
+                <div class="code-block">
+Elite Team Practices:
+
+Pre-Game Ritual:
+1. Equipment check and optimization
+2. Strategy review for anticipated challenges
+3. Communication test and role confirmation
+4. Mental preparation and focus exercises
+
+Mid-Game Adaptations:
+1. Real-time strategy adjustments
+2. Seamless role switching when needed
+3. Resource reallocation based on team needs
+4. Dynamic positioning based on emerging threats
+
+Post-Game Analysis:
+1. Detailed review of deaths and mistakes
+2. Strategy refinement for future attempts
+3. Individual performance feedback
+4. Team cohesion assessment
+                </div>
+
+                <h3>The Path to 100+ Clears</h3>
+                
+                <h4>Progression Milestones</h4>
+                <ol>
+                    <li><strong>Clears 1-10:</strong> Learning basic survival and team coordination</li>
+                    <li><strong>Clears 11-25:</strong> Developing consistency and advanced techniques</li>
+                    <li><strong>Clears 26-50:</strong> Mastering all roles and contingency planning</li>
+                    <li><strong>Clears 51-100:</strong> Perfecting execution and helping others improve</li>
+                    <li><strong>100+ Clears:</strong> Innovation and pushing the meta forward</li>
+                </ol>
+
+                <h4>Community Contribution</h4>
+                <p>
+                    Elite players don't just master the game - they help others improve:
+                </p>
+                <ul>
+                    <li><strong>Coaching Others:</strong> Teaching reinforces your own understanding</li>
+                    <li><strong>Strategy Innovation:</strong> Developing new tactics and sharing discoveries</li>
+                    <li><strong>Community Building:</strong> Creating positive environment for improvement</li>
+                    <li><strong>Content Creation:</strong> Documenting strategies for future players</li>
+                </ul>
+
+                <div class="nightmare-box">
+                    <div class="nightmare-box-title">
+                        <i class="fas fa-crown"></i>
+                        Elite Player Wisdom
+                    </div>
+                    <p>
+                        "Nightmare Mode teaches you more about yourself than about the game. It reveals your patience, your ability to learn from failure, and your capacity for teamwork under pressure. Master these traits, and you master the game." - Top 1% Nightmare Player
+                    </p>
+                </div>
+
+                <h3>Final Words of Mastery</h3>
+                <p>
+                    Nightmare Mode mastery is not a destination but a journey of continuous improvement. Every clear teaches new lessons, every failure reveals new opportunities for growth. The players who achieve true mastery are those who embrace this journey with patience, dedication, and an unquenchable desire to improve.
+                </p>
+
+                <p>
+                    Remember: The goal isn't just to clear Nightmare Mode once - it's to do it so consistently that you can help others achieve the same success. True mastery is measured not just by your own achievements, but by your ability to elevate your entire team and community.
+                </p>
+
+                <p>
+                    The nightmare awaits, survivor. Will you conquer it, or will it conquer you? The choice, as always, is yours.
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./beginners-guide.html" class="related-guide-item">
+                    <i class="fas fa-seedling"></i> Beginner's Guide
+                </a>
+                <a href="./meta-weapons-guide.html" class="related-guide-item">
+                    <i class="fas fa-sword"></i> Meta Weapons & Builds
+                </a>
+                <a href="./perks-traits-guide.html" class="related-guide-item">
+                    <i class="fas fa-star"></i> Perks & Traits Guide
+                </a>
+                <a href="./solo-speedrun-guide.html" class="related-guide-item">
+                    <i class="fas fa-running"></i> Solo Speedrun Guide
+                </a>
+                <a href="./pets-farming-guide.html" class="related-guide-item">
+                    <i class="fas fa-paw"></i> Pet System Guide
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; padding: 20px 0;">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

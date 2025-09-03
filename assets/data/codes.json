@@ -1,0 +1,125 @@
+{
+  "lastUpdated": "2025-08-29T00:00:00Z",
+  "codes": [
+    {
+      "id": "alpha2025",
+      "code": "ALPHA2025",
+      "status": "active",
+      "badge": "NEW",
+      "rewards": [
+        {
+          "type": "coins",
+          "amount": 1000,
+          "icon": "fas fa-coins"
+        },
+        {
+          "type": "gems",
+          "amount": 50,
+          "icon": "fas fa-gem"
+        }
+      ],
+      "expires": "2025-09-01T23:59:59Z",
+      "addedDate": "2025-08-27T00:00:00Z",
+      "description": "Alpha release celebration code"
+    },
+    {
+      "id": "survive100",
+      "code": "SURVIVE100",
+      "status": "active",
+      "badge": "HOT",
+      "rewards": [
+        {
+          "type": "armor",
+          "rarity": "epic",
+          "name": "Epic Survivor Armor",
+          "icon": "fas fa-shield-alt"
+        }
+      ],
+      "expires": "2025-08-31T23:59:59Z",
+      "addedDate": "2025-08-25T00:00:00Z",
+      "description": "Celebrate 100 million visits"
+    },
+    {
+      "id": "welcome2hz",
+      "code": "WELCOME2HZ",
+      "status": "active",
+      "badge": "ACTIVE",
+      "rewards": [
+        {
+          "type": "pack",
+          "name": "Starter Pack",
+          "icon": "fas fa-box",
+          "contents": [
+            "Basic Weapon",
+            "500 Coins",
+            "Health Potion x5"
+          ]
+        }
+      ],
+      "expires": null,
+      "addedDate": "2025-05-22T00:00:00Z",
+      "description": "Welcome gift for new players"
+    },
+    {
+      "id": "update16",
+      "code": "UPDATE16",
+      "status": "active",
+      "badge": "UPDATE",
+      "rewards": [
+        {
+          "type": "weapon",
+          "rarity": "rare",
+          "name": "Plasma Rifle",
+          "icon": "fas fa-gun"
+        },
+        {
+          "type": "xp_boost",
+          "duration": "2 hours",
+          "multiplier": 2,
+          "icon": "fas fa-rocket"
+        }
+      ],
+      "expires": "2025-09-05T23:59:59Z",
+      "addedDate": "2025-08-27T00:00:00Z",
+      "description": "Update 1.6 celebration rewards"
+    },
+    {
+      "id": "discord1k",
+      "code": "DISCORD1K",
+      "status": "active",
+      "badge": "SOCIAL",
+      "rewards": [
+        {
+          "type": "pet",
+          "name": "Discord Pet",
+          "rarity": "exclusive",
+          "icon": "fab fa-discord"
+        }
+      ],
+      "expires": "2025-08-30T23:59:59Z",
+      "addedDate": "2025-08-26T00:00:00Z",
+      "description": "1000 Discord members milestone"
+    },
+    {
+      "id": "nightmare",
+      "code": "NIGHTMARE",
+      "status": "expired",
+      "badge": "EXPIRED",
+      "rewards": [
+        {
+          "type": "title",
+          "name": "Nightmare Survivor",
+          "icon": "fas fa-skull"
+        }
+      ],
+      "expires": "2025-08-20T23:59:59Z",
+      "addedDate": "2025-08-10T00:00:00Z",
+      "description": "Nightmare mode launch code"
+    }
+  ],
+  "categories": {
+    "active": ["alpha2025", "survive100", "welcome2hz", "update16", "discord1k"],
+    "expired": ["nightmare"],
+    "permanent": ["welcome2hz"]
+  }
+}

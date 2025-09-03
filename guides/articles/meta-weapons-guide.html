@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Weapons & Build Guide [UPDATE 2] - Hunty Zombie | HZ DEV</title>
+    <meta name="description" content="Master Hunty Zombie's September 2025 meta with Greatsword + Scythe builds. Learn optimal weapon synergies, trait optimization, and coin farming strategies for UPDATE 2 by HZ DEV.">
+    <meta name="keywords" content="Hunty Zombie, meta weapons UPDATE 2, Greatsword Scythe build, HZ DEV, best weapons September 2025, Prodigy trait, Dagger new weapon">
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a0e1a;
+            --secondary-dark: #151923;
+            --tertiary-dark: #1e2533;
+            --accent-green: #00ff88;
+            --accent-blue: #00d4ff;
+            --accent-purple: #b833ff;
+            --accent-red: #ff3e3e;
+            --accent-gold: #ffd700;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --text-muted: #64748b;
+            --border-color: #2a3441;
+            --gradient-1: linear-gradient(135deg, #ff3e3e 0%, #ffd700 100%);
+            --gradient-2: linear-gradient(135deg, #b833ff 0%, #ff3e3e 100%);
+            --gradient-3: linear-gradient(135deg, #00d4ff 0%, #b833ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-badge {
+            background: var(--accent-purple);
+            color: var(--primary-dark);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--accent-gold);
+        }
+
+        .nav-link.active {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--accent-gold);
+        }
+
+        .nav-link i {
+            font-size: 1rem;
+        }
+
+        .nav-link span {
+            font-weight: 500;
+        }
+
+        /* Language Selector */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector {
+            position: relative;
+        }
+
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 62, 62, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-category {
+            color: var(--accent-gold);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            margin-left: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .difficulty-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--accent-gold);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content Layout */
+        .article-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+            display: block;
+            padding-left: 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-list a:hover {
+            color: var(--accent-gold);
+            border-left-color: var(--accent-gold);
+        }
+
+        .toc-list a.active {
+            color: var(--accent-gold);
+            border-left-color: var(--accent-gold);
+        }
+
+        /* Article Content */
+        .article-content {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-1);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-gold);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Tier List */
+        .tier-list {
+            background: var(--tertiary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tier-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--primary-dark);
+            border-radius: 8px;
+        }
+
+        .tier-label {
+            width: 80px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+
+        .tier-s { background: linear-gradient(135deg, #ff3e3e, #ffd700); }
+        .tier-a { background: linear-gradient(135deg, #b833ff, #ff3e3e); }
+        .tier-b { background: linear-gradient(135deg, #00d4ff, #b833ff); }
+        .tier-c { background: linear-gradient(135deg, #00ff88, #00d4ff); }
+
+        .tier-items {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .weapon-item {
+            background: var(--secondary-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .weapon-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Comparison */
+        .stats-comparison {
+            width: 100%;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .stats-comparison th {
+            background: var(--primary-dark);
+            padding: 1rem;
+            text-align: left;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .stats-comparison td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .stats-comparison tr:last-child td {
+            border-bottom: none;
+        }
+
+        .stat-bar {
+            height: 8px;
+            background: var(--primary-dark);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.25rem;
+        }
+
+        .stat-fill {
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        /* Build Cards */
+        .build-card {
+            background: var(--tertiary-dark);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            transition: all 0.3s;
+        }
+
+        .build-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+
+        .build-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .build-title {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
+        }
+
+        .build-rating {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .star {
+            color: var(--accent-gold);
+        }
+
+        .build-components {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .component-item {
+            background: var(--primary-dark);
+            padding: 0.75rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .component-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .component-value {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* DPS Calculator */
+        .dps-calculator {
+            background: var(--tertiary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .calculator-title {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .calculator-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .input-group select,
+        .input-group input {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .calculator-result {
+            background: var(--primary-dark);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .dps-value {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        /* Code Block */
+        .code-block {
+            background: var(--primary-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: var(--accent-green);
+            overflow-x: auto;
+        }
+
+        /* Tip Boxes */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 62, 62, 0.1) 100%);
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .related-guides {
+            background: var(--secondary-dark);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .related-guides-title {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .related-guide-item {
+            display: block;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--tertiary-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+
+        .related-guide-item:hover {
+            background: var(--primary-dark);
+            color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-1);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+        }
+
+        .footer-bottom a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc, .sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary-dark);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo">
+                    <span class="logo-text">HUNTY ZOMBIE</span>
+                    <span class="logo-badge">META GUIDE</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/codes/" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Codes</span>
+                </a>
+                <a href="/wiki/" class="nav-link">
+                    <i class="fas fa-book"></i>
+                    <span>Wiki</span>
+                </a>
+                <a href="/scripts/" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Scripts</span>
+                </a>
+                <a href="/guides/" class="nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Guides</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-header-content">
+            <div class="article-category">WEAPON META</div>
+            <h1 class="article-title">
+                Meta Weapons & Build Guide
+                <span class="update-badge">UPDATE 2</span>
+            </h1>
+            <div class="article-meta">
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>HZ Community</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>20 min read</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated: September 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="difficulty-badge">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="article-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3 class="toc-title">Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#tier-list">Weapon Tier List</a></li>
+                <li><a href="#greatsword-meta">Greatsword Domination</a></li>
+                <li><a href="#weapon-synergies">Weapon Synergies</a></li>
+                <li><a href="#trait-optimization">Trait Optimization</a></li>
+                <li><a href="#build-examples">Meta Build Examples</a></li>
+                <li><a href="#dps-calculations">DPS Calculations</a></li>
+                <li><a href="#update-changes">Update 2 Changes</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <main class="article-content">
+            <!-- Featured Image -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="/assets/images/hunty-zombie2.webp" alt="Hunty Zombie Meta Weapons" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            </div>
+            
+            <section id="introduction">
+                <h2>The Current Meta Landscape</h2>
+                <p>
+                    Welcome to the definitive meta guide for Hunty Zombie UPDATE 2! Created by HZ DEV, this anime wave defense Roblox experience has evolved significantly with the introduction of the Scythe and Dagger weapons in September 2025. This comprehensive guide will break down everything you need to know about the current meta, optimal weapon combinations, and coin maximization strategies for both solo and team gameplay.
+                </p>
+                <p>
+                    The September 2025 meta has established the Greatsword + Scythe combination as the undisputed king of wave survival. With their insane AoE damage and permanent enemy stagger capabilities, this duo dominates all content including Nightmare difficulty. Understanding weapon synergies, trait optimization, and the new DoubleDMG perk is what separates casual players from elite zombie hunters.
+                </p>
+
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-fire"></i>
+                        Meta Alert
+                    </div>
+                    <p>
+                        The Greatsword + Scythe combination is the current meta, offering unmatched AoE damage and permanent enemy stagger. With Prodigy trait and DoubleDMG perk, this setup can clear entire screens of zombies instantly, making it essential for high-wave survival.
+                    </p>
+                </div>
+            </section>
+
+            <section id="tier-list">
+                <h2>Comprehensive Weapon Tier List</h2>
+                <p>
+                    Our tier list is based on extensive testing across all difficulty modes, considering factors like damage output, utility, ease of use, and synergy potential. Rankings assume optimal trait setups and player skill level.
+                </p>
+
+                <div class="tier-list">
+                    <div class="tier-row">
+                        <div class="tier-label tier-s">S</div>
+                        <div class="tier-items">
+                            <div class="weapon-item">Greatsword</div>
+                            <div class="weapon-item">Scythe <span style="color: var(--accent-red); font-size: 0.75rem;">(NEW META)</span></div>
+                            <div class="weapon-item">Katana</div>
+                        </div>
+                    </div>
+                    <div class="tier-row">
+                        <div class="tier-label tier-a">A</div>
+                        <div class="tier-items">
+                            <div class="weapon-item">Dagger <span style="color: var(--accent-green); font-size: 0.75rem;">(NEW)</span></div>
+                            <div class="weapon-item">Guitar</div>
+                            <div class="weapon-item">Dual Guns</div>
+                        </div>
+                    </div>
+                    <div class="tier-row">
+                        <div class="tier-label tier-b">B</div>
+                        <div class="tier-items">
+                            <div class="weapon-item">Axes</div>
+                        </div>
+                    </div>
+                    <div class="tier-row">
+                        <div class="tier-label tier-c">C</div>
+                        <div class="tier-items">
+                            <div class="weapon-item">Baseball Bat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Tier Explanations</h3>
+                <ul>
+                    <li><strong>S-Tier:</strong> Meta-defining weapons that excel in all scenarios</li>
+                    <li><strong>A-Tier:</strong> Powerful options with specific strengths</li>
+                    <li><strong>B-Tier:</strong> Viable choices with notable weaknesses</li>
+                    <li><strong>C-Tier:</strong> Starter weapons or highly situational picks</li>
+                </ul>
+            </section>
+
+            <section id="greatsword-meta">
+                <h2>The Greatsword + Scythe Meta Domination</h2>
+                <p>
+                    The Greatsword and Scythe combination has become the definitive meta in UPDATE 2. Both weapons offer insane AoE damage with the potential to permanently stagger enemies with just their basic attacks. This synergy creates an unstoppable force that trivializes even Nightmare difficulty.
+                </p>
+
+                <h3>Why This Combo Dominates</h3>
+                <table class="stats-comparison">
+                    <thead>
+                        <tr>
+                            <th>Weapon</th>
+                            <th>Key Strength</th>
+                            <th>Meta Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Greatsword</td>
+                            <td>Insane AoE damage</td>
+                            <td>Clears entire screens</td>
+                        </tr>
+                        <tr>
+                            <td>Scythe</td>
+                            <td>Permanent enemy stagger</td>
+                            <td>Complete crowd control</td>
+                        </tr>
+                        <tr>
+                            <td>Combined</td>
+                            <td>Invincibility frames</td>
+                            <td>Near-immortal gameplay</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Optimal Ability Usage</h3>
+                <ul>
+                    <li><strong>Z Ability:</strong> Primary damage ability - coordinate between weapons for continuous pressure</li>
+                    <li><strong>X Ability:</strong> Secondary ability - use for crowd control or burst damage</li>
+                    <li><strong>C Ability:</strong> Utility ability - save for emergency situations</li>
+                    <li><strong>G Awakening:</strong> Ultimate ability - coordinate both weapon awakenings for boss waves</li>
+                    <li><strong>Q Dash:</strong> Invincibility frames - essential for dodging TNT zombies</li>
+                </ul>
+
+                <div class="code-block">
+Optimal Rotation (Greatsword + Scythe):
+Greatsword M1 x3 → Switch → Scythe M1 x3 → Z Ability → 
+Switch → Greatsword X Ability → Q Dash → Repeat
+
+Key: Alternate weapons to maintain constant stagger while abilities cool down
+With Prodigy trait: Maximum damage output achieved
+                </div>
+            </section>
+
+            <section id="weapon-synergies">
+                <h2>Weapon Synergy Combinations</h2>
+                <p>
+                    Having two weapon slots isn't just about variety - it's about creating synergistic combinations that cover each other's weaknesses and multiply your effectiveness.
+                </p>
+
+                <h3>Top Meta Combinations</h3>
+
+                <div class="build-card">
+                    <div class="build-header">
+                        <h3 class="build-title">The META Destroyer (S-Tier)</h3>
+                        <div class="build-rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Primary</div>
+                            <div class="component-value">Greatsword</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Secondary</div>
+                            <div class="component-value">Scythe</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Prodigy/Power III</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">DoubleDMG</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem;">
+                        <strong>Strategy:</strong> The ultimate September 2025 meta. Both weapons provide insane AoE damage with permanent enemy stagger. DoubleDMG perk melts bosses instantly. This combo trivializes all content including Nightmare mode.
+                    </p>
+                </div>
+
+                <div class="build-card">
+                    <div class="build-header">
+                        <h3 class="build-title">The Speedster (A-Tier)</h3>
+                        <div class="build-rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Primary</div>
+                            <div class="component-value">Dagger</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Secondary</div>
+                            <div class="component-value">Dual Guns</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Focus</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">Vampire</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem;">
+                        <strong>Strategy:</strong> Lightning-fast attacks with Dagger build up Vampire healing quickly. Switch to Dual Guns for ranged phases. Perfect for solo speedruns.
+                    </p>
+                </div>
+
+                <div class="build-card">
+                    <div class="build-header">
+                        <h3 class="build-title">The Survivor (A-Tier)</h3>
+                        <div class="build-rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Primary</div>
+                            <div class="component-value">Scythe</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Secondary</div>
+                            <div class="component-value">Katana</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Power</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">Healer</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem;">
+                        <strong>Strategy:</strong> Maximum i-frames between both weapons. Scythe for crowd control, Katana for single-target burst. Healer perk provides team support.
+                    </p>
+                </div>
+            </section>
+
+            <section id="trait-optimization">
+                <h2>Trait Optimization & Reroll Strategy</h2>
+                <p>
+                    Traits are the hidden power multipliers that can make or break your build. Understanding trait mathematics and reroll strategies is essential for maximizing your potential.
+                </p>
+
+                <h3>Trait Tier List</h3>
+                <table class="stats-comparison">
+                    <thead>
+                        <tr>
+                            <th>Trait</th>
+                            <th>Rarity</th>
+                            <th>Damage Boost</th>
+                            <th>Attack Speed</th>
+                            <th>Skill Damage</th>
+                            <th>Overall Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Prodigy</strong></td>
+                            <td>Mythic (0.5%)</td>
+                            <td>+15%</td>
+                            <td>+6%</td>
+                            <td>+15%</td>
+                            <td>S-Tier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Power</strong></td>
+                            <td>Legendary (5%)</td>
+                            <td>+12%</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>A-Tier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Focus</strong></td>
+                            <td>Legendary (5%)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>+20%</td>
+                            <td>A-Tier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Swift</strong></td>
+                            <td>Epic (10%)</td>
+                            <td>-</td>
+                            <td>+8%</td>
+                            <td>-</td>
+                            <td>B-Tier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fortune</strong></td>
+                            <td>Epic (10%)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Drop +30%</td>
+                            <td>B-Tier (Farming)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Reroll Investment Strategy</h3>
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-dice"></i>
+                        Smart Rerolling
+                    </div>
+                    <p>
+                        Expected cost to get Prodigy: ~40,000 Coins (20 rerolls average). However, Power or Focus traits provide 80% of Prodigy's effectiveness at 1/10th the cost. Only chase Prodigy if you have 100K+ Coins saved.
+                    </p>
+                </div>
+
+                <h3>Trait Priority by Weapon Type</h3>
+                <ul>
+                    <li><strong>Fast Attack Weapons (Dagger, Katana):</strong> Swift > Power > Focus</li>
+                    <li><strong>Heavy Hitters (Greatsword, Hammer):</strong> Power > Prodigy > Focus</li>
+                    <li><strong>Ability-Focused (Guitar, Scythe):</strong> Focus > Prodigy > Power</li>
+                    <li><strong>Farming Builds:</strong> Fortune > Any combat trait</li>
+                </ul>
+            </section>
+
+            <section id="build-examples">
+                <h2>Complete Meta Build Examples</h2>
+                <p>
+                    Here are fully optimized builds for different playstyles and goals, complete with rotation guides and tactical advice.
+                </p>
+
+                <h3>Build #1: The Nightmare Destroyer</h3>
+                <div class="build-card">
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Weapons</div>
+                            <div class="component-value">Greatsword + Guitar</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Prodigy</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">Critical</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Pet</div>
+                            <div class="component-value">Dragon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Rotation Guide:</h4>
+                <div class="code-block">
+Wave 1-20: Greatsword only, save abilities for groups
+Wave 20-50: Alternate weapons every 2 waves
+Wave 50-70: Guitar for ranged phases, Greatsword for melee
+Wave 70+: Full rotation with awakening on boss waves
+
+Key Combo: GS Basic x3 → Switch → Guitar Ability 1 → 
+Switch → GS Ability 2 → Repeat
+                </div>
+
+                <h3>Build #2: The Speed Farmer</h3>
+                <div class="build-card">
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Weapons</div>
+                            <div class="component-value">Dagger + Dual Guns</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Fortune</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">Vampire</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Pet</div>
+                            <div class="component-value">Raven</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Efficiency Tips:</h4>
+                <ul>
+                    <li>Clear Normal mode in under 8 minutes</li>
+                    <li>40% increased drop rate with Fortune + Raven</li>
+                    <li>Average 12K Coins per run with optimal routing</li>
+                    <li>Skip boss animations with proper positioning</li>
+                </ul>
+
+                <h3>Build #3: The Team Support</h3>
+                <div class="build-card">
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Weapons</div>
+                            <div class="component-value">Scythe + Bow</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Focus</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">Healer</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Pet</div>
+                            <div class="component-value">Angel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Team Role:</h4>
+                <p>
+                    Focus on keeping teammates alive while providing consistent damage. Scythe's wide attacks protect allies, while Bow provides safe damage from distance. Healer perk + Angel pet creates a healing aura that can sustain an entire team through Nightmare difficulty.
+                </p>
+            </section>
+
+            <section id="dps-calculations">
+                <h2>DPS Calculations & Optimization</h2>
+                <p>
+                    Understanding the mathematics behind damage calculation helps you make informed decisions about gear and strategy. Let's break down the DPS formula and optimization techniques.
+                </p>
+
+                <h3>Base DPS Formula</h3>
+                <div class="code-block">
+Total DPS = (Base Damage × Trait Multiplier × Perk Multiplier) × Attack Speed
+            + (Skill Damage × Skill Multiplier × Cooldown Efficiency)
+            + (Pet Damage Contribution)
+            + (Critical Hit Bonus × Critical Rate)
+
+Example (Greatsword with Prodigy):
+Base: 450 × 1.15 × 1.0 × 1.2 = 621 DPS
+Skills: 1200 × 1.15 × 0.4 = 552 DPS
+Pet (Dragon): 50 DPS + 20% burn chance
+Critical: 621 × 2.0 × 0.25 = 310.5 DPS
+Total: ~1,533.5 DPS (before awakening)
+                </div>
+
+                <div class="dps-calculator">
+                    <h3 class="calculator-title">DPS Comparison Tool</h3>
+                    <table class="stats-comparison">
+                        <thead>
+                            <tr>
+                                <th>Build</th>
+                                <th>Single Target DPS</th>
+                                <th>AoE DPS</th>
+                                <th>Burst Potential</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Greatsword + Prodigy</td>
+                                <td>2,850</td>
+                                <td>8,550</td>
+                                <td>12,000+</td>
+                            </tr>
+                            <tr>
+                                <td>Dagger + Focus</td>
+                                <td>3,200</td>
+                                <td>4,800</td>
+                                <td>9,600</td>
+                            </tr>
+                            <tr>
+                                <td>Dual Guns + Power</td>
+                                <td>2,400</td>
+                                <td>7,200</td>
+                                <td>8,000</td>
+                            </tr>
+                            <tr>
+                                <td>Scythe + Prodigy</td>
+                                <td>2,600</td>
+                                <td>9,100</td>
+                                <td>10,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Optimization Techniques</h3>
+                <ul>
+                    <li><strong>Animation Canceling:</strong> Cancel recovery frames with abilities for 20% more attacks</li>
+                    <li><strong>Ability Weaving:</strong> Use abilities between basic attack chains, not during</li>
+                    <li><strong>Positioning:</strong> Maximize AoE overlap for 3x effective damage</li>
+                    <li><strong>Cooldown Management:</strong> Never let abilities sit off cooldown for more than 2 seconds</li>
+                    <li><strong>Awakening Timing:</strong> Use at 60%+ enemy density for maximum value</li>
+                </ul>
+            </section>
+
+            <section id="update-changes">
+                <h2>UPDATE 2 Changes & September 2025 Meta</h2>
+                <p>
+                    UPDATE 2 brought game-changing additions to Hunty Zombie, establishing the current meta that dominates September 2025. The introduction of the Scythe and Dagger weapons, along with the DoubleDMG perk, has revolutionized high-level play.
+                </p>
+
+                <h3>Major UPDATE 2 Additions</h3>
+                <table class="stats-comparison">
+                    <thead>
+                        <tr>
+                            <th>Addition</th>
+                            <th>Type</th>
+                            <th>Key Feature</th>
+                            <th>Meta Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scythe</td>
+                            <td>Weapon</td>
+                            <td>Permanent Stagger</td>
+                            <td>New S-Tier Meta</td>
+                        </tr>
+                        <tr>
+                            <td>Dagger</td>
+                            <td>Weapon</td>
+                            <td>Attack Speed</td>
+                            <td>A-Tier Speed Option</td>
+                        </tr>
+                        <tr>
+                            <td>DoubleDMG</td>
+                            <td>Perk</td>
+                            <td>2x Damage Burst</td>
+                            <td>Boss Killer Essential</td>
+                        </tr>
+                        <tr>
+                            <td>Lucky Spins</td>
+                            <td>System</td>
+                            <td>No Rare Items</td>
+                            <td>Better Legendary Odds</td>
+                        </tr>
+                        <tr>
+                            <td>ALPHA Status</td>
+                            <td>Development</td>
+                            <td>Active Updates</td>
+                            <td>Expect Changes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Current Meta Strategies</h3>
+                <p>
+                    The UPDATE 2 meta has solidified around these proven strategies:
+                </p>
+                <ul>
+                    <li><strong>Greatsword + Scythe Domination:</strong> Permanent stagger with insane AoE clears all content</li>
+                    <li><strong>DoubleDMG Boss Melting:</strong> Time the new perk for instant boss elimination</li>
+                    <li><strong>Dragon Pet Synergy:</strong> 30% drop boost + 20% burn chance multiplies effectiveness</li>
+                    <li><strong>Friend Bonus Farming:</strong> 25% coin boost with full friend party is essential</li>
+                    <li><strong>Lucky Spin Optimization:</strong> Save codes for Lucky Spins to target Mythic weapons</li>
+                </ul>
+
+                <h3>ALPHA Development Notice</h3>
+                <div class="tip-box">
+                    <div class="tip-box-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Game in Active Development
+                    </div>
+                    <p>
+                        Hunty Zombie is in ALPHA RELEASE by HZ DEV. Expect frequent updates, balance changes, and potential data resets. The current Greatsword + Scythe meta may change, so stay flexible. Join the official HZ DEV Discord for real-time updates and patch notes.
+                    </p>
+                </div>
+            </section>
+
+            <section id="conclusion">
+                <h2>Mastering the Meta</h2>
+                <p>
+                    The September 2025 Hunty Zombie meta is defined by the Greatsword + Scythe combination, which trivializes all content with its permanent stagger and AoE damage. Success in this HZ DEV creation comes from understanding weapon synergies, optimizing traits, and maximizing coin farming efficiency.
+                </p>
+
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Greatsword + Scythe is the undisputed meta for all content including Nightmare</li>
+                    <li>Prodigy trait is ideal but not mandatory - Power/Focus are viable alternatives</li>
+                    <li>Weapon synergy matters more than individual weapon strength</li>
+                    <li>DPS calculations should factor in survivability and utility</li>
+                    <li>Game is in ALPHA - expect frequent updates from HZ DEV</li>
+                </ul>
+
+                <h3>Final Build Recommendation</h3>
+                <p>
+                    For players looking to invest in one optimized build:
+                </p>
+                <div class="build-card" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 62, 62, 0.1) 100%); border-color: var(--accent-gold);">
+                    <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 1rem;">September 2025 Ultimate Meta Build</h3>
+                    <div class="build-components">
+                        <div class="component-item">
+                            <div class="component-label">Primary</div>
+                            <div class="component-value">Greatsword</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Secondary</div>
+                            <div class="component-value">Scythe</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Trait</div>
+                            <div class="component-value">Prodigy/Power III</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Perk</div>
+                            <div class="component-value">DoubleDMG</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Pet</div>
+                            <div class="component-value">Dragon/Raven</div>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-label">Investment</div>
+                            <div class="component-value">~150K Coins + Lucky Spins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Remember, Hunty Zombie is in ALPHA RELEASE by HZ DEV, so the meta evolves frequently. The Greatsword + Scythe combination currently dominates, but stay connected with the community for updates. Master these concepts, farm coins efficiently, and dominate the zombie apocalypse!
+                </p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="related-guides">
+                <h3 class="related-guides-title">Related Guides</h3>
+                <a href="./beginners-guide.html" class="related-guide-item">
+                    <i class="fas fa-book"></i> Beginner's Guide
+                </a>
+                <a href="./nightmare-mode-guide.html" class="related-guide-item">
+                    <i class="fas fa-skull"></i> Nightmare Mode
+                </a>
+                <a href="./perks-traits-guide.html" class="related-guide-item">
+                    <i class="fas fa-star"></i> Perks & Traits
+                </a>
+                <a href="./solo-speedrun-guide.html" class="related-guide-item">
+                    <i class="fas fa-running"></i> Speedrun Tactics
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/guides/" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Guides
+    </a>
+
+    <script>
+        // Table of Contents Active State
+        const sections = document.querySelectorAll('section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hunty Zombie Online. Not affiliated with Roblox Corporation or HZ DEV. | <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Language Selector (placeholder functionality)
+        const langBtn = document.getElementById('langBtn');
+        if (langBtn) {
+            langBtn.addEventListener('click', () => {
+                // Placeholder - could be expanded for actual language switching
+                console.log('Language selector clicked');
+            });
+        }
+    </script>
+</body>
+</html>

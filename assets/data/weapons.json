@@ -1,0 +1,524 @@
+{
+  "weapons": [
+    {
+      "id": "ak47-inferno",
+      "name": "AK-47 Inferno",
+      "category": "assault",
+      "type": "Assault Rifle",
+      "rarity": "legendary",
+      "tier": "S",
+      "description": "A legendary assault rifle infused with eternal flames. Burns through zombie hordes with devastating efficiency.",
+      "image": "/assets/images/weapons/ak47-inferno.jpg",
+      "stats": {
+        "damage": 950,
+        "fireRate": 7.5,
+        "range": 80,
+        "magazine": 30,
+        "reload": 2.8,
+        "accuracy": 75,
+        "mobility": 65,
+        "penetration": 3
+      },
+      "maxLevel": 50,
+      "perks": [
+        {
+          "name": "Burn Damage",
+          "icon": "fire",
+          "description": "Inflicts burn damage over time"
+        },
+        {
+          "name": "Fast Reload",
+          "icon": "bolt",
+          "description": "30% faster reload speed"
+        }
+      ],
+      "upgradePath": {
+        "cost": [1000, 2500, 5000, 10000, 25000],
+        "materials": ["Fire Crystal", "Dragon Scale", "Inferno Core"]
+      },
+      "unlockRequirement": "Reach Wave 50",
+      "price": {
+        "coins": 50000,
+        "gems": 500
+      }
+    },
+    {
+      "id": "awp-thunder",
+      "name": "AWP Thunder",
+      "category": "sniper",
+      "type": "Sniper Rifle",
+      "rarity": "epic",
+      "tier": "A",
+      "description": "A powerful sniper rifle charged with lightning. One shot, one kill - with a shocking twist.",
+      "image": "/assets/images/weapons/awp-thunder.jpg",
+      "stats": {
+        "damage": 2000,
+        "fireRate": 0.5,
+        "range": 200,
+        "magazine": 5,
+        "reload": 3.5,
+        "accuracy": 100,
+        "mobility": 30,
+        "penetration": 5
+      },
+      "maxLevel": 45,
+      "perks": [
+        {
+          "name": "Electric Stun",
+          "icon": "bolt",
+          "description": "Stuns nearby enemies on hit"
+        },
+        {
+          "name": "Perfect Accuracy",
+          "icon": "crosshairs",
+          "description": "100% accuracy when scoped"
+        }
+      ],
+      "upgradePath": {
+        "cost": [800, 2000, 4000, 8000, 20000],
+        "materials": ["Thunder Stone", "Lightning Rod", "Storm Core"]
+      },
+      "unlockRequirement": "Get 100 headshots",
+      "price": {
+        "coins": 35000,
+        "gems": 350
+      }
+    },
+    {
+      "id": "spas12-frost",
+      "name": "SPAS-12 Frost",
+      "category": "shotgun",
+      "type": "Shotgun",
+      "rarity": "rare",
+      "tier": "B",
+      "description": "A tactical shotgun enhanced with cryogenic technology. Freezes enemies solid before shattering them.",
+      "image": "/assets/images/weapons/spas12-frost.jpg",
+      "stats": {
+        "damage": 850,
+        "fireRate": 2.0,
+        "range": 15,
+        "magazine": 8,
+        "reload": 3.0,
+        "accuracy": 40,
+        "mobility": 55,
+        "penetration": 1,
+        "pellets": 8
+      },
+      "maxLevel": 35,
+      "perks": [
+        {
+          "name": "Freeze Effect",
+          "icon": "snowflake",
+          "description": "30% chance to freeze enemies"
+        }
+      ],
+      "upgradePath": {
+        "cost": [500, 1200, 2500, 5000, 12000],
+        "materials": ["Ice Shard", "Frozen Heart", "Blizzard Core"]
+      },
+      "unlockRequirement": "Reach Wave 20",
+      "price": {
+        "coins": 20000,
+        "gems": 200
+      }
+    },
+    {
+      "id": "glock17",
+      "name": "Glock-17",
+      "category": "pistol",
+      "type": "Pistol",
+      "rarity": "common",
+      "tier": "C",
+      "description": "A reliable starting pistol. Not fancy, but gets the job done in the early waves.",
+      "image": "/assets/images/weapons/glock17.jpg",
+      "stats": {
+        "damage": 150,
+        "fireRate": 6.0,
+        "range": 30,
+        "magazine": 17,
+        "reload": 1.8,
+        "accuracy": 65,
+        "mobility": 85,
+        "penetration": 1
+      },
+      "maxLevel": 20,
+      "perks": [],
+      "upgradePath": {
+        "cost": [100, 250, 500, 1000, 2000],
+        "materials": []
+      },
+      "unlockRequirement": "Starting weapon",
+      "price": {
+        "coins": 0,
+        "gems": 0
+      }
+    },
+    {
+      "id": "mp5-venom",
+      "name": "MP5 Venom",
+      "category": "smg",
+      "type": "SMG",
+      "rarity": "epic",
+      "tier": "A",
+      "description": "A rapid-fire SMG infused with deadly venom. Each bullet carries a toxic payload.",
+      "image": "/assets/images/weapons/mp5-venom.jpg",
+      "stats": {
+        "damage": 250,
+        "fireRate": 12.0,
+        "range": 40,
+        "magazine": 40,
+        "reload": 2.2,
+        "accuracy": 60,
+        "mobility": 75,
+        "penetration": 1
+      },
+      "maxLevel": 40,
+      "perks": [
+        {
+          "name": "Poison Rounds",
+          "icon": "skull-crossbones",
+          "description": "Inflicts poison damage over time"
+        },
+        {
+          "name": "Extended Mag",
+          "icon": "plus",
+          "description": "+10 magazine capacity"
+        }
+      ],
+      "upgradePath": {
+        "cost": [700, 1800, 3500, 7000, 18000],
+        "materials": ["Venom Sac", "Toxic Fang", "Poison Core"]
+      },
+      "unlockRequirement": "Kill 500 zombies with SMGs",
+      "price": {
+        "coins": 30000,
+        "gems": 300
+      }
+    },
+    {
+      "id": "m249-fortress",
+      "name": "M249 Fortress",
+      "category": "lmg",
+      "type": "LMG",
+      "rarity": "legendary",
+      "tier": "S",
+      "description": "A massive light machine gun that turns you into a walking fortress. Unlimited destruction.",
+      "image": "/assets/images/weapons/m249-fortress.jpg",
+      "stats": {
+        "damage": 500,
+        "fireRate": 10.0,
+        "range": 70,
+        "magazine": 200,
+        "reload": 5.5,
+        "accuracy": 50,
+        "mobility": 25,
+        "penetration": 4
+      },
+      "maxLevel": 50,
+      "perks": [
+        {
+          "name": "Suppressive Fire",
+          "icon": "shield",
+          "description": "Slows enemies while firing"
+        },
+        {
+          "name": "Armor Piercing",
+          "icon": "shield-alt",
+          "description": "Ignores 50% of enemy armor"
+        },
+        {
+          "name": "Extended Belt",
+          "icon": "infinity",
+          "description": "+50 magazine capacity"
+        }
+      ],
+      "upgradePath": {
+        "cost": [1500, 3500, 7000, 15000, 35000],
+        "materials": ["Steel Plate", "Fortress Core", "Titan Alloy"]
+      },
+      "unlockRequirement": "Survive 10 waves without reloading",
+      "price": {
+        "coins": 60000,
+        "gems": 600
+      }
+    },
+    {
+      "id": "katana-shadow",
+      "name": "Shadow Katana",
+      "category": "melee",
+      "type": "Melee",
+      "rarity": "epic",
+      "tier": "A",
+      "description": "An ancient blade that cuts through dimensions. Strike from the shadows.",
+      "image": "/assets/images/weapons/katana-shadow.jpg",
+      "stats": {
+        "damage": 1500,
+        "attackSpeed": 2.0,
+        "range": 3,
+        "mobility": 100,
+        "critChance": 30,
+        "critMultiplier": 3.0
+      },
+      "maxLevel": 45,
+      "perks": [
+        {
+          "name": "Shadow Strike",
+          "icon": "eye-slash",
+          "description": "Teleport behind enemies"
+        },
+        {
+          "name": "Blade Dance",
+          "icon": "wind",
+          "description": "360° spin attack"
+        }
+      ],
+      "upgradePath": {
+        "cost": [1000, 2500, 5000, 10000, 25000],
+        "materials": ["Shadow Essence", "Void Crystal", "Darkness Core"]
+      },
+      "unlockRequirement": "Get 100 melee kills",
+      "price": {
+        "coins": 40000,
+        "gems": 400
+      }
+    },
+    {
+      "id": "raygun-omega",
+      "name": "Ray Gun Omega",
+      "category": "special",
+      "type": "Special",
+      "rarity": "legendary",
+      "tier": "S",
+      "description": "The ultimate wonder weapon. Fires concentrated energy blasts that disintegrate everything.",
+      "image": "/assets/images/weapons/raygun-omega.jpg",
+      "stats": {
+        "damage": 3000,
+        "fireRate": 3.0,
+        "range": 50,
+        "magazine": 20,
+        "reload": 3.0,
+        "accuracy": 100,
+        "mobility": 60,
+        "penetration": 10,
+        "splashDamage": 500,
+        "splashRadius": 5
+      },
+      "maxLevel": 50,
+      "perks": [
+        {
+          "name": "Disintegrate",
+          "icon": "atom",
+          "description": "Instantly kills weak enemies"
+        },
+        {
+          "name": "Chain Lightning",
+          "icon": "bolt",
+          "description": "Damage chains to nearby enemies"
+        },
+        {
+          "name": "Overcharge",
+          "icon": "battery-full",
+          "description": "Charged shots deal 2x damage"
+        }
+      ],
+      "upgradePath": {
+        "cost": [2000, 5000, 10000, 20000, 50000],
+        "materials": ["Element 115", "Quantum Core", "Omega Crystal"]
+      },
+      "unlockRequirement": "Complete all Easter Eggs",
+      "price": {
+        "coins": 100000,
+        "gems": 1000
+      }
+    },
+    {
+      "id": "crossbow-explosive",
+      "name": "Explosive Crossbow",
+      "category": "special",
+      "type": "Special",
+      "rarity": "rare",
+      "tier": "B",
+      "description": "Silent but deadly. Fires explosive bolts that clear crowds.",
+      "image": "/assets/images/weapons/crossbow-explosive.jpg",
+      "stats": {
+        "damage": 1200,
+        "fireRate": 1.0,
+        "range": 100,
+        "magazine": 1,
+        "reload": 2.5,
+        "accuracy": 90,
+        "mobility": 70,
+        "penetration": 2,
+        "splashDamage": 300,
+        "splashRadius": 3
+      },
+      "maxLevel": 35,
+      "perks": [
+        {
+          "name": "Explosive Bolts",
+          "icon": "bomb",
+          "description": "Bolts explode on impact"
+        },
+        {
+          "name": "Retrieval",
+          "icon": "undo",
+          "description": "50% chance to recover bolts"
+        }
+      ],
+      "upgradePath": {
+        "cost": [600, 1500, 3000, 6000, 15000],
+        "materials": ["Explosive Powder", "Steel Cable", "Blast Core"]
+      },
+      "unlockRequirement": "Get 50 explosive kills",
+      "price": {
+        "coins": 25000,
+        "gems": 250
+      }
+    },
+    {
+      "id": "desert-eagle-gold",
+      "name": "Golden Desert Eagle",
+      "category": "pistol",
+      "type": "Pistol",
+      "rarity": "epic",
+      "tier": "A",
+      "description": "A golden hand cannon with stopping power. Style meets destruction.",
+      "image": "/assets/images/weapons/desert-eagle-gold.jpg",
+      "stats": {
+        "damage": 800,
+        "fireRate": 2.5,
+        "range": 50,
+        "magazine": 7,
+        "reload": 2.0,
+        "accuracy": 80,
+        "mobility": 70,
+        "penetration": 2
+      },
+      "maxLevel": 40,
+      "perks": [
+        {
+          "name": "Headhunter",
+          "icon": "crosshairs",
+          "description": "2x headshot damage"
+        },
+        {
+          "name": "Lucky Shot",
+          "icon": "clover",
+          "description": "10% chance for instant kill"
+        }
+      ],
+      "upgradePath": {
+        "cost": [800, 2000, 4000, 8000, 20000],
+        "materials": ["Gold Ingot", "Lucky Charm", "Fortune Core"]
+      },
+      "unlockRequirement": "Get 250 headshots with pistols",
+      "price": {
+        "coins": 35000,
+        "gems": 350
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "assault",
+      "name": "Assault Rifles",
+      "icon": "rifle",
+      "description": "Versatile automatic rifles for all situations"
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper Rifles",
+      "icon": "crosshairs",
+      "description": "Long-range precision weapons"
+    },
+    {
+      "id": "shotgun",
+      "name": "Shotguns",
+      "icon": "spray-can",
+      "description": "Close-range devastation"
+    },
+    {
+      "id": "smg",
+      "name": "SMGs",
+      "icon": "gun",
+      "description": "Rapid-fire mobility weapons"
+    },
+    {
+      "id": "lmg",
+      "name": "LMGs",
+      "icon": "shield",
+      "description": "Heavy sustained firepower"
+    },
+    {
+      "id": "pistol",
+      "name": "Pistols",
+      "icon": "gun",
+      "description": "Reliable sidearms"
+    },
+    {
+      "id": "melee",
+      "name": "Melee",
+      "icon": "hammer",
+      "description": "Close combat weapons"
+    },
+    {
+      "id": "special",
+      "name": "Special",
+      "icon": "magic",
+      "description": "Wonder weapons and unique items"
+    }
+  ],
+  "rarities": [
+    {
+      "id": "common",
+      "name": "Common",
+      "color": "#6C757D",
+      "dropRate": 60
+    },
+    {
+      "id": "rare",
+      "name": "Rare",
+      "color": "#00D4FF",
+      "dropRate": 25
+    },
+    {
+      "id": "epic",
+      "name": "Epic",
+      "color": "#B833FF",
+      "dropRate": 12
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "color": "#FF6B6B",
+      "dropRate": 3
+    }
+  ],
+  "tiers": [
+    {
+      "id": "S",
+      "name": "S-Tier",
+      "description": "The absolute best weapons in the game"
+    },
+    {
+      "id": "A",
+      "name": "A-Tier",
+      "description": "Excellent weapons for most situations"
+    },
+    {
+      "id": "B",
+      "name": "B-Tier",
+      "description": "Good weapons with specific uses"
+    },
+    {
+      "id": "C",
+      "name": "C-Tier",
+      "description": "Basic weapons for early game"
+    },
+    {
+      "id": "D",
+      "name": "D-Tier",
+      "description": "Last resort weapons"
+    }
+  ]
+}

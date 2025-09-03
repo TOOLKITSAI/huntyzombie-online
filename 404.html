@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Hunty Zombie">
+    <title>404 - Page Not Found | Hunty Zombie</title>
+    
+    <!-- Favicon and Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00FF88">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: #0A0E1A;
+            color: #FFFFFF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(184,51,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0,212,255,0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .glitch-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                transparent 50%,
+                rgba(0, 255, 136, 0.03) 50%
+            );
+            background-size: 100% 4px;
+            animation: scan 8s linear infinite;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(20px); }
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .error-code {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #FF3E3E 0%, #B833FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 80px rgba(255, 62, 62, 0.5);
+            margin-bottom: 1rem;
+            position: relative;
+            animation: glitch 2s infinite;
+        }
+        
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: 
+                    0 0 80px rgba(255, 62, 62, 0.5),
+                    -2px 0 #00FF88,
+                    2px 0 #00D4FF;
+            }
+            25% {
+                text-shadow: 
+                    0 0 80px rgba(255, 62, 62, 0.5),
+                    2px 0 #00FF88,
+                    -2px 0 #00D4FF;
+            }
+            50% {
+                text-shadow: 
+                    0 0 80px rgba(255, 62, 62, 0.5),
+                    -2px 2px #00FF88,
+                    2px -2px #00D4FF;
+            }
+            75% {
+                text-shadow: 
+                    0 0 80px rgba(255, 62, 62, 0.5),
+                    2px -2px #00FF88,
+                    -2px 2px #00D4FF;
+            }
+        }
+        
+        .error-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            color: #00FF88;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: #B8BCC8;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .zombie-icon {
+            font-size: 4rem;
+            color: #FF3E3E;
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: transparent;
+            color: #00FF88;
+            border-color: #00FF88;
+            box-shadow: 
+                0 0 20px rgba(0, 255, 136, 0.3),
+                inset 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+        
+        .btn-primary:hover {
+            background: #00FF88;
+            color: #0A0E1A;
+            transform: translateY(-2px);
+            box-shadow: 
+                0 10px 40px rgba(0, 255, 136, 0.5),
+                0 0 0 4px rgba(0, 255, 136, 0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #00D4FF;
+            border-color: #00D4FF;
+            box-shadow: 
+                0 0 20px rgba(0, 212, 255, 0.3),
+                inset 0 0 20px rgba(0, 212, 255, 0.1);
+        }
+        
+        .btn-secondary:hover {
+            background: #00D4FF;
+            color: #0A0E1A;
+            transform: translateY(-2px);
+            box-shadow: 
+                0 10px 40px rgba(0, 212, 255, 0.5),
+                0 0 0 4px rgba(0, 212, 255, 0.2);
+        }
+        
+        .search-suggestion {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(21, 25, 35, 0.5);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 12px;
+        }
+        
+        .search-title {
+            font-size: 1.1rem;
+            color: #00FF88;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link {
+            color: #00D4FF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-link:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00D4FF;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="glitch-lines"></div>
+    
+    <div class="container">
+        <div class="zombie-icon">
+            <i class="fas fa-skull-crossbones"></i>
+        </div>
+        
+        <div class="error-code">404</div>
+        
+        <h1 class="error-title">Zone Not Found</h1>
+        
+        <p class="error-message">
+            Looks like you've wandered into an uncharted zombie territory! 
+            The page you're looking for has been overrun by the undead or doesn't exist.
+        </p>
+        
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">
+                <i class="fas fa-home"></i>
+                <span>Return to Base</span>
+            </a>
+            <a href="/codes/" class="btn btn-secondary">
+                <i class="fas fa-gift"></i>
+                <span>Get Codes</span>
+            </a>
+        </div>
+        
+        <div class="search-suggestion">
+            <div class="search-title">
+                <i class="fas fa-compass"></i> Quick Navigation
+            </div>
+            <div class="quick-links">
+                <a href="/wiki/" class="quick-link">Wiki</a>
+                <a href="/guides/" class="quick-link">Guides</a>
+                <a href="/scripts/" class="quick-link">Scripts</a>
+                <a href="/wiki/weapons/" class="quick-link">Weapons</a>
+                <a href="/wiki/zombies/" class="quick-link">Zombies</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Redirect to homepage after 10 seconds
+        setTimeout(() => {
+            console.log('Redirecting to homepage...');
+        }, 10000);
+        
+        // Add random glitch effect
+        setInterval(() => {
+            const errorCode = document.querySelector('.error-code');
+            if (Math.random() > 0.95) {
+                errorCode.style.transform = `scale(${0.95 + Math.random() * 0.1})`;
+                setTimeout(() => {
+                    errorCode.style.transform = 'scale(1)';
+                }, 100);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

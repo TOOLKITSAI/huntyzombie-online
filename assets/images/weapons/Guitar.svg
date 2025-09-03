@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background glow effect -->
+  <defs>
+    <radialGradient id="guitarGlow">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0" />
+    </radialGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Glow background -->
+  <ellipse cx="50" cy="50" rx="45" ry="45" fill="url(#guitarGlow)"/>
+  
+  <!-- Guitar body -->
+  <g filter="url(#neonGlow)">
+    <!-- Guitar neck -->
+    <rect x="45" y="10" width="10" height="40" fill="#2A2E3A" stroke="#00FF88" stroke-width="1"/>
+    
+    <!-- Fret markers -->
+    <line x1="45" y1="20" x2="55" y2="20" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="45" y1="30" x2="55" y2="30" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="45" y1="40" x2="55" y2="40" stroke="#00D4FF" stroke-width="0.5"/>
+    
+    <!-- Guitar strings -->
+    <line x1="47" y1="10" x2="47" y2="50" stroke="#FFD700" stroke-width="0.5" opacity="0.8"/>
+    <line x1="50" y1="10" x2="50" y2="50" stroke="#FFD700" stroke-width="0.5" opacity="0.8"/>
+    <line x1="53" y1="10" x2="53" y2="50" stroke="#FFD700" stroke-width="0.5" opacity="0.8"/>
+    
+    <!-- Guitar body (electric style) -->
+    <path d="M 35 45 
+             C 25 45, 20 55, 20 65
+             C 20 75, 25 85, 35 85
+             L 40 85
+             L 40 80
+             C 40 75, 45 73, 50 73
+             C 55 73, 60 75, 60 80
+             L 60 85
+             L 65 85
+             C 75 85, 80 75, 80 65
+             C 80 55, 75 45, 65 45
+             L 60 45
+             C 60 50, 55 52, 50 52
+             C 45 52, 40 50, 40 45
+             Z" 
+          fill="#1E2430" 
+          stroke="#00FF88" 
+          stroke-width="2"/>
+    
+    <!-- Sound hole / pickup -->
+    <circle cx="50" cy="65" r="8" fill="#0A0E1A" stroke="#00D4FF" stroke-width="1"/>
+    <circle cx="50" cy="65" r="5" fill="none" stroke="#B833FF" stroke-width="0.5"/>
+    
+    <!-- Volume knobs -->
+    <circle cx="35" cy="75" r="3" fill="#2A2E3A" stroke="#00FF88" stroke-width="0.5"/>
+    <circle cx="65" cy="75" r="3" fill="#2A2E3A" stroke="#00FF88" stroke-width="0.5"/>
+    
+    <!-- Headstock -->
+    <rect x="44" y="5" width="12" height="8" rx="2" fill="#2A2E3A" stroke="#00FF88" stroke-width="1"/>
+    
+    <!-- Tuning pegs -->
+    <circle cx="46" cy="7" r="1" fill="#FFD700"/>
+    <circle cx="54" cy="7" r="1" fill="#FFD700"/>
+    <circle cx="46" cy="11" r="1" fill="#FFD700"/>
+    <circle cx="54" cy="11" r="1" fill="#FFD700"/>
+  </g>
+  
+  <!-- Electric sparks effect -->
+  <g opacity="0.6">
+    <path d="M 25 60 L 28 58 L 26 62 L 29 60" stroke="#00D4FF" stroke-width="0.5" fill="none"/>
+    <path d="M 72 68 L 75 66 L 73 70 L 76 68" stroke="#B833FF" stroke-width="0.5" fill="none"/>
+  </g>
+</svg>

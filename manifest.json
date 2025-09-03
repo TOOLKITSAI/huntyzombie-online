@@ -1,0 +1,65 @@
+{
+  "name": "Hunty Zombie - Ultimate Game Guide",
+  "short_name": "Hunty Zombie",
+  "description": "Ultimate Roblox zombie survival game guide with codes, wiki, and strategies",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0E1A",
+  "theme_color": "#00FF88",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/hunty-zombie1.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "label": "Hunty Zombie Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Active Codes",
+      "short_name": "Codes",
+      "description": "View all active game codes",
+      "url": "/codes/",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Game Wiki",
+      "short_name": "Wiki",
+      "description": "Browse game wiki and guides",
+      "url": "/wiki/",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}
