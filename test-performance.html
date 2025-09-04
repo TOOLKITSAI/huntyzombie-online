@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0E1A;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #00FF88;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+        .metric-title {
+            font-size: 14px;
+            color: #B8BCC8;
+            margin-bottom: 10px;
+        }
+        .metric-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #00D4FF;
+        }
+        .metric-unit {
+            font-size: 14px;
+            color: #6C7380;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .status.good { background: rgba(0, 255, 136, 0.2); color: #00FF88; }
+        .status.needs-improvement { background: rgba(255, 183, 0, 0.2); color: #FFB700; }
+        .status.poor { background: rgba(255, 62, 62, 0.2); color: #FF3E3E; }
+        button {
+            background: linear-gradient(135deg, #00FF88, #00D4FF);
+            color: #0A0E1A;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+        #log {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 3px solid #00FF88;
+            padding-left: 10px;
+        }
+        .resources-list {
+            margin-top: 20px;
+        }
+        .resource-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Hunty Zombie Performance Test Dashboard</h1>
+        
+        <button onclick="runPerformanceTest()">Run Performance Test</button>
+        
+        <div class="metrics-grid" id="metrics">
+            <div class="metric-card">
+                <div class="metric-title">Page Load Time</div>
+                <div class="metric-value" id="loadTime">-</div>
+                <div class="metric-unit">ms</div>
+                <div class="status" id="loadStatus"></div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">First Contentful Paint</div>
+                <div class="metric-value" id="fcp">-</div>
+                <div class="metric-unit">ms</div>
+                <div class="status" id="fcpStatus"></div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">DOM Content Loaded</div>
+                <div class="metric-value" id="domContentLoaded">-</div>
+                <div class="metric-unit">ms</div>
+                <div class="status" id="domStatus"></div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Total Resources</div>
+                <div class="metric-value" id="totalResources">-</div>
+                <div class="metric-unit">files</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Total Transfer Size</div>
+                <div class="metric-value" id="totalSize">-</div>
+                <div class="metric-unit">KB</div>
+                <div class="status" id="sizeStatus"></div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">JavaScript Execution</div>
+                <div class="metric-value" id="jsExecution">-</div>
+                <div class="metric-unit">ms</div>
+                <div class="status" id="jsStatus"></div>
+            </div>
+        </div>
+        
+        <h2 style="margin: 30px 0 20px; color: #00FF88;">Performance Log</h2>
+        <div id="log"></div>
+        
+        <div class="resources-list" id="resourcesList"></div>
+    </div>
+
+    <script>
+        function getStatus(value, goodThreshold, poorThreshold) {
+            if (value < goodThreshold) return { class: 'good', text: 'Good' };
+            if (value < poorThreshold) return { class: 'needs-improvement', text: 'Needs Work' };
+            return { class: 'poor', text: 'Poor' };
+        }
+
+        function formatBytes(bytes) {
+            return (bytes / 1024).toFixed(2);
+        }
+
+        function addLogEntry(message, type = 'info') {
+            const log = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            entry.style.borderColor = type === 'success' ? '#00FF88' : 
+                                     type === 'warning' ? '#FFB700' : 
+                                     type === 'error' ? '#FF3E3E' : '#00D4FF';
+            log.appendChild(entry);
+            log.scrollTop = log.scrollHeight;
+        }
+
+        async function runPerformanceTest() {
+            addLogEntry('Starting performance test...', 'info');
+            
+            // 测试主页性能
+            const iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = '/index.html';
+            document.body.appendChild(iframe);
+            
+            iframe.onload = function() {
+                setTimeout(() => {
+                    analyzePerformance();
+                    document.body.removeChild(iframe);
+                }, 2000);
+            };
+        }
+
+        function analyzePerformance() {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            const paintData = performance.getEntriesByType('paint');
+            const resourceData = performance.getEntriesByType('resource');
+            
+            // Page Load Time
+            const loadTime = Math.round(perfData.loadEventEnd - perfData.fetchStart);
+            document.getElementById('loadTime').textContent = loadTime;
+            const loadStatus = getStatus(loadTime, 2000, 4000);
+            const loadStatusEl = document.getElementById('loadStatus');
+            loadStatusEl.className = 'status ' + loadStatus.class;
+            loadStatusEl.textContent = loadStatus.text;
+            
+            // First Contentful Paint
+            const fcpEntry = paintData.find(p => p.name === 'first-contentful-paint');
+            if (fcpEntry) {
+                const fcpTime = Math.round(fcpEntry.startTime);
+                document.getElementById('fcp').textContent = fcpTime;
+                const fcpStatus = getStatus(fcpTime, 1500, 3000);
+                const fcpStatusEl = document.getElementById('fcpStatus');
+                fcpStatusEl.className = 'status ' + fcpStatus.class;
+                fcpStatusEl.textContent = fcpStatus.text;
+                addLogEntry(`First Contentful Paint: ${fcpTime}ms`, fcpTime < 1500 ? 'success' : 'warning');
+            }
+            
+            // DOM Content Loaded
+            const domTime = Math.round(perfData.domContentLoadedEventEnd - perfData.fetchStart);
+            document.getElementById('domContentLoaded').textContent = domTime;
+            const domStatus = getStatus(domTime, 1500, 3000);
+            const domStatusEl = document.getElementById('domStatus');
+            domStatusEl.className = 'status ' + domStatus.class;
+            domStatusEl.textContent = domStatus.text;
+            
+            // Resources
+            document.getElementById('totalResources').textContent = resourceData.length;
+            
+            // Total Size
+            let totalSize = 0;
+            resourceData.forEach(resource => {
+                totalSize += resource.transferSize || 0;
+            });
+            const totalSizeKB = Math.round(totalSize / 1024);
+            document.getElementById('totalSize').textContent = totalSizeKB;
+            const sizeStatus = getStatus(totalSizeKB, 500, 1500);
+            const sizeStatusEl = document.getElementById('sizeStatus');
+            sizeStatusEl.className = 'status ' + sizeStatus.class;
+            sizeStatusEl.textContent = sizeStatus.text;
+            
+            // JavaScript Execution Time
+            let jsTime = 0;
+            resourceData.filter(r => r.name.includes('.js')).forEach(resource => {
+                jsTime += resource.duration || 0;
+            });
+            document.getElementById('jsExecution').textContent = Math.round(jsTime);
+            const jsStatus = getStatus(jsTime, 300, 1000);
+            const jsStatusEl = document.getElementById('jsStatus');
+            jsStatusEl.className = 'status ' + jsStatus.class;
+            jsStatusEl.textContent = jsStatus.text;
+            
+            // Log detailed resource info
+            addLogEntry(`Total resources loaded: ${resourceData.length}`, 'info');
+            addLogEntry(`Total transfer size: ${formatBytes(totalSize)} KB`, totalSizeKB < 500 ? 'success' : 'warning');
+            
+            // Find slow resources
+            const slowResources = resourceData
+                .filter(r => r.duration > 500)
+                .sort((a, b) => b.duration - a.duration)
+                .slice(0, 5);
+            
+            if (slowResources.length > 0) {
+                addLogEntry('Slow resources detected:', 'warning');
+                slowResources.forEach(resource => {
+                    const name = resource.name.split('/').pop();
+                    addLogEntry(`  ${name}: ${Math.round(resource.duration)}ms`, 'warning');
+                });
+            }
+            
+            // Check for render-blocking resources
+            const renderBlocking = resourceData.filter(r => 
+                (r.name.includes('.css') || r.name.includes('.js')) && 
+                r.startTime < 1000
+            );
+            
+            if (renderBlocking.length > 0) {
+                addLogEntry(`Found ${renderBlocking.length} potentially render-blocking resources`, 'warning');
+            }
+            
+            // Memory usage (if available)
+            if (performance.memory) {
+                const memoryUsed = Math.round(performance.memory.usedJSHeapSize / 1048576);
+                addLogEntry(`Memory usage: ${memoryUsed} MB`, memoryUsed < 50 ? 'success' : 'warning');
+            }
+            
+            // Overall score calculation
+            const score = calculatePerformanceScore({
+                loadTime, 
+                fcp: fcpEntry ? fcpEntry.startTime : 0,
+                domTime,
+                totalSizeKB,
+                jsTime
+            });
+            
+            addLogEntry(`Overall Performance Score: ${score}/100`, 
+                score >= 90 ? 'success' : score >= 70 ? 'warning' : 'error');
+        }
+
+        function calculatePerformanceScore(metrics) {
+            let score = 100;
+            
+            // Deduct points for slow metrics
+            if (metrics.loadTime > 4000) score -= 20;
+            else if (metrics.loadTime > 2000) score -= 10;
+            
+            if (metrics.fcp > 3000) score -= 20;
+            else if (metrics.fcp > 1500) score -= 10;
+            
+            if (metrics.domTime > 3000) score -= 15;
+            else if (metrics.domTime > 1500) score -= 7;
+            
+            if (metrics.totalSizeKB > 1500) score -= 15;
+            else if (metrics.totalSizeKB > 500) score -= 7;
+            
+            if (metrics.jsTime > 1000) score -= 10;
+            else if (metrics.jsTime > 300) score -= 5;
+            
+            return Math.max(0, Math.round(score));
+        }
+
+        // Auto-run on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                addLogEntry('Performance Test Dashboard Ready', 'success');
+                addLogEntry('Click "Run Performance Test" to analyze the optimized page', 'info');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
